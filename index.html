@@ -148,6 +148,8 @@ footer{margin-top:22px;font-size:12px;color:var(--ink-soft);line-height:1.7}
 header{position:relative}
 .langsel{position:absolute;top:0;right:0;appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 14px;font-size:12px;font-weight:700;cursor:pointer}
 .langsel:focus{outline:none;border-color:var(--accent)}
+.weeksel{appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 16px;font-size:13px;font-weight:700;cursor:pointer}
+.weeksel:focus{outline:none;border-color:var(--accent)}
 [hidden]{display:none!important}
 </style>
 <style>body{margin:0}</style>
@@ -161,7 +163,7 @@ header{position:relative}
   <h1>Qalendar</h1>
   <div class="weekline">
     <div class="weeklabel" id="weekLabel">—</div>
-    <div class="tabs" role="tablist" id="weekTabs"></div>
+    <select id="weekTabs" class="weeksel" title="Week"></select>
   </div>
   <div class="filters" role="group" aria-label="Index filter">
     <button class="tab" id="fSpx" aria-selected="false">S&amp;P 500</button>
@@ -279,7 +281,9 @@ function coRow(c,date){
 }
 function tabLabel(w,i){return i===0?T("thisWeek"):i===1?T("nextWeek"):fmtWeek(w,false)||("W"+(i+1));}
 function renderTabs(){
-  document.getElementById("weekTabs").innerHTML=W().map((w,i)=>`<button class="tab" role="tab" data-week="${i}" aria-selected="${i===active}">${tabLabel(w,i)}</button>`).join("");
+  const wsel=document.getElementById("weekTabs");
+  wsel.innerHTML=W().map((w,i)=>`<option value="${i}">${esc(tabLabel(w,i))}</option>`).join("");
+  wsel.value=String(active);
 }
 function render(){
   const d=W()[active], el=document.getElementById("content");
@@ -303,9 +307,8 @@ function render(){
       <div class="session post"><h3>${T("post")}</h3><div class="list">${post.length?post.map(c=>coRow(c,day.date)).join(""):'<span class="none">—</span>'}</div></div>
     </section>`;}).join("")+"</div>";
 }
-document.getElementById("weekTabs").addEventListener("click",e=>{
-  const b=e.target.closest("[data-week]");
-  if(b){active=parseInt(b.getAttribute("data-week"),10)||0;render();}
+document.getElementById("weekTabs").addEventListener("change",e=>{
+  active=parseInt(e.target.value,10)||0;render();
 });
 function syncFilters(){try{localStorage.setItem("idxSel",JSON.stringify(sel));}catch(e){}
   document.getElementById("fSpx").setAttribute("aria-selected",!!sel.SPX);
