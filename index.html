@@ -69,6 +69,9 @@ h1{margin:6px 0 2px;font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacin
 .co:hover .hide-btn,.hide-btn:focus{opacity:1}
 @media (hover:none){.hide-btn{opacity:.5}}
 .hide-btn:hover{color:#b3463c}
+.cal-btn{flex:none;margin-left:auto;border:0;background:none;font-size:12px;line-height:1;cursor:pointer;padding:2px 2px;border-radius:4px;opacity:.5}
+.cal-btn:hover{opacity:1}
+.cal-btn+.hide-btn{margin-left:2px}
 .hpanel{margin-top:10px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px}
 .ndot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#c0392b;margin-left:5px;vertical-align:middle}
 #chgNotice,#upNotice{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px;padding:8px 12px;border:1px solid var(--accent);border-radius:10px;background:var(--today);font-size:12.5px;color:var(--ink)}
@@ -281,7 +284,7 @@ function coRow(c,date){
   const bdg=ix.includes("W")?'<span class="bdg wch">WATCH</span>':ix.includes("HSI")?'<span class="bdg hsi">HSI</span>':ix.includes("DAX")?'<span class="bdg dax">DAX</span>':ix.includes("FTSE")?'<span class="bdg fts">FTSE</span>':ix.includes("CAC")?'<span class="bdg cac">CAC</span>':ix.includes("N225")?'<span class="bdg n225">N225</span>':ix.includes("KOSPI")?'<span class="bdg kos">KOSPI</span>':ix.includes("SSE")?'<span class="bdg sse">SSE</span>':ix.includes("NDX")?'<span class="bdg ndx">NDX</span>':'<span class="bdg spx">S&amp;P</span>';
   return `<div class="co"><div class="dot" style="${logoStyle(c.t)}">${logoText(c)}</div>
   <div class="meta2"><div class="tk">${c.t}${bdg}${inAnyList(c.t)?`<span class="star" title="${T("onLists")}">★</span>`:''}</div>
-  <div class="nm">${c.n||""}${localSuffix(c.n,date)}</div></div><button class="hide-btn" data-hide="${c.t}" title="${T("hideT").replace("{t}",c.t)}">✕</button></div>`;
+  <div class="nm">${c.n||""}${localSuffix(c.n,date)}</div></div><button class="cal-btn" data-ical="${c.t}" title="${T("calExport")}">📅</button><button class="hide-btn" data-hide="${c.t}" title="${T("hideT").replace("{t}",c.t)}">✕</button></div>`;
 }
 function tabLabel(w,i){return i===0?T("thisWeek"):i===1?T("nextWeek"):fmtWeek(w,false)||("W"+(i+1));}
 function renderTabs(){
@@ -367,6 +370,8 @@ function renderHidden(){
 }
 document.getElementById("fHidden").onclick=()=>{showHidden=!showHidden;renderHidden();};
 document.getElementById("content").addEventListener("click",e=>{
+  const cb=e.target.closest("[data-ical]");
+  if(cb){exportICS(new Set([cb.getAttribute("data-ical")]));return;}
   const b=e.target.closest("[data-hide]");
   if(b){const t=b.getAttribute("data-hide");if(!hidden.includes(t))hidden.push(t);lists.forEach(l=>l.t=l.t.filter(x=>x!==t));saveLists();renderLists();saveHidden();renderHidden();render();}
 });
@@ -396,8 +401,9 @@ function renderUpcoming(){
   el.onclick=e=>{if(e.target.id==="upDismiss"){try{localStorage.setItem("upSeen",key);}catch(x){}el.hidden=true;}};
 }
 function icsEsc(x){return String(x).replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,");}
-function exportICS(){
-  const mine=new Set();lists.forEach(l=>l.t.forEach(t=>mine.add(t)));
+function exportICS(tset){
+  let mine=tset;
+  if(!mine){mine=new Set();lists.forEach(l=>l.t.forEach(t=>mine.add(t)));}
   const ev=[];
   for(const w of W()){if(!w||!w.days)continue;
     for(const d of w.days)for(const ss of ["pre","post"])for(const c of (d[ss]||[]))if(mine.has(c.t)){
