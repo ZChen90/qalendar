@@ -101,6 +101,9 @@ h1{margin:6px 0 2px;font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacin
 .laddrow .nm2{color:var(--ink-soft);font-size:11.5px}
 .lchip{border:1px solid var(--accent);color:var(--accent-ink);background:none;border-radius:999px;padding:2px 10px;font-size:11.5px;cursor:pointer;font-weight:700}
 .lchip:hover{background:var(--today)}
+#listPills .tab{cursor:grab}
+#listPills .tab.dragging{opacity:.45}
+#listPills .tab.dropover{box-shadow:0 0 0 2px var(--accent) inset}
 .star{color:#c9a227;font-size:12px}
 .lt{color:var(--accent-ink);font-weight:600;white-space:nowrap}
 .lrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;width:100%;padding:5px 0;border-bottom:1px dashed var(--line)}
@@ -219,13 +222,14 @@ const W=()=>data.weeks||[];
 try{const s=JSON.parse(localStorage.getItem("idxSel"));if(s&&typeof s.SPX==="boolean"&&typeof s.NDX==="boolean")sel={SPX:!!s.SPX,NDX:!!s.NDX,HSI:typeof s.HSI==="boolean"?s.HSI:true,DAX:typeof s.DAX==="boolean"?s.DAX:true,FTSE:typeof s.FTSE==="boolean"?s.FTSE:true,CAC:typeof s.CAC==="boolean"?s.CAC:true,N225:typeof s.N225==="boolean"?s.N225:true,KOSPI:typeof s.KOSPI==="boolean"?s.KOSPI:true,SSE:typeof s.SSE==="boolean"?s.SSE:true};}catch(e){}
 let hidden=[], showHidden=false;
 try{const h=JSON.parse(localStorage.getItem("hiddenTickers"));if(Array.isArray(h))hidden=h.filter(x=>typeof x==="string");}catch(e){}
-let lists=[{n:"My Watch List",t:["BE","SPCX"]}], showLists=false, listSel=[true];
+let lists=[{n:"My Watch List",t:["BE","SPCX"],d:1}], showLists=false, listSel=[true];
 try{
   const sv=JSON.parse(localStorage.getItem("userLists"));
-  if(Array.isArray(sv)&&sv.length&&sv.every(l=>l&&typeof l.n==="string"&&Array.isArray(l.t)))lists=sv.map(l=>({n:l.n,t:l.t.filter(x=>typeof x==="string")}));
+  if(Array.isArray(sv)&&sv.length&&sv.every(l=>l&&typeof l.n==="string"&&Array.isArray(l.t)))lists=sv.map(l=>({n:l.n,t:l.t.filter(x=>typeof x==="string"),d:l.d?1:0}));
   else{const w=JSON.parse(localStorage.getItem("watchTickers"));if(Array.isArray(w))lists[0].t=[...new Set([...lists[0].t,...w.filter(x=>typeof x==="string")])];}
 }catch(e){}
 try{const ls=JSON.parse(localStorage.getItem("listSel"));if(Array.isArray(ls))listSel=ls.map(Boolean);}catch(e){}
+if(lists.length&&!lists.some(l=>l.d))lists[0].d=1;
 while(listSel.length<lists.length)listSel.push(true);
 listSel.length=lists.length;
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -244,7 +248,8 @@ ko:{xSPX:"S&P 500",xNDX:"나스닥100",xHSI:"항섹지수",xDAX:"DAX 40",xFTSE:"
 };
 const T=k=>(I18N[lang]&&I18N[lang][k])!==undefined?I18N[lang][k]:(I18N.en[k]!==undefined?I18N.en[k]:k);
 const idxName=x=>T("x"+x)||x;
-const dispName=(l,i)=>(i===0&&l.n==="My Watch List")?T("myWatch"):l.n;
+const dispName=(l,i)=>(l&&l.d&&l.n==="My Watch List")?T("myWatch"):(l?l.n:"");
+const defIdx=()=>{const i=lists.findIndex(l=>l.d);return i<0?0:i;};
 const LOC=()=>LOCALE[lang]||"en-US";
 const pd=x=>new Date(x+"T12:00:00Z");
 function fmtWeek(w,withYear){try{const ds=w&&w.days;if(ds&&ds.length){const o=withYear?{year:"numeric",month:"short",day:"numeric"}:{month:"short",day:"numeric"};return new Intl.DateTimeFormat(LOC(),Object.assign({timeZone:"UTC"},o)).formatRange(pd(ds[0].date),pd(ds[ds.length-1].date));}}catch(e){}return (w&&w.weekLabel)||"";}
@@ -304,7 +309,7 @@ function render(){
   document.getElementById("weekLabel").textContent=fmtWeek(d,true);
   if(!sel.SPX&&!sel.NDX&&!sel.HSI&&!sel.DAX&&!sel.FTSE&&!sel.CAC&&!sel.N225&&!sel.KOSPI&&!sel.SSE&&!listSel.some(Boolean)){el.innerHTML=`<div class="empty"><b>${T("nothingSel")}</b><br>${T("nothingSelBody")}</div>`;return;}
   const tI=todayISO();
-  const flt=c=>{if(inSelList(c.t))return true;const ix=c.idx||[];if(ix.includes("W")&&listSel[0])return true;if(hidden.includes(c.t))return false;return (sel.SPX&&ix.includes("SPX"))||(sel.NDX&&ix.includes("NDX"))||(sel.HSI&&ix.includes("HSI"))||(sel.DAX&&ix.includes("DAX"))||(sel.FTSE&&ix.includes("FTSE"))||(sel.CAC&&ix.includes("CAC"))||(sel.N225&&ix.includes("N225"))||(sel.KOSPI&&ix.includes("KOSPI"))||(sel.SSE&&ix.includes("SSE"));};
+  const flt=c=>{if(inSelList(c.t))return true;const ix=c.idx||[];if(ix.includes("W")&&listSel[defIdx()])return true;if(hidden.includes(c.t))return false;return (sel.SPX&&ix.includes("SPX"))||(sel.NDX&&ix.includes("NDX"))||(sel.HSI&&ix.includes("HSI"))||(sel.DAX&&ix.includes("DAX"))||(sel.FTSE&&ix.includes("FTSE"))||(sel.CAC&&ix.includes("CAC"))||(sel.N225&&ix.includes("N225"))||(sel.KOSPI&&ix.includes("KOSPI"))||(sel.SSE&&ix.includes("SSE"));};
   el.innerHTML='<div class="board">'+d.days.map(day=>{
     const isT=day.date===tI;
     const pre=(day.pre||[]).filter(flt), post=(day.post||[]).filter(flt);
@@ -360,7 +365,7 @@ document.getElementById("hiddenPanel").addEventListener("click",e=>{
 });
 function saveLists(){try{localStorage.setItem("userLists",JSON.stringify(lists));localStorage.setItem("listSel",JSON.stringify(listSel));}catch(e){}}
 function renderListPills(){
-  document.getElementById("listPills").innerHTML=lists.map((l,i)=>`<button class="tab" data-list="${i}" aria-selected="${!!listSel[i]}">★ ${esc(dispName(l,i))} (${l.t.length})</button>`).join("");
+  document.getElementById("listPills").innerHTML=lists.map((l,i)=>`<button class="tab" data-list="${i}" draggable="true" aria-selected="${!!listSel[i]}">★ ${esc(dispName(l,i))} (${l.t.length})</button>`).join("");
 }
 function renderLists(){
   renderListPills();
@@ -372,7 +377,7 @@ function renderLists(){
     <input class="lname" data-ren="${i}" value="${esc(l.n)}" title="${T("rename")}">
     ${l.t.map(t=>`<span class="hchip">${t}<button data-rmt="${i}|${t}" title="${T("removeT").replace("{t}",t)}">✕</button></span>`).join("")}
     <input class="ladd" data-addto="${i}" placeholder="${T("addTicker")}">
-    ${i>0?`<button class="ldel" data-dell="${i}">${T("delList")}</button>`:""}
+    ${l.d?"":`<button class="ldel" data-dell="${i}">${T("delList")}</button>`}
   </div>`).join("")+`<div class="lrow"><input class="ladd" id="newList" placeholder="${T("newList")}" style="width:160px"></div>`;
 }
 function addToList(i,t){t=(t||"").toUpperCase().trim().replace(/[^A-Z0-9.\-]/g,"");if(!t||!lists[i])return;
@@ -383,6 +388,33 @@ document.getElementById("fLists").onclick=()=>{showLists=!showLists;renderLists(
 document.getElementById("listPills").addEventListener("click",e=>{
   const b=e.target.closest("[data-list]");
   if(b){const i=+b.getAttribute("data-list");listSel[i]=!listSel[i];saveLists();renderListPills();render();}
+});
+let dragIdx=null;
+const pillsEl=document.getElementById("listPills");
+pillsEl.addEventListener("dragstart",e=>{
+  const b=e.target.closest("[data-list]");if(!b)return;
+  dragIdx=+b.getAttribute("data-list");
+  e.dataTransfer.effectAllowed="move";
+  try{e.dataTransfer.setData("text/plain",String(dragIdx));}catch(x){}
+  b.classList.add("dragging");
+});
+pillsEl.addEventListener("dragend",()=>{dragIdx=null;[...pillsEl.children].forEach(b=>b.classList.remove("dragging","dropover"));});
+pillsEl.addEventListener("dragover",e=>{
+  const b=e.target.closest("[data-list]");if(dragIdx===null||!b)return;
+  e.preventDefault();e.dataTransfer.dropEffect="move";
+  [...pillsEl.children].forEach(x=>x.classList.remove("dropover"));
+  if(+b.getAttribute("data-list")!==dragIdx)b.classList.add("dropover");
+});
+pillsEl.addEventListener("drop",e=>{
+  const b=e.target.closest("[data-list]");if(dragIdx===null||!b)return;
+  e.preventDefault();
+  const to=+b.getAttribute("data-list");
+  if(to!==dragIdx){
+    const L=lists.splice(dragIdx,1)[0], S=listSel.splice(dragIdx,1)[0];
+    lists.splice(to,0,L);listSel.splice(to,0,S);
+    saveLists();renderLists();render();
+  }
+  dragIdx=null;
 });
 document.getElementById("watchPanel").addEventListener("click",e=>{
   const rm=e.target.closest("[data-rmt]");
@@ -426,18 +458,18 @@ function renderSearch(){
     const cj=(c.a||[]).find(x=>/[\u3040-\u30ff\u4e00-\u9fff\uac00-\ud7af]/.test(x))||"";
     return `<div class="sgrp"><div class="gn">${esc(c.n)}${cj?` <span class="gal">${esc(cj)}</span>`:""}</div>`+c.l.map((L,li)=>{
       const id=ci+":"+li, inData=SIDX.dataT.has(L[0]);
-      const where=L[2]&&L[2].length?idxName(L[2][0]):dispName(lists[0],0);
+      const where=L[2]&&L[2].length?idxName(L[2][0]):dispName(lists[defIdx()],defIdx());
       let row=`<button class="srowb" data-pick="${id}" aria-selected="${pick===id}"><span class="tk2">${L[1]} · ${L[0]}</span><span class="nm2">${esc(where)}${inData?"":" · "+T("notInData")}${hidden.includes(L[0])?" · "+T("hiddenTag"):""}</span></button>`;
       if(pick===id)row+=`<div class="laddrow"><span class="nm2">${L[2]&&L[2].length?T("showsUnder").replace("{x}",esc(idxName(L[2][0]))):T("notCovered")}</span>${lists.map((ls,i)=>`<button class="lchip" data-padd="${i}">★ ${esc(dispName(ls,i))}</button>`).join("")}</div>`;
       return row;
     }).join("")+`</div>`;
   }).join("");
   const qt=raw.toUpperCase().replace(/[^A-Z0-9.\-]/g,"");
-  if(qt&&!SIDX.comps.some(c=>c.l.some(L=>L[0]===qt)))html+=`<button class="sitem" data-add="${qt}"><span class="tk2">${esc(T("addNew").replace("{t}",qt).replace("{list}",dispName(lists[0],0)))}</span><span class="nm2">${T("notIn4w")}</span></button>`;
+  if(qt&&!SIDX.comps.some(c=>c.l.some(L=>L[0]===qt)))html+=`<button class="sitem" data-add="${qt}"><span class="tk2">${esc(T("addNew").replace("{t}",qt).replace("{list}",dispName(lists[defIdx()],defIdx())))}</span><span class="nm2">${T("notIn4w")}</span></button>`;
   sRes.innerHTML=html;sRes.hidden=!html;
 }
 sBox.addEventListener("input",()=>{pick="";renderSearch();});
-sBox.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();addToList(0,sBox.value);sBox.value="";sRes.hidden=true;pick="";}});
+sBox.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();addToList(defIdx(),sBox.value);sBox.value="";sRes.hidden=true;pick="";}});
 sRes.addEventListener("click",e=>{
   const pb=e.target.closest("[data-pick]");
   if(pb){const id=pb.getAttribute("data-pick");pick=pick===id?"":id;renderSearch();return;}
@@ -446,7 +478,7 @@ sRes.addEventListener("click",e=>{
     let t=L[0];if(!SIDX.dataT.has(t)){const sib=c.l.find(x=>SIDX.dataT.has(x[0]));if(sib)t=sib[0];}
     addToList(+pa.getAttribute("data-padd"),t);sBox.value="";sRes.hidden=true;sRes.innerHTML="";pick="";return;}
   const b=e.target.closest("[data-add]");
-  if(b){addToList(0,b.getAttribute("data-add"));sBox.value="";sRes.hidden=true;sRes.innerHTML="";pick="";}
+  if(b){addToList(defIdx(),b.getAttribute("data-add"));sBox.value="";sRes.hidden=true;sRes.innerHTML="";pick="";}
 });
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))sRes.hidden=true;});
 try{
