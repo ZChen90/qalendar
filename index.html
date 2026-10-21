@@ -101,9 +101,9 @@ h1{margin:6px 0 2px;font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacin
 .laddrow .nm2{color:var(--ink-soft);font-size:11.5px}
 .lchip{border:1px solid var(--accent);color:var(--accent-ink);background:none;border-radius:999px;padding:2px 10px;font-size:11.5px;cursor:pointer;font-weight:700}
 .lchip:hover{background:var(--today)}
-#listPills .tab{cursor:grab}
-#listPills .tab.dragging{opacity:.45}
-#listPills .tab.dropover{box-shadow:0 0 0 2px var(--accent) inset}
+#idxPills .tab,#listPills .tab{cursor:grab}
+#idxPills .tab.dragging,#listPills .tab.dragging{opacity:.45}
+#idxPills .tab.dropover,#listPills .tab.dropover{box-shadow:0 0 0 2px var(--accent) inset}
 .star{color:#c9a227;font-size:12px}
 .lt{color:var(--accent-ink);font-weight:600;white-space:nowrap}
 .lrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;width:100%;padding:5px 0;border-bottom:1px dashed var(--line)}
@@ -176,15 +176,7 @@ header{position:relative}
     <select id="weekTabs" class="weeksel" title="Week"></select>
   </div>
   <div class="filters" role="group" aria-label="Index filter">
-    <button class="tab" id="fSpx" aria-selected="false">S&amp;P 500</button>
-    <button class="tab" id="fNdx" aria-selected="false">Nasdaq-100</button>
-    <button class="tab" id="fHsi" aria-selected="false">Hang Seng</button>
-    <button class="tab" id="fDax" aria-selected="false">DAX</button>
-    <button class="tab" id="fFts" aria-selected="false">FTSE 100</button>
-    <button class="tab" id="fCac" aria-selected="false">CAC 40</button>
-    <button class="tab" id="fN225" aria-selected="false">Nikkei 225</button>
-    <button class="tab" id="fKospi" aria-selected="false">KOSPI</button>
-    <button class="tab" id="fSse" aria-selected="false">SSE</button>
+    <span id="idxPills" style="display:contents"></span>
     <span id="listPills" style="display:contents"></span>
     <button class="tab" id="fLists" aria-selected="false">Lists ✎</button>
     <button class="tab" id="fHidden" aria-selected="false" hidden>Hidden (0)</button>
@@ -323,26 +315,45 @@ document.getElementById("weekTabs").addEventListener("change",e=>{
   active=parseInt(e.target.value,10)||0;render();
 });
 function syncFilters(){try{localStorage.setItem("idxSel",JSON.stringify(sel));}catch(e){}
-  document.getElementById("fSpx").setAttribute("aria-selected",!!sel.SPX);
-  document.getElementById("fNdx").setAttribute("aria-selected",!!sel.NDX);
-  document.getElementById("fHsi").setAttribute("aria-selected",!!sel.HSI);
-  document.getElementById("fDax").setAttribute("aria-selected",!!sel.DAX);
-  document.getElementById("fFts").setAttribute("aria-selected",!!sel.FTSE);
-  document.getElementById("fCac").setAttribute("aria-selected",!!sel.CAC);
-  document.getElementById("fN225").setAttribute("aria-selected",!!sel.N225);
-  document.getElementById("fKospi").setAttribute("aria-selected",!!sel.KOSPI);
-  document.getElementById("fSse").setAttribute("aria-selected",!!sel.SSE);
+  renderIdxPills();
   render();}
 function toggleFilter(f){sel[f]=!sel[f];syncFilters();}
-document.getElementById("fSpx").onclick=()=>toggleFilter("SPX");
-document.getElementById("fNdx").onclick=()=>toggleFilter("NDX");
-document.getElementById("fHsi").onclick=()=>toggleFilter("HSI");
-document.getElementById("fDax").onclick=()=>toggleFilter("DAX");
-document.getElementById("fFts").onclick=()=>toggleFilter("FTSE");
-document.getElementById("fCac").onclick=()=>toggleFilter("CAC");
-document.getElementById("fN225").onclick=()=>toggleFilter("N225");
-document.getElementById("fKospi").onclick=()=>toggleFilter("KOSPI");
-document.getElementById("fSse").onclick=()=>toggleFilter("SSE");
+const IDXKEYS=["SPX","NDX","HSI","DAX","FTSE","CAC","N225","KOSPI","SSE"];
+let idxOrder=IDXKEYS.slice();
+try{const io=JSON.parse(localStorage.getItem("idxOrder"));
+  if(Array.isArray(io)){const v=io.filter(k=>IDXKEYS.includes(k));IDXKEYS.forEach(k=>{if(!v.includes(k))v.push(k);});if(v.length===IDXKEYS.length)idxOrder=v;}
+}catch(e){}
+function saveIdxOrder(){try{localStorage.setItem("idxOrder",JSON.stringify(idxOrder));}catch(e){}}
+function renderIdxPills(){
+  document.getElementById("idxPills").innerHTML=idxOrder.map(k=>`<button class="tab" data-idx="${k}" draggable="true" aria-selected="${!!sel[k]}">${esc(idxName(k))}</button>`).join("");
+}
+const ipEl=document.getElementById("idxPills");
+ipEl.addEventListener("click",e=>{
+  const b=e.target.closest("[data-idx]");
+  if(b)toggleFilter(b.getAttribute("data-idx"));
+});
+let dragIdxKey=null;
+ipEl.addEventListener("dragstart",e=>{
+  const b=e.target.closest("[data-idx]");if(!b)return;
+  dragIdxKey=b.getAttribute("data-idx");
+  e.dataTransfer.effectAllowed="move";
+  try{e.dataTransfer.setData("text/plain",dragIdxKey);}catch(x){}
+  b.classList.add("dragging");
+});
+ipEl.addEventListener("dragend",()=>{dragIdxKey=null;[...ipEl.children].forEach(b=>b.classList.remove("dragging","dropover"));});
+ipEl.addEventListener("dragover",e=>{
+  const b=e.target.closest("[data-idx]");if(!dragIdxKey||!b)return;
+  e.preventDefault();e.dataTransfer.dropEffect="move";
+  [...ipEl.children].forEach(x=>x.classList.remove("dropover"));
+  if(b.getAttribute("data-idx")!==dragIdxKey)b.classList.add("dropover");
+});
+ipEl.addEventListener("drop",e=>{
+  const b=e.target.closest("[data-idx]");if(!dragIdxKey||!b)return;
+  e.preventDefault();
+  const to=idxOrder.indexOf(b.getAttribute("data-idx")), from=idxOrder.indexOf(dragIdxKey);
+  if(to>-1&&from>-1&&to!==from){idxOrder.splice(to,0,idxOrder.splice(from,1)[0]);saveIdxOrder();renderIdxPills();}
+  dragIdxKey=null;
+});
 function saveHidden(){try{localStorage.setItem("hiddenTickers",JSON.stringify(hidden));}catch(e){}}
 function renderHidden(){
   const btn=document.getElementById("fHidden"), panel=document.getElementById("hiddenPanel");
@@ -523,15 +534,7 @@ selEl.onchange=()=>{lang=selEl.value;try{localStorage.setItem("lang",lang);}catc
 function applyLang(){
   document.documentElement.lang=lang;
   document.getElementById("eyebrow").textContent=["SPX","NDX","HSI","DAX","FTSE","CAC","N225","KOSPI","SSE"].map(idxName).join(" · ");
-  document.getElementById("fSpx").textContent=idxName("SPX");
-  document.getElementById("fNdx").textContent=idxName("NDX");
-  document.getElementById("fHsi").textContent=idxName("HSI");
-  document.getElementById("fDax").textContent=idxName("DAX");
-  document.getElementById("fFts").textContent=idxName("FTSE");
-  document.getElementById("fCac").textContent=idxName("CAC");
-  document.getElementById("fN225").textContent=idxName("N225");
-  document.getElementById("fKospi").textContent=idxName("KOSPI");
-  document.getElementById("fSse").textContent=idxName("SSE");
+  renderIdxPills();
   document.getElementById("fLists").textContent=T("lists");
   sBox.placeholder=T("searchPh");
   document.getElementById("legend").innerHTML=`<span><b class="pre">${T("pre")}</b> ${T("preDef")}</span><span><b class="post">${T("post")}</b> ${T("postDef")}</span><span><span class="bdg ndx">NDX</span> ${T("ndxDef")}</span><span><span class="bdg hsi">HSI</span> ${T("hsiDef")}</span><span><span class="bdg dax">DAX</span> ${T("daxDef")}</span><span><span class="bdg fts">FTSE</span> ${T("ftsDef")}</span><span><span class="bdg cac">CAC</span> ${T("cacDef")}</span><span><span class="bdg n225">N225</span> ${T("n225Def")}</span><span><span class="bdg kos">KOSPI</span> ${T("kosDef")}</span><span><span class="bdg sse">SSE</span> ${T("sseDef")}</span><span><span class="bdg wch">WATCH</span> ${T("wchDef")}</span><span>${T("sessNote")}</span><span id="tzNote">${T("tzNote").replace("{tz}",VIEW_TZ)}</span>`;
