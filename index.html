@@ -137,6 +137,9 @@ h1{margin:6px 0 2px;font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacin
 footer{margin-top:22px;font-size:12px;color:var(--ink-soft);line-height:1.7}
 .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:12px;color:var(--ink-soft)}
 .legend span b.pre{color:var(--pre)} .legend span b.post{color:var(--post)}
+header{position:relative}
+.langsel{position:absolute;top:0;right:0;appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 14px;font-size:12px;font-weight:700;cursor:pointer}
+.langsel:focus{outline:none;border-color:var(--accent)}
 </style>
 <style>body{margin:0}</style>
 </head>
@@ -144,7 +147,8 @@ footer{margin-top:22px;font-size:12px;color:var(--ink-soft);line-height:1.7}
 
 <div class="wrap">
 <header>
-  <div class="eyebrow">S&amp;P 500 · Nasdaq-100 · Hang Seng · DAX · FTSE 100 · CAC 40 · Nikkei 225</div>
+  <select id="langSel" class="langsel" title="Language"></select>
+  <div class="eyebrow" id="eyebrow">S&amp;P 500 · Nasdaq-100 · Hang Seng · DAX · FTSE 100 · CAC 40 · Nikkei 225</div>
   <h1>Qalendar</h1>
   <div class="weekline">
     <div class="weeklabel" id="weekLabel">—</div>
@@ -171,7 +175,7 @@ footer{margin-top:22px;font-size:12px;color:var(--ink-soft);line-height:1.7}
   <div class="hpanel" id="hiddenPanel" hidden></div>
   <div class="hpanel" id="changesPanel" hidden></div>
   <div id="chgNotice" hidden></div>
-  <div class="legend"><span><b class="pre">Pre-market</b> = before the U.S. open</span><span><b class="post">Post-market</b> = after the U.S. close</span><span><span class="bdg ndx">NDX</span> Nasdaq-100 member (also in the S&amp;P 500)</span><span><span class="bdg hsi">HSI</span> Hang Seng Index member (HK-listed)</span><span><span class="bdg dax">DAX</span> DAX 40 member (Frankfurt-listed)</span><span><span class="bdg fts">FTSE</span> FTSE 100 member (London-listed)</span><span><span class="bdg cac">CAC</span> CAC 40 member (Paris-listed)</span><span><span class="bdg n225">N225</span> Nikkei 225 member (Tokyo-listed)</span><span><span class="bdg wch">WATCH</span> Tracked company outside the seven indices</span><span>Sessions follow each company's home market</span><span id="tzNote"></span></div>
+  <div class="legend" id="legend"><span><b class="pre">Pre-market</b> = before the U.S. open</span><span><b class="post">Post-market</b> = after the U.S. close</span><span><span class="bdg ndx">NDX</span> Nasdaq-100 member (also in the S&amp;P 500)</span><span><span class="bdg hsi">HSI</span> Hang Seng Index member (HK-listed)</span><span><span class="bdg dax">DAX</span> DAX 40 member (Frankfurt-listed)</span><span><span class="bdg fts">FTSE</span> FTSE 100 member (London-listed)</span><span><span class="bdg cac">CAC</span> CAC 40 member (Paris-listed)</span><span><span class="bdg n225">N225</span> Nikkei 225 member (Tokyo-listed)</span><span><span class="bdg wch">WATCH</span> Tracked company outside the seven indices</span><span>Sessions follow each company's home market</span><span id="tzNote"></span></div>
   <div class="updated" id="updated"></div>
 </header>
 <div id="content">
@@ -205,6 +209,27 @@ try{const ls=JSON.parse(localStorage.getItem("listSel"));if(Array.isArray(ls))li
 while(listSel.length<lists.length)listSel.push(true);
 listSel.length=lists.length;
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const LANGS={en:"English",zh:"中文",de:"Deutsch",fr:"Français",ja:"日本語"};
+const LOCALE={en:"en-US",zh:"zh-CN",de:"de-DE",fr:"fr-FR",ja:"ja-JP"};
+let lang="";
+try{lang=localStorage.getItem("lang")||"";}catch(e){}
+if(!LANGS[lang]){const nv=(navigator.language||"en").slice(0,2).toLowerCase();lang=LANGS[nv]?nv:"en";}
+const I18N={
+en:{xSPX:"S&P 500",xNDX:"Nasdaq-100",xHSI:"Hang Seng",xDAX:"DAX 40",xFTSE:"FTSE 100",xCAC:"CAC 40",xN225:"Nikkei 225",lists:"Lists ✎",hiddenBtn:"Hidden",changesBtn:"Index changes",searchPh:"Search: name / ticker · 中文 · Deutsch · Français · 日本語",pre:"Pre-market",post:"Post-market",preDef:"= before the U.S. open",postDef:"= after the U.S. close",ndxDef:"Nasdaq-100 member (also in the S&P 500)",hsiDef:"Hang Seng Index member (HK-listed)",daxDef:"DAX 40 member (Frankfurt-listed)",ftsDef:"FTSE 100 member (London-listed)",cacDef:"CAC 40 member (Paris-listed)",n225Def:"Nikkei 225 member (Tokyo-listed)",wchDef:"Tracked company outside the seven indices",sessNote:"Sessions follow each company's home market",tzNote:"Known release times are converted to your local time ({tz})",updated:"Updated",source:"Source",thisWeek:"This week",nextWeek:"Next week",today:"Today",emptyW:"This week's schedule is not published yet",emptyWBody:"Updates every trading-day morning; coming weeks fill in automatically as companies confirm dates.",nothingSel:"Nothing selected",nothingSelBody:"Select at least one index or list above to show the calendar.",hideT:"Hide {t}",restore:"Restore",restoreAll:"Restore all",onLists:"On your lists",rename:"Click to rename",addTicker:"+ ticker",newList:"+ New list name",delList:"Delete list",removeT:"Remove {t}",myWatch:"My Watch List",notInData:"not in current data",hiddenTag:"hidden",showsUnder:"Shows under {x} — also add to:",notCovered:"Not in a covered index — add to:",addNew:"+ Add “{t}” to {list}",notIn4w:"not in the current 4-week data",chgAdd:"{co} added to {ix}",chgRem:"{co} removed from {ix}",chgWt:"{co}: weight change in {ix}",effective:"effective",notice:"Index update:",viewAll:"View all",yourTime:"your time",foot:"Qalendar · For informational purposes only — not investment advice. Report dates follow company announcements and may change on short notice; accuracy is not guaranteed. Data refreshes automatically every trading-day morning. This page sets no cookies and collects no personal data; preferences are stored only in your own browser."},
+zh:{xSPX:"标普500",xNDX:"纳斯达克100",xHSI:"恒生指数",xDAX:"DAX 40",xFTSE:"富时100",xCAC:"CAC 40",xN225:"日经225",lists:"清单 ✎",hiddenBtn:"已隐藏",changesBtn:"指数变动",searchPh:"搜索:公司名 / 代码(支持中英德法日)",pre:"盘前",post:"盘后",preDef:"= 美股开盘前",postDef:"= 美股收盘后",ndxDef:"纳斯达克100成分股(同属标普500)",hsiDef:"恒生指数成分股(港股)",daxDef:"DAX 40 成分股(法兰克福)",ftsDef:"富时100成分股(伦敦)",cacDef:"CAC 40 成分股(巴黎)",n225Def:"日经225成分股(东京)",wchDef:"七大指数之外的跟踪公司",sessNote:"盘前/盘后按公司所在市场划分",tzNote:"已知发布时间会换算为你的当地时间({tz})",updated:"更新于",source:"来源",thisWeek:"本周",nextWeek:"下周",today:"今天",emptyW:"本周日程尚未发布",emptyWBody:"每个交易日早晨自动更新;公司确认日期后,后续几周会自动补全。",nothingSel:"未选择任何内容",nothingSelBody:"请至少选择上方的一个指数或清单以显示日历。",hideT:"隐藏 {t}",restore:"恢复",restoreAll:"全部恢复",onLists:"已在你的清单中",rename:"点击重命名",addTicker:"+ 代码",newList:"+ 新清单名称",delList:"删除清单",removeT:"移除 {t}",myWatch:"我的关注清单",notInData:"暂不在当前数据中",hiddenTag:"已隐藏",showsUnder:"显示于 {x} — 同时加入:",notCovered:"不属于所列指数 — 加入:",addNew:"+ 将 “{t}” 加入{list}",notIn4w:"不在当前4周数据中",chgAdd:"{co} 纳入 {ix}",chgRem:"{co} 从 {ix} 剔除",chgWt:"{co}:{ix} 权重调整",effective:"生效日",notice:"指数变动:",viewAll:"查看全部",yourTime:"当地时间",foot:"Qalendar · 仅供参考,不构成投资建议。财报日期以公司公告为准,可能临时变动,不保证准确性。数据每个交易日早晨自动更新。本页面不使用 Cookie、不收集个人数据;偏好设置仅保存在你自己的浏览器中。"},
+de:{xSPX:"S&P 500",xNDX:"Nasdaq-100",xHSI:"Hang Seng",xDAX:"DAX 40",xFTSE:"FTSE 100",xCAC:"CAC 40",xN225:"Nikkei 225",lists:"Listen ✎",hiddenBtn:"Ausgeblendet",changesBtn:"Index-Änderungen",searchPh:"Suche: Name / Ticker (alle Sprachen)",pre:"Vorbörse",post:"Nachbörse",preDef:"= vor US-Handelsbeginn",postDef:"= nach US-Handelsschluss",ndxDef:"Nasdaq-100-Mitglied (auch im S&P 500)",hsiDef:"Hang-Seng-Mitglied (Hongkong)",daxDef:"DAX-40-Mitglied (Frankfurt)",ftsDef:"FTSE-100-Mitglied (London)",cacDef:"CAC-40-Mitglied (Paris)",n225Def:"Nikkei-225-Mitglied (Tokio)",wchDef:"Beobachtetes Unternehmen außerhalb der sieben Indizes",sessNote:"Sessions folgen dem Heimatmarkt des Unternehmens",tzNote:"Bekannte Veröffentlichungszeiten werden in Ihre Ortszeit umgerechnet ({tz})",updated:"Aktualisiert",source:"Quelle",thisWeek:"Diese Woche",nextWeek:"Nächste Woche",today:"Heute",emptyW:"Der Zeitplan für diese Woche liegt noch nicht vor",emptyWBody:"Aktualisierung an jedem Handelstagmorgen; kommende Wochen füllen sich automatisch, sobald Unternehmen Termine bestätigen.",nothingSel:"Nichts ausgewählt",nothingSelBody:"Wählen Sie oben mindestens einen Index oder eine Liste aus.",hideT:"{t} ausblenden",restore:"Wiederherstellen",restoreAll:"Alle wiederherstellen",onLists:"Auf Ihren Listen",rename:"Zum Umbenennen klicken",addTicker:"+ Ticker",newList:"+ Neue Liste",delList:"Liste löschen",removeT:"{t} entfernen",myWatch:"Meine Watchlist",notInData:"nicht in aktuellen Daten",hiddenTag:"ausgeblendet",showsUnder:"Erscheint unter {x} — auch hinzufügen zu:",notCovered:"In keinem erfassten Index — hinzufügen zu:",addNew:"+ „{t}“ zu {list} hinzufügen",notIn4w:"nicht in den aktuellen 4 Wochen",chgAdd:"{co} in den {ix} aufgenommen",chgRem:"{co} aus dem {ix} entfernt",chgWt:"{co}: Gewichtsänderung im {ix}",effective:"wirksam ab",notice:"Index-Update:",viewAll:"Alle anzeigen",yourTime:"Ortszeit",foot:"Qalendar · Nur zu Informationszwecken — keine Anlageberatung. Termine folgen Unternehmensangaben und können sich kurzfristig ändern; keine Gewähr. Daten werden an jedem Handelstagmorgen automatisch aktualisiert. Diese Seite setzt keine Cookies und erhebt keine personenbezogenen Daten; Einstellungen bleiben nur in Ihrem Browser."},
+fr:{xSPX:"S&P 500",xNDX:"Nasdaq-100",xHSI:"Hang Seng",xDAX:"DAX 40",xFTSE:"FTSE 100",xCAC:"CAC 40",xN225:"Nikkei 225",lists:"Listes ✎",hiddenBtn:"Masqués",changesBtn:"Changements d'indice",searchPh:"Recherche : nom / ticker (toutes langues)",pre:"Pré-marché",post:"Après-marché",preDef:"= avant l'ouverture US",postDef:"= après la clôture US",ndxDef:"Membre du Nasdaq-100 (aussi au S&P 500)",hsiDef:"Membre du Hang Seng (Hong Kong)",daxDef:"Membre du DAX 40 (Francfort)",ftsDef:"Membre du FTSE 100 (Londres)",cacDef:"Membre du CAC 40 (Paris)",n225Def:"Membre du Nikkei 225 (Tokyo)",wchDef:"Société suivie hors des sept indices",sessNote:"Les sessions suivent le marché d'origine de chaque société",tzNote:"Les heures connues sont converties en votre heure locale ({tz})",updated:"Mis à jour",source:"Source",thisWeek:"Cette semaine",nextWeek:"Semaine prochaine",today:"Aujourd'hui",emptyW:"Le calendrier de cette semaine n'est pas encore publié",emptyWBody:"Mise à jour chaque matin de bourse ; les semaines à venir se remplissent automatiquement.",nothingSel:"Aucune sélection",nothingSelBody:"Sélectionnez au moins un indice ou une liste ci-dessus.",hideT:"Masquer {t}",restore:"Rétablir",restoreAll:"Tout rétablir",onLists:"Dans vos listes",rename:"Cliquer pour renommer",addTicker:"+ ticker",newList:"+ Nouvelle liste",delList:"Supprimer la liste",removeT:"Retirer {t}",myWatch:"Ma liste de suivi",notInData:"absent des données actuelles",hiddenTag:"masqué",showsUnder:"Affiché sous {x} — ajouter aussi à :",notCovered:"Hors des indices couverts — ajouter à :",addNew:"+ Ajouter « {t} » à {list}",notIn4w:"absent des 4 semaines actuelles",chgAdd:"{co} ajouté au {ix}",chgRem:"{co} retiré du {ix}",chgWt:"{co} : changement de pondération dans le {ix}",effective:"effectif le",notice:"Mise à jour d'indice :",viewAll:"Tout voir",yourTime:"heure locale",foot:"Qalendar · À titre informatif uniquement — pas un conseil en investissement. Les dates suivent les annonces des sociétés et peuvent changer ; exactitude non garantie. Données mises à jour automatiquement chaque matin de bourse. Cette page n'utilise aucun cookie et ne collecte aucune donnée personnelle ; les préférences restent dans votre navigateur."},
+ja:{xSPX:"S&P 500",xNDX:"ナスダック100",xHSI:"ハンセン指数",xDAX:"DAX 40",xFTSE:"FTSE 100",xCAC:"CAC 40",xN225:"日経225",lists:"リスト ✎",hiddenBtn:"非表示",changesBtn:"指数変更",searchPh:"検索:社名/ティッカー(多言語対応)",pre:"プレマーケット",post:"アフターマーケット",preDef:"= 米国市場の寄付前",postDef:"= 米国市場の引け後",ndxDef:"ナスダック100構成銘柄(S&P 500にも採用)",hsiDef:"ハンセン指数構成銘柄(香港上場)",daxDef:"DAX 40構成銘柄(フランクフルト上場)",ftsDef:"FTSE 100構成銘柄(ロンドン上場)",cacDef:"CAC 40構成銘柄(パリ上場)",n225Def:"日経225構成銘柄(東京上場)",wchDef:"7指数以外のウォッチ銘柄",sessNote:"セッションは各社の本国市場に準拠",tzNote:"判明している発表時刻は現地時間({tz})に換算されます",updated:"更新",source:"出典",thisWeek:"今週",nextWeek:"来週",today:"本日",emptyW:"今週の予定はまだ公開されていません",emptyWBody:"毎取引日の朝に自動更新。日程確定に伴い今後の週も自動的に追加されます。",nothingSel:"未選択",nothingSelBody:"上のインデックスまたはリストを1つ以上選択してください。",hideT:"{t}を非表示",restore:"復元",restoreAll:"すべて復元",onLists:"リスト登録済み",rename:"クリックして名前を変更",addTicker:"+ ティッカー",newList:"+ 新しいリスト名",delList:"リストを削除",removeT:"{t}を削除",myWatch:"マイウォッチリスト",notInData:"現在のデータ外",hiddenTag:"非表示",showsUnder:"{x} に表示 — さらに追加:",notCovered:"対象指数外 — 追加先:",addNew:"+ 「{t}」を{list}に追加",notIn4w:"現在の4週間データ外",chgAdd:"{co} が {ix} に採用",chgRem:"{co} が {ix} から除外",chgWt:"{co}:{ix} のウェイト変更",effective:"発効日",notice:"指数更新:",viewAll:"すべて表示",yourTime:"現地時間",foot:"Qalendar · 情報提供のみを目的とし、投資助言ではありません。決算日は企業発表に基づき、直前に変更される場合があります。正確性は保証されません。データは毎取引日の朝に自動更新。本ページはCookieを使用せず、個人情報を収集しません。設定はご自身のブラウザにのみ保存されます。"}
+};
+const T=k=>(I18N[lang]&&I18N[lang][k])!==undefined?I18N[lang][k]:(I18N.en[k]!==undefined?I18N.en[k]:k);
+const idxName=x=>T("x"+x)||x;
+const dispName=(l,i)=>(i===0&&l.n==="My Watch List")?T("myWatch"):l.n;
+const LOC=()=>LOCALE[lang]||"en-US";
+const pd=x=>new Date(x+"T12:00:00Z");
+function fmtWeek(w,withYear){try{const ds=w&&w.days;if(ds&&ds.length){const o=withYear?{year:"numeric",month:"short",day:"numeric"}:{month:"short",day:"numeric"};return new Intl.DateTimeFormat(LOC(),Object.assign({timeZone:"UTC"},o)).formatRange(pd(ds[0].date),pd(ds[ds.length-1].date));}}catch(e){}return (w&&w.weekLabel)||"";}
+const wkday=x=>{try{return new Intl.DateTimeFormat(LOC(),{timeZone:"UTC",weekday:"short"}).format(pd(x));}catch(e){return "";}};
+const mdate=x=>{try{return new Intl.DateTimeFormat(LOC(),{timeZone:"UTC",month:"numeric",day:"numeric"}).format(pd(x));}catch(e){return (x||"").slice(5).replace("-","/");}};
+
 const inAnyList=t=>lists.some(l=>l.t.includes(t));
 const inSelList=t=>lists.some((l,i)=>listSel[i]&&l.t.includes(t));
 function todayISO(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
@@ -226,7 +251,7 @@ function localSuffix(name,date){
     const t=new Intl.DateTimeFormat(undefined,{timeZone:VIEW_TZ,hour:"2-digit",minute:"2-digit",hour12:false}).format(dt);
     const dLoc=new Intl.DateTimeFormat("en-CA",{timeZone:VIEW_TZ,year:"numeric",month:"2-digit",day:"2-digit"}).format(dt);
     const shift=dLoc>date?" +1d":dLoc<date?" −1d":"";
-    return ` <span class="lt">≈ ${t}${shift} your time</span>`;
+    return ` <span class="lt">≈ ${t}${shift} ${T("yourTime")}</span>`;
   }catch(e){return "";}
 }
 function logoText(c){
@@ -237,33 +262,33 @@ function coRow(c,date){
   const ix=c.idx||[];
   const bdg=ix.includes("W")?'<span class="bdg wch">WATCH</span>':ix.includes("HSI")?'<span class="bdg hsi">HSI</span>':ix.includes("DAX")?'<span class="bdg dax">DAX</span>':ix.includes("FTSE")?'<span class="bdg fts">FTSE</span>':ix.includes("CAC")?'<span class="bdg cac">CAC</span>':ix.includes("N225")?'<span class="bdg n225">N225</span>':ix.includes("NDX")?'<span class="bdg ndx">NDX</span>':'<span class="bdg spx">S&amp;P</span>';
   return `<div class="co"><div class="dot" style="${logoStyle(c.t)}">${logoText(c)}</div>
-  <div class="meta2"><div class="tk">${c.t}${bdg}${inAnyList(c.t)?'<span class="star" title="On your lists">★</span>':''}</div>
-  <div class="nm">${c.n||""}${localSuffix(c.n,date)}</div></div><button class="hide-btn" data-hide="${c.t}" title="Hide ${c.t}">✕</button></div>`;
+  <div class="meta2"><div class="tk">${c.t}${bdg}${inAnyList(c.t)?`<span class="star" title="${T("onLists")}">★</span>`:''}</div>
+  <div class="nm">${c.n||""}${localSuffix(c.n,date)}</div></div><button class="hide-btn" data-hide="${c.t}" title="${T("hideT").replace("{t}",c.t)}">✕</button></div>`;
 }
-function tabLabel(w,i){return i===0?"This week":i===1?"Next week":(w.weekLabel||"Week "+(i+1)).replace(/,\s*\d{4}\s*$/,"");}
+function tabLabel(w,i){return i===0?T("thisWeek"):i===1?T("nextWeek"):fmtWeek(w,false)||("W"+(i+1));}
 function renderTabs(){
   document.getElementById("weekTabs").innerHTML=W().map((w,i)=>`<button class="tab" role="tab" data-week="${i}" aria-selected="${i===active}">${tabLabel(w,i)}</button>`).join("");
 }
 function render(){
   const d=W()[active], el=document.getElementById("content");
   renderTabs();
-  document.getElementById("updated").textContent=data.updatedAt?("Updated "+data.updatedAt+(data.source?" · Source: "+data.source:"")):"";
+  document.getElementById("updated").textContent=data.updatedAt?(T("updated")+" "+data.updatedAt+(data.source?" · "+T("source")+": "+data.source:"")):"";
   if(!d||!d.days||!d.days.length){
-    document.getElementById("weekLabel").textContent=d&&d.weekLabel?d.weekLabel:"—";
-    el.innerHTML=`<div class="empty"><b>This week's schedule is not published yet</b><br>${d&&d.note?d.note:"Updates every trading-day morning; coming weeks fill in automatically as companies confirm dates."}</div>`;
+    document.getElementById("weekLabel").textContent=fmtWeek(d,true)||"—";
+    el.innerHTML=`<div class="empty"><b>${T("emptyW")}</b><br>${d&&d.note?esc(d.note):T("emptyWBody")}</div>`;
     return;
   }
-  document.getElementById("weekLabel").textContent=d.weekLabel||"";
-  if(!sel.SPX&&!sel.NDX&&!sel.HSI&&!sel.DAX&&!sel.FTSE&&!sel.CAC&&!sel.N225&&!listSel.some(Boolean)){el.innerHTML='<div class="empty"><b>Nothing selected</b><br>Select at least one index or list above to show the calendar.</div>';return;}
+  document.getElementById("weekLabel").textContent=fmtWeek(d,true);
+  if(!sel.SPX&&!sel.NDX&&!sel.HSI&&!sel.DAX&&!sel.FTSE&&!sel.CAC&&!sel.N225&&!listSel.some(Boolean)){el.innerHTML=`<div class="empty"><b>${T("nothingSel")}</b><br>${T("nothingSelBody")}</div>`;return;}
   const tI=todayISO();
   const flt=c=>{if(inSelList(c.t))return true;const ix=c.idx||[];if(ix.includes("W")&&listSel[0])return true;if(hidden.includes(c.t))return false;return (sel.SPX&&ix.includes("SPX"))||(sel.NDX&&ix.includes("NDX"))||(sel.HSI&&ix.includes("HSI"))||(sel.DAX&&ix.includes("DAX"))||(sel.FTSE&&ix.includes("FTSE"))||(sel.CAC&&ix.includes("CAC"))||(sel.N225&&ix.includes("N225"));};
   el.innerHTML='<div class="board">'+d.days.map(day=>{
     const isT=day.date===tI;
     const pre=(day.pre||[]).filter(flt), post=(day.post||[]).filter(flt);
     return `<section class="day${isT?" today":""}">
-      <div class="dayhead"><span class="dayname">${day.weekday}</span><span class="daydate">${(day.date||"").slice(5).replace("-","/")}</span>${isT?'<span class="todaytag">Today</span>':""}</div>
-      <div class="session pre"><h3>Pre-market</h3><div class="list">${pre.length?pre.map(c=>coRow(c,day.date)).join(""):'<span class="none">—</span>'}</div></div>
-      <div class="session post"><h3>Post-market</h3><div class="list">${post.length?post.map(c=>coRow(c,day.date)).join(""):'<span class="none">—</span>'}</div></div>
+      <div class="dayhead"><span class="dayname">${wkday(day.date)||day.weekday}</span><span class="daydate">${mdate(day.date)}</span>${isT?`<span class="todaytag">${T("today")}</span>`:""}</div>
+      <div class="session pre"><h3>${T("pre")}</h3><div class="list">${pre.length?pre.map(c=>coRow(c,day.date)).join(""):'<span class="none">—</span>'}</div></div>
+      <div class="session post"><h3>${T("post")}</h3><div class="list">${post.length?post.map(c=>coRow(c,day.date)).join(""):'<span class="none">—</span>'}</div></div>
     </section>`;}).join("")+"</div>";
 }
 document.getElementById("weekTabs").addEventListener("click",e=>{
@@ -290,12 +315,12 @@ document.getElementById("fN225").onclick=()=>toggleFilter("N225");
 function saveHidden(){try{localStorage.setItem("hiddenTickers",JSON.stringify(hidden));}catch(e){}}
 function renderHidden(){
   const btn=document.getElementById("fHidden"), panel=document.getElementById("hiddenPanel");
-  btn.textContent=`Hidden (${hidden.length})`;
+  btn.textContent=`${T("hiddenBtn")} (${hidden.length})`;
   btn.hidden=hidden.length===0;
   if(!hidden.length)showHidden=false;
   btn.setAttribute("aria-selected",showHidden&&hidden.length>0);
   panel.hidden=!showHidden||!hidden.length;
-  panel.innerHTML=hidden.length?hidden.map(t=>`<span class="hchip">${t}<button data-restore="${t}" title="Restore ${t}">Restore</button></span>`).join("")+'<button class="tab" id="restoreAll" style="margin-left:auto">Restore all</button>':"";
+  panel.innerHTML=hidden.length?hidden.map(t=>`<span class="hchip">${t}<button data-restore="${t}" title="${T("restore")} ${t}">${T("restore")}</button></span>`).join("")+`<button class="tab" id="restoreAll" style="margin-left:auto">${T("restoreAll")}</button>`:"";
 }
 document.getElementById("fHidden").onclick=()=>{showHidden=!showHidden;renderHidden();};
 document.getElementById("content").addEventListener("click",e=>{
@@ -309,7 +334,7 @@ document.getElementById("hiddenPanel").addEventListener("click",e=>{
 });
 function saveLists(){try{localStorage.setItem("userLists",JSON.stringify(lists));localStorage.setItem("listSel",JSON.stringify(listSel));}catch(e){}}
 function renderListPills(){
-  document.getElementById("listPills").innerHTML=lists.map((l,i)=>`<button class="tab" data-list="${i}" aria-selected="${!!listSel[i]}">★ ${esc(l.n)} (${l.t.length})</button>`).join("");
+  document.getElementById("listPills").innerHTML=lists.map((l,i)=>`<button class="tab" data-list="${i}" aria-selected="${!!listSel[i]}">★ ${esc(dispName(l,i))} (${l.t.length})</button>`).join("");
 }
 function renderLists(){
   renderListPills();
@@ -318,11 +343,11 @@ function renderLists(){
   panel.hidden=!showLists;
   if(!showLists)return;
   panel.innerHTML=lists.map((l,i)=>`<div class="lrow">
-    <input class="lname" data-ren="${i}" value="${esc(l.n)}" title="Click to rename">
-    ${l.t.map(t=>`<span class="hchip">${t}<button data-rmt="${i}|${t}" title="Remove ${t}">✕</button></span>`).join("")}
-    <input class="ladd" data-addto="${i}" placeholder="+ ticker">
-    ${i>0?`<button class="ldel" data-dell="${i}">Delete list</button>`:""}
-  </div>`).join("")+`<div class="lrow"><input class="ladd" id="newList" placeholder="+ New list name" style="width:160px"></div>`;
+    <input class="lname" data-ren="${i}" value="${esc(l.n)}" title="${T("rename")}">
+    ${l.t.map(t=>`<span class="hchip">${t}<button data-rmt="${i}|${t}" title="${T("removeT").replace("{t}",t)}">✕</button></span>`).join("")}
+    <input class="ladd" data-addto="${i}" placeholder="${T("addTicker")}">
+    ${i>0?`<button class="ldel" data-dell="${i}">${T("delList")}</button>`:""}
+  </div>`).join("")+`<div class="lrow"><input class="ladd" id="newList" placeholder="${T("newList")}" style="width:160px"></div>`;
 }
 function addToList(i,t){t=(t||"").toUpperCase().trim().replace(/[^A-Z0-9.\-]/g,"");if(!t||!lists[i])return;
   if(!lists[i].t.includes(t))lists[i].t.push(t);
@@ -350,7 +375,6 @@ document.getElementById("watchPanel").addEventListener("change",e=>{
   if(rn){const nm=rn.value.trim().slice(0,30);if(nm){lists[+rn.getAttribute("data-ren")].n=nm;saveLists();renderLists();render();}else renderLists();}
 });
 const DIRX=JSON.parse(document.getElementById("dir").textContent);
-const IDXNAME={SPX:"S&P 500",NDX:"Nasdaq-100",HSI:"Hang Seng",DAX:"DAX 40",FTSE:"FTSE 100",CAC:"CAC 40",N225:"Nikkei 225"};
 const SUFMKT={HK:"HK",DE:"DE",L:"UK",PA:"FR",T:"JP"};
 const mktOf=t=>{const m=t.match(/\.([A-Z]+)$/);return m?(SUFMKT[m[1]]||m[1]):"US";};
 const nrm=x=>String(x).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
@@ -376,14 +400,14 @@ function renderSearch(){
     const cj=(c.a||[]).find(x=>/[\u3040-\u30ff\u4e00-\u9fff]/.test(x))||"";
     return `<div class="sgrp"><div class="gn">${esc(c.n)}${cj?` <span class="gal">${esc(cj)}</span>`:""}</div>`+c.l.map((L,li)=>{
       const id=ci+":"+li, inData=SIDX.dataT.has(L[0]);
-      const where=L[2]&&L[2].length?(IDXNAME[L[2][0]]||L[2][0]):"My Watch List";
-      let row=`<button class="srowb" data-pick="${id}" aria-selected="${pick===id}"><span class="tk2">${L[1]} · ${L[0]}</span><span class="nm2">${esc(where)}${inData?"":" · not in current data"}${hidden.includes(L[0])?" · hidden":""}</span></button>`;
-      if(pick===id)row+=`<div class="laddrow"><span class="nm2">${L[2]&&L[2].length?"Shows under "+esc(IDXNAME[L[2][0]]||L[2][0])+" — also add to:":"Not in a covered index — add to:"}</span>${lists.map((ls,i)=>`<button class="lchip" data-padd="${i}">★ ${esc(ls.n)}</button>`).join("")}</div>`;
+      const where=L[2]&&L[2].length?idxName(L[2][0]):dispName(lists[0],0);
+      let row=`<button class="srowb" data-pick="${id}" aria-selected="${pick===id}"><span class="tk2">${L[1]} · ${L[0]}</span><span class="nm2">${esc(where)}${inData?"":" · "+T("notInData")}${hidden.includes(L[0])?" · "+T("hiddenTag"):""}</span></button>`;
+      if(pick===id)row+=`<div class="laddrow"><span class="nm2">${L[2]&&L[2].length?T("showsUnder").replace("{x}",esc(idxName(L[2][0]))):T("notCovered")}</span>${lists.map((ls,i)=>`<button class="lchip" data-padd="${i}">★ ${esc(dispName(ls,i))}</button>`).join("")}</div>`;
       return row;
     }).join("")+`</div>`;
   }).join("");
   const qt=raw.toUpperCase().replace(/[^A-Z0-9.\-]/g,"");
-  if(qt&&!SIDX.comps.some(c=>c.l.some(L=>L[0]===qt)))html+=`<button class="sitem" data-add="${qt}"><span class="tk2">+ Add “${qt}” to My Watch List</span><span class="nm2">not in the current 4-week data</span></button>`;
+  if(qt&&!SIDX.comps.some(c=>c.l.some(L=>L[0]===qt)))html+=`<button class="sitem" data-add="${qt}"><span class="tk2">${esc(T("addNew").replace("{t}",qt).replace("{list}",dispName(lists[0],0)))}</span><span class="nm2">${T("notIn4w")}</span></button>`;
   sRes.innerHTML=html;sRes.hidden=!html;
 }
 sBox.addEventListener("input",()=>{pick="";renderSearch();});
@@ -405,28 +429,28 @@ try{
 }catch(e){
   document.getElementById("content").innerHTML='<div class="empty"><b>Data format error</b><br>Please wait for the next automatic update.</div>';
 }
-try{document.getElementById("tzNote").textContent="Known release times are converted to your local time ("+VIEW_TZ+")";}catch(e){}
+
 const CHG=Array.isArray(data.changes)?data.changes:[];
 const chgKey=c=>c.d+"|"+c.t+"|"+c.ty;
 let seenChg="",showChg=false;
 try{seenChg=localStorage.getItem("seenChg")||"";}catch(e){}
 function markChgSeen(){if(CHG.length){seenChg=chgKey(CHG[0]);try{localStorage.setItem("seenChg",seenChg);}catch(e){}}}
-function chgText(c){return c.ty==="add"?"added to":c.ty==="remove"?"removed from":"weight change in";}
+function chgLine(c){const k=c.ty==="remove"?"chgRem":c.ty==="weight"?"chgWt":"chgAdd";return T(k).replace("{co}",`<b>${esc(c.n||c.t)}</b> (${esc(c.t)})`).replace("{ix}",`<b>${esc(idxName(c.ix))}</b>`);}
 function renderChanges(){
   const btn=document.getElementById("fChanges"),panel=document.getElementById("changesPanel"),note=document.getElementById("chgNotice");
   btn.hidden=!CHG.length;
   const unseen=CHG.length>0&&chgKey(CHG[0])!==seenChg;
-  btn.innerHTML=`Index changes (${CHG.length})${unseen?'<span class="ndot"></span>':''}`;
+  btn.innerHTML=`${T("changesBtn")} (${CHG.length})${unseen?'<span class="ndot"></span>':''}`;
   btn.setAttribute("aria-selected",String(showChg));
   panel.hidden=!showChg||!CHG.length;
   if(!panel.hidden)panel.innerHTML=CHG.map(c=>{
     const sym=c.ty==="add"?"\uFF0B":c.ty==="remove"?"\u2212":"\u2696";
-    return `<div class="chgrow"><span class="chgsym ${esc(c.ty)}">${sym}</span><span><b>${esc(c.n||c.t)}</b> (${esc(c.t)}) ${chgText(c)} <b>${esc(IDXNAME[c.ix]||c.ix)}</b> \u00b7 effective ${esc(c.d)}${c.note?` \u2014 <span class="chgnote">${esc(c.note)}</span>`:""}</span></div>`;
+    return `<div class="chgrow"><span class="chgsym ${esc(c.ty)}">${sym}</span><span>${chgLine(c)} · ${T("effective")} ${esc(c.d)}${c.note?` — <span class="chgnote">${esc(c.note)}</span>`:""}</span></div>`;
   }).join("");
   if(unseen&&!showChg){
     const c=CHG[0];
     note.hidden=false;
-    note.innerHTML=`<span>\uD83D\uDCE2 Index update: <b>${esc(c.n||c.t)}</b> ${chgText(c)} <b>${esc(IDXNAME[c.ix]||c.ix)}</b> (effective ${esc(c.d)})</span><button id="chgSee">View all</button><button id="chgDismiss" title="Dismiss">\u2715</button>`;
+    note.innerHTML=`<span>📢 ${T("notice")} ${chgLine(c)} (${T("effective")} ${esc(c.d)})</span><button id="chgSee">${T("viewAll")}</button><button id="chgDismiss" title="✕">✕</button>`;
   }else note.hidden=true;
 }
 document.getElementById("fChanges").onclick=()=>{showChg=!showChg;if(showChg)markChgSeen();renderChanges();};
@@ -434,7 +458,27 @@ document.getElementById("chgNotice").addEventListener("click",e=>{
   if(e.target.id==="chgSee"){showChg=true;markChgSeen();renderChanges();window.scrollTo({top:0});}
   else if(e.target.id==="chgDismiss"){markChgSeen();renderChanges();}
 });
-renderLists();renderHidden();renderChanges();syncFilters();
+const selEl=document.getElementById("langSel");
+selEl.innerHTML=Object.keys(LANGS).map(k=>`<option value="${k}">${LANGS[k]}</option>`).join("");
+selEl.value=lang;
+selEl.onchange=()=>{lang=selEl.value;try{localStorage.setItem("lang",lang);}catch(e){}applyLang();};
+function applyLang(){
+  document.documentElement.lang=lang;
+  document.getElementById("eyebrow").textContent=["SPX","NDX","HSI","DAX","FTSE","CAC","N225"].map(idxName).join(" · ");
+  document.getElementById("fSpx").textContent=idxName("SPX");
+  document.getElementById("fNdx").textContent=idxName("NDX");
+  document.getElementById("fHsi").textContent=idxName("HSI");
+  document.getElementById("fDax").textContent=idxName("DAX");
+  document.getElementById("fFts").textContent=idxName("FTSE");
+  document.getElementById("fCac").textContent=idxName("CAC");
+  document.getElementById("fN225").textContent=idxName("N225");
+  document.getElementById("fLists").textContent=T("lists");
+  sBox.placeholder=T("searchPh");
+  document.getElementById("legend").innerHTML=`<span><b class="pre">${T("pre")}</b> ${T("preDef")}</span><span><b class="post">${T("post")}</b> ${T("postDef")}</span><span><span class="bdg ndx">NDX</span> ${T("ndxDef")}</span><span><span class="bdg hsi">HSI</span> ${T("hsiDef")}</span><span><span class="bdg dax">DAX</span> ${T("daxDef")}</span><span><span class="bdg fts">FTSE</span> ${T("ftsDef")}</span><span><span class="bdg cac">CAC</span> ${T("cacDef")}</span><span><span class="bdg n225">N225</span> ${T("n225Def")}</span><span><span class="bdg wch">WATCH</span> ${T("wchDef")}</span><span>${T("sessNote")}</span><span id="tzNote">${T("tzNote").replace("{tz}",VIEW_TZ)}</span>`;
+  document.getElementById("foot").textContent=T("foot");
+  renderLists();renderHidden();renderChanges();render();
+}
+applyLang();syncFilters();
 </script>
 
 </body>
