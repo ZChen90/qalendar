@@ -203,7 +203,7 @@ header{position:relative}
   <div id="upNotice" hidden></div>
   <div id="calModal" hidden><div class="calbox">
     <h4 id="calTitle"></h4>
-    <label><input type="checkbox" id="ckApple" checked> Apple Calendar (.ics)</label>
+    <label><input type="checkbox" id="ckApple" checked> Apple Calendar</label>
     <label><input type="checkbox" id="ckOutlook"> Outlook</label>
     <label><input type="checkbox" id="ckGoogle"> Google Calendar</label>
     <div class="calrow"><button class="tab" id="calClose"></button><button class="tab" id="calGo"></button></div>
@@ -433,9 +433,15 @@ function icsDataURI(mine){const ics=buildICS(mine);return ics?"data:text/calenda
 function exportICS(tset){
   let mine=tset;
   if(!mine){mine=new Set();lists.forEach(l=>l.t.forEach(t=>mine.add(t)));}
-  const uri=icsDataURI(mine);if(!uri)return;
+  const ics=buildICS(mine);if(!ics)return;
+  const blob=new Blob([ics],{type:"text/calendar;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const isIOS=/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
   const a=document.createElement("a");
-  a.href=uri;a.download="qalendar.ics";document.body.appendChild(a);a.click();a.remove();
+  a.href=url;
+  if(!isIOS)a.download="qalendar.ics";
+  document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>{try{URL.revokeObjectURL(url);}catch(x){}},60000);
 }
 const CAL_URL={
   google:e=>{const dt=e.date.replace(/-/g,"");const nd=new Date(pd(e.date).getTime()+86400000).toISOString().slice(0,10).replace(/-/g,"");return "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(e.t+" earnings ("+e.ss+"-market)")+"&dates="+dt+"/"+nd+"&details="+encodeURIComponent(e.n+" \u2014 qalendar.app");},
