@@ -101,7 +101,7 @@ h1{margin:6px 0 2px;font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacin
 .laddrow .nm2{color:var(--ink-soft);font-size:11.5px}
 .lchip{border:1px solid var(--accent);color:var(--accent-ink);background:none;border-radius:999px;padding:2px 10px;font-size:11.5px;cursor:pointer;font-weight:700}
 .lchip:hover{background:var(--today)}
-#idxPills .tab,#listPills .tab{cursor:grab}
+#idxPills .tab,#listPills .tab{cursor:grab;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 #idxPills .tab.dragging,#listPills .tab.dragging{opacity:.45}
 #idxPills .tab.dropover,#listPills .tab.dropover{box-shadow:0 0 0 2px var(--accent) inset}
 .star{color:#c9a227;font-size:12px}
@@ -426,6 +426,51 @@ pillsEl.addEventListener("drop",e=>{
     saveLists();renderLists();render();
   }
   dragIdx=null;
+});
+function touchReorder(el,attrName,onDrop){
+  let timer=null,draggingEl=null,sx=0,sy=0;
+  function clearFx(){[...el.children].forEach(x=>x.classList.remove("dragging","dropover"));}
+  el.addEventListener("touchstart",e=>{
+    const b=e.target.closest("["+attrName+"]");if(!b)return;
+    const t=e.touches[0];sx=t.clientX;sy=t.clientY;
+    timer=setTimeout(()=>{timer=null;draggingEl=b;b.classList.add("dragging");if(navigator.vibrate)try{navigator.vibrate(10);}catch(x){}},350);
+  },{passive:true});
+  el.addEventListener("touchmove",e=>{
+    const t=e.touches[0];
+    if(!draggingEl){
+      if(timer&&(Math.abs(t.clientX-sx)>8||Math.abs(t.clientY-sy)>8)){clearTimeout(timer);timer=null;}
+      return;
+    }
+    e.preventDefault();
+    const over=document.elementFromPoint(t.clientX,t.clientY);
+    const b=over&&over.closest?over.closest("["+attrName+"]"):null;
+    [...el.children].forEach(x=>x.classList.remove("dropover"));
+    if(b&&b!==draggingEl&&el.contains(b))b.classList.add("dropover");
+  },{passive:false});
+  el.addEventListener("touchend",e=>{
+    if(timer){clearTimeout(timer);timer=null;}
+    if(!draggingEl)return;
+    const t=e.changedTouches&&e.changedTouches[0];
+    let b=null;
+    if(t){const over=document.elementFromPoint(t.clientX,t.clientY);b=over&&over.closest?over.closest("["+attrName+"]"):null;}
+    const from=draggingEl.getAttribute(attrName);
+    draggingEl=null;clearFx();
+    if(e.cancelable)e.preventDefault();
+    if(b&&el.contains(b)&&b.getAttribute(attrName)!==from)onDrop(from,b.getAttribute(attrName));
+  },{passive:false});
+  el.addEventListener("touchcancel",()=>{if(timer){clearTimeout(timer);timer=null;}draggingEl=null;clearFx();});
+}
+touchReorder(ipEl,"data-idx",(from,to)=>{
+  const f=idxOrder.indexOf(from),t2=idxOrder.indexOf(to);
+  if(f>-1&&t2>-1&&f!==t2){idxOrder.splice(t2,0,idxOrder.splice(f,1)[0]);saveIdxOrder();renderIdxPills();}
+});
+touchReorder(pillsEl,"data-list",(from,to)=>{
+  const f=parseInt(from,10),t2=parseInt(to,10);
+  if(!isNaN(f)&&!isNaN(t2)&&f!==t2&&lists[f]&&lists[t2]){
+    const L=lists.splice(f,1)[0],S=listSel.splice(f,1)[0];
+    lists.splice(t2,0,L);listSel.splice(t2,0,S);
+    saveLists();renderLists();render();
+  }
 });
 document.getElementById("watchPanel").addEventListener("click",e=>{
   const rm=e.target.closest("[data-rmt]");
