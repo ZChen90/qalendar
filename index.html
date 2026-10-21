@@ -115,9 +115,9 @@ h1{margin:6px 0 2px;font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacin
 .laddrow .nm2{color:var(--ink-soft);font-size:11.5px}
 .lchip{border:1px solid var(--accent);color:var(--accent-ink);background:none;border-radius:999px;padding:2px 10px;font-size:11.5px;cursor:pointer;font-weight:700}
 .lchip:hover{background:var(--today)}
-#idxPills .tab,#listPills .tab{cursor:grab;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
-#idxPills .tab.dragging,#listPills .tab.dragging{opacity:.45}
-#idxPills .tab.dropover,#listPills .tab.dropover{box-shadow:0 0 0 2px var(--accent) inset}
+#pillRow .tab{cursor:grab;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+#pillRow .tab.dragging{opacity:.45}
+#pillRow .tab.dropover{box-shadow:0 0 0 2px var(--accent) inset}
 .star{color:#c9a227;font-size:12px}
 .lt{color:var(--accent-ink);font-weight:600;white-space:nowrap}
 .lrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;width:100%;padding:5px 0;border-bottom:1px dashed var(--line)}
@@ -190,8 +190,7 @@ header{position:relative}
     <select id="weekTabs" class="weeksel" title="Week"></select>
   </div>
   <div class="filters" role="group" aria-label="Index filter">
-    <span id="idxPills" style="display:contents"></span>
-    <span id="listPills" style="display:contents"></span>
+    <span id="pillRow" style="display:contents"></span>
     <button class="tab" id="fLists" aria-selected="false">Lists ✎</button>
     <button class="tab" id="fHidden" aria-selected="false" hidden>Hidden (0)</button>
     <button class="tab" id="fChanges" aria-selected="false" hidden>Index changes</button>
@@ -236,14 +235,15 @@ const W=()=>data.weeks||[];
 try{const s=JSON.parse(localStorage.getItem("idxSel"));if(s&&typeof s.SPX==="boolean"&&typeof s.NDX==="boolean")sel={SPX:!!s.SPX,NDX:!!s.NDX,HSI:typeof s.HSI==="boolean"?s.HSI:true,DAX:typeof s.DAX==="boolean"?s.DAX:true,FTSE:typeof s.FTSE==="boolean"?s.FTSE:true,CAC:typeof s.CAC==="boolean"?s.CAC:true,N225:typeof s.N225==="boolean"?s.N225:true,KOSPI:typeof s.KOSPI==="boolean"?s.KOSPI:true,SSE:typeof s.SSE==="boolean"?s.SSE:true};}catch(e){}
 let hidden=[], showHidden=false;
 try{const h=JSON.parse(localStorage.getItem("hiddenTickers"));if(Array.isArray(h))hidden=h.filter(x=>typeof x==="string");}catch(e){}
-let lists=[{n:"My Watch List",t:["BE","SPCX"],d:1}], showLists=false, listSel=[true];
+let lists=[{n:"My Watch List",t:["BE","SPCX"],d:1,id:"lw"}], showLists=false, listSel=[true];
 try{
   const sv=JSON.parse(localStorage.getItem("userLists"));
-  if(Array.isArray(sv)&&sv.length&&sv.every(l=>l&&typeof l.n==="string"&&Array.isArray(l.t)))lists=sv.map(l=>({n:l.n,t:l.t.filter(x=>typeof x==="string"),d:l.d?1:0}));
+  if(Array.isArray(sv)&&sv.length&&sv.every(l=>l&&typeof l.n==="string"&&Array.isArray(l.t)))lists=sv.map(l=>({n:l.n,t:l.t.filter(x=>typeof x==="string"),d:l.d?1:0,id:typeof l.id==="string"?l.id:undefined}));
   else{const w=JSON.parse(localStorage.getItem("watchTickers"));if(Array.isArray(w))lists[0].t=[...new Set([...lists[0].t,...w.filter(x=>typeof x==="string")])];}
 }catch(e){}
 try{const ls=JSON.parse(localStorage.getItem("listSel"));if(Array.isArray(ls))listSel=ls.map(Boolean);}catch(e){}
 if(lists.length&&!lists.some(l=>l.d))lists[0].d=1;
+lists.forEach((l,i)=>{if(!l.id)l.id="l"+i+"_"+Math.random().toString(36).slice(2,7);});
 while(listSel.length<lists.length)listSel.push(true);
 listSel.length=lists.length;
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -342,40 +342,70 @@ function syncFilters(){try{localStorage.setItem("idxSel",JSON.stringify(sel));}c
   render();}
 function toggleFilter(f){sel[f]=!sel[f];syncFilters();}
 const IDXKEYS=["SPX","NDX","HSI","DAX","FTSE","CAC","N225","KOSPI","SSE"];
-let idxOrder=IDXKEYS.slice();
-try{const io=JSON.parse(localStorage.getItem("idxOrder"));
-  if(Array.isArray(io)){const v=io.filter(k=>IDXKEYS.includes(k));IDXKEYS.forEach(k=>{if(!v.includes(k))v.push(k);});if(v.length===IDXKEYS.length)idxOrder=v;}
-}catch(e){}
-function saveIdxOrder(){try{localStorage.setItem("idxOrder",JSON.stringify(idxOrder));}catch(e){}}
-function renderIdxPills(){
-  document.getElementById("idxPills").innerHTML=idxOrder.map(k=>`<button class="tab" data-idx="${k}" draggable="true" aria-selected="${!!sel[k]}">${esc(idxName(k))}</button>`).join("");
+const listTok=l=>"L:"+l.id;
+let pillOrder=null;
+try{pillOrder=JSON.parse(localStorage.getItem("pillOrder"));}catch(e){}
+if(!Array.isArray(pillOrder)){
+  pillOrder=[];
+  try{const io=JSON.parse(localStorage.getItem("idxOrder"));if(Array.isArray(io))io.forEach(k=>{if(IDXKEYS.includes(k))pillOrder.push("I:"+k);});}catch(e){}
 }
-const ipEl=document.getElementById("idxPills");
-ipEl.addEventListener("click",e=>{
-  const b=e.target.closest("[data-idx]");
-  if(b)toggleFilter(b.getAttribute("data-idx"));
+function repairPillOrder(){
+  const valid=new Set(IDXKEYS.map(k=>"I:"+k));lists.forEach(l=>valid.add(listTok(l)));
+  pillOrder=pillOrder.filter(x=>valid.has(x));
+  const have=new Set(pillOrder);
+  IDXKEYS.forEach(k=>{if(!have.has("I:"+k))pillOrder.push("I:"+k);});
+  lists.forEach(l=>{if(!have.has(listTok(l)))pillOrder.push(listTok(l));});
+}
+repairPillOrder();
+function savePillOrder(){try{localStorage.setItem("pillOrder",JSON.stringify(pillOrder));}catch(e){}}
+const listByTok=tok=>lists.findIndex(l=>l.id===tok.slice(2));
+function renderPills(){
+  repairPillOrder();
+  document.getElementById("pillRow").innerHTML=pillOrder.map(tok=>{
+    if(tok.startsWith("I:")){const k=tok.slice(2);return `<button class="tab" data-pill="${tok}" draggable="true" aria-selected="${!!sel[k]}">${esc(idxName(k))}</button>`;}
+    const i=listByTok(tok);if(i<0)return "";
+    return `<button class="tab" data-pill="${tok}" draggable="true" aria-selected="${!!listSel[i]}">★ ${esc(dispName(lists[i],i))} (${lists[i].t.length})</button>`;
+  }).join("");
+}
+const renderIdxPills=renderPills, renderListPills=renderPills;
+function applyPillDrop(from,to){
+  const f=pillOrder.indexOf(from), t2=pillOrder.indexOf(to);
+  if(f<0||t2<0||f===t2)return;
+  pillOrder.splice(t2,0,pillOrder.splice(f,1)[0]);
+  const idOrder=pillOrder.filter(x=>x.startsWith("L:")).map(x=>x.slice(2));
+  const pairs=lists.map((l,i)=>[l,listSel[i]]);
+  pairs.sort((a,b)=>idOrder.indexOf(a[0].id)-idOrder.indexOf(b[0].id));
+  lists=pairs.map(p=>p[0]);listSel=pairs.map(p=>!!p[1]);
+  savePillOrder();saveLists();renderLists();render();
+}
+const pillRowEl=document.getElementById("pillRow");
+pillRowEl.addEventListener("click",e=>{
+  const b=e.target.closest("[data-pill]");if(!b)return;
+  const tok=b.getAttribute("data-pill");
+  if(tok.indexOf("I:")===0){toggleFilter(tok.slice(2));return;}
+  const i=listByTok(tok);
+  if(i>-1){listSel[i]=!listSel[i];saveLists();renderPills();render();}
 });
-let dragIdxKey=null;
-ipEl.addEventListener("dragstart",e=>{
-  const b=e.target.closest("[data-idx]");if(!b)return;
-  dragIdxKey=b.getAttribute("data-idx");
+let dragTok=null;
+pillRowEl.addEventListener("dragstart",e=>{
+  const b=e.target.closest("[data-pill]");if(!b)return;
+  dragTok=b.getAttribute("data-pill");
   e.dataTransfer.effectAllowed="move";
-  try{e.dataTransfer.setData("text/plain",dragIdxKey);}catch(x){}
+  try{e.dataTransfer.setData("text/plain",dragTok);}catch(x){}
   b.classList.add("dragging");
 });
-ipEl.addEventListener("dragend",()=>{dragIdxKey=null;[...ipEl.children].forEach(b=>b.classList.remove("dragging","dropover"));});
-ipEl.addEventListener("dragover",e=>{
-  const b=e.target.closest("[data-idx]");if(!dragIdxKey||!b)return;
+pillRowEl.addEventListener("dragend",()=>{dragTok=null;[...pillRowEl.children].forEach(b=>b.classList.remove("dragging","dropover"));});
+pillRowEl.addEventListener("dragover",e=>{
+  const b=e.target.closest("[data-pill]");if(!dragTok||!b)return;
   e.preventDefault();e.dataTransfer.dropEffect="move";
-  [...ipEl.children].forEach(x=>x.classList.remove("dropover"));
-  if(b.getAttribute("data-idx")!==dragIdxKey)b.classList.add("dropover");
+  [...pillRowEl.children].forEach(x=>x.classList.remove("dropover"));
+  if(b.getAttribute("data-pill")!==dragTok)b.classList.add("dropover");
 });
-ipEl.addEventListener("drop",e=>{
-  const b=e.target.closest("[data-idx]");if(!dragIdxKey||!b)return;
+pillRowEl.addEventListener("drop",e=>{
+  const b=e.target.closest("[data-pill]");if(!dragTok||!b)return;
   e.preventDefault();
-  const to=idxOrder.indexOf(b.getAttribute("data-idx")), from=idxOrder.indexOf(dragIdxKey);
-  if(to>-1&&from>-1&&to!==from){idxOrder.splice(to,0,idxOrder.splice(from,1)[0]);saveIdxOrder();renderIdxPills();}
-  dragIdxKey=null;
+  applyPillDrop(dragTok,b.getAttribute("data-pill"));
+  dragTok=null;
 });
 function saveHidden(){try{localStorage.setItem("hiddenTickers",JSON.stringify(hidden));}catch(e){}}
 function renderHidden(){
@@ -577,9 +607,6 @@ document.getElementById("content").addEventListener("dragstart",e=>{
   e.dataTransfer.effectAllowed="copy";
 });
 function saveLists(){try{localStorage.setItem("userLists",JSON.stringify(lists));localStorage.setItem("listSel",JSON.stringify(listSel));}catch(e){}}
-function renderListPills(){
-  document.getElementById("listPills").innerHTML=lists.map((l,i)=>`<button class="tab" data-list="${i}" draggable="true" aria-selected="${!!listSel[i]}">★ ${esc(dispName(l,i))} (${l.t.length})</button>`).join("");
-}
 function renderLists(){
   renderListPills();
   const panel=document.getElementById("watchPanel");
@@ -598,37 +625,6 @@ function addToList(i,t){t=(t||"").toUpperCase().trim().replace(/[^A-Z0-9.\-]/g,"
   hidden=hidden.filter(x=>x!==t);
   saveLists();saveHidden();renderLists();renderHidden();render();}
 document.getElementById("fLists").onclick=()=>{showLists=!showLists;renderLists();};
-document.getElementById("listPills").addEventListener("click",e=>{
-  const b=e.target.closest("[data-list]");
-  if(b){const i=+b.getAttribute("data-list");listSel[i]=!listSel[i];saveLists();renderListPills();render();}
-});
-let dragIdx=null;
-const pillsEl=document.getElementById("listPills");
-pillsEl.addEventListener("dragstart",e=>{
-  const b=e.target.closest("[data-list]");if(!b)return;
-  dragIdx=+b.getAttribute("data-list");
-  e.dataTransfer.effectAllowed="move";
-  try{e.dataTransfer.setData("text/plain",String(dragIdx));}catch(x){}
-  b.classList.add("dragging");
-});
-pillsEl.addEventListener("dragend",()=>{dragIdx=null;[...pillsEl.children].forEach(b=>b.classList.remove("dragging","dropover"));});
-pillsEl.addEventListener("dragover",e=>{
-  const b=e.target.closest("[data-list]");if(dragIdx===null||!b)return;
-  e.preventDefault();e.dataTransfer.dropEffect="move";
-  [...pillsEl.children].forEach(x=>x.classList.remove("dropover"));
-  if(+b.getAttribute("data-list")!==dragIdx)b.classList.add("dropover");
-});
-pillsEl.addEventListener("drop",e=>{
-  const b=e.target.closest("[data-list]");if(dragIdx===null||!b)return;
-  e.preventDefault();
-  const to=+b.getAttribute("data-list");
-  if(to!==dragIdx){
-    const L=lists.splice(dragIdx,1)[0], S=listSel.splice(dragIdx,1)[0];
-    lists.splice(to,0,L);listSel.splice(to,0,S);
-    saveLists();renderLists();render();
-  }
-  dragIdx=null;
-});
 function touchReorder(el,attrName,onDrop){
   let timer=null,draggingEl=null,sx=0,sy=0;
   function clearFx(){[...el.children].forEach(x=>x.classList.remove("dragging","dropover"));}
@@ -662,18 +658,7 @@ function touchReorder(el,attrName,onDrop){
   },{passive:false});
   el.addEventListener("touchcancel",()=>{if(timer){clearTimeout(timer);timer=null;}draggingEl=null;clearFx();});
 }
-touchReorder(ipEl,"data-idx",(from,to)=>{
-  const f=idxOrder.indexOf(from),t2=idxOrder.indexOf(to);
-  if(f>-1&&t2>-1&&f!==t2){idxOrder.splice(t2,0,idxOrder.splice(f,1)[0]);saveIdxOrder();renderIdxPills();}
-});
-touchReorder(pillsEl,"data-list",(from,to)=>{
-  const f=parseInt(from,10),t2=parseInt(to,10);
-  if(!isNaN(f)&&!isNaN(t2)&&f!==t2&&lists[f]&&lists[t2]){
-    const L=lists.splice(f,1)[0],S=listSel.splice(f,1)[0];
-    lists.splice(t2,0,L);listSel.splice(t2,0,S);
-    saveLists();renderLists();render();
-  }
-});
+touchReorder(pillRowEl,"data-pill",applyPillDrop);
 document.getElementById("watchPanel").addEventListener("click",e=>{
   if(e.target.id==="icsBtn"){exportICS();return;}
   const rm=e.target.closest("[data-rmt]");
@@ -685,7 +670,7 @@ document.getElementById("watchPanel").addEventListener("keydown",e=>{
   if(e.key!=="Enter")return;
   const ad=e.target.closest("[data-addto]");
   if(ad){addToList(+ad.getAttribute("data-addto"),ad.value);return;}
-  if(e.target.id==="newList"){const nm=e.target.value.trim().slice(0,30);if(nm){lists.push({n:nm,t:[]});listSel.push(true);saveLists();renderLists();render();}}
+  if(e.target.id==="newList"){const nm=e.target.value.trim().slice(0,30);if(nm){lists.push({n:nm,t:[],id:"l"+Date.now().toString(36)+Math.random().toString(36).slice(2,6)});listSel.push(true);saveLists();renderLists();render();}}
 });
 document.getElementById("watchPanel").addEventListener("change",e=>{
   const rn=e.target.closest("[data-ren]");
