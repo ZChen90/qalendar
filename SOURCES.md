@@ -1,5 +1,22 @@
 # Earnings verification log
 
+## 2026-10-29 22:25 Berlin — candidate rejected by required tests
+
+A candidate for October 26–November 22 was prepared locally with four verified events and explicit partial-coverage labeling. It was NOT published. Required calendar tests returned 6 passes / 2 failures. The stale-data test assumes the live embedded snapshot is stale on October 29; the refresh test assumes its hard-coded October 29 12:00 snapshot is newer than the embedded data and puts its event in a fixed week-array position. These assumptions prevent the tests from reliably validating a current rolling snapshot. Tests need deterministic fixtures independent of published data. No UI or test code was changed in this data/source-log-only run.
+
+The structural validator passed with four warnings because it expects five weekday records per week whereas the requested maintenance window uses Monday–Sunday. There were no verified weekend events in the candidate. The calendar remains at its old timestamp; this run does not resolve stale coverage.
+
+### Additional verified evidence
+
+- Microsoft: October 28 after US market close, explicitly stated by the issuer; the 14:30 Pacific call is not used as the release time. Results publication confirms the date. https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/ and https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2
+- Microsoft membership: Nasdaq identifies MSFT as a current Nasdaq-100 constituent on October 20. S&P's accessible constituent snapshot is August 31; secondary StocksXray's October 28 component list corroborates S&P 500 membership. https://www.nasdaq.com/articles/global-indexes/inside-the-index/msft ; https://www.spglobal.com/spdji/en/indices/equity/sp-500/?affid=243&oid=8&uid=1 ; https://www.stocksxray.com/index/sp500
+- Siemens: issuer and Deutsche Boerse identify the ordinary share and DAX membership; SIE ticker corroborated by secondary Onvista. November 12 at 07:00 CET confirmed again on issuer press-event page. https://www.siemens.com/de-de/company/investor-relations/share-bonds-rating/basic-data-key-share-figures/ ; https://www.cashmarket.deutsche-boerse.com/cash-de/Handel/aktien/dax-aktien-auf-xetra ; https://www.onvista.de/aktien/Siemens-Aktie-DE0007236101
+- Shell: LSE confirms SHEL and FTSE 100 membership, with October 28 data. The October 29 07:00 GMT issuer release evidence remains as below. https://www.londonstockexchange.com/en/quote/equity/SHEL/shell-plc
+- HSBC: issuer reconfirms October 27 at 04:00 GMT. Secondary Barclays listing information identifies HSBA and FTSE 100 membership. HSI provider shows HSBC among its constituents, but 12:00 HKT is not pre-market in Hong Kong. The candidate therefore used the London listing HSBA.L at 04:00 UK, and did not falsely label its Hong Kong release as pre-market. https://www.hsbc.com/results ; https://research-centre.barclays.co.uk/shares/hsbc-holdings/company-information/ ; https://www.hsi.com.hk/en-hk/indexes/all-indexes/index-details/?seriesCode=hsi
+
+Date-only Sanofi, Toyota and Samsung evidence and the SSE/owner-watch gaps remain documented below. These sources do not establish full coverage of any index. No new unconfirmed events or assumed release sessions were published. Existing search-directory membership claims were not comprehensively audited.
+
+
 ## 2026-10-29 — partial verification; publication refresh incomplete
 
 Requested window: 2026-10-26 through 2026-11-22 inclusive, Monday–Sunday in Europe/Berlin. This run did not establish complete event coverage or current membership for all nine indices. No earnings snapshot or updatedAt change is published. The existing October 21 snapshot remains stale; passing structural tests does not validate its facts. Unverified new events were not added.
