@@ -5,7 +5,15 @@ const vm=require('node:vm');
 const path=require('node:path');
 const html=fs.readFileSync(path.join(__dirname,'../index.html'),'utf8');
 const script=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
-function boot(date='2026-10-29T12:00:00',payload){
+// Synthetic historical fixture: regression scenarios must not depend on today's feed.
+function calendarFixture(){
+ const weeks=Array.from({length:4},(_,wi)=>({days:Array.from({length:5},(_,di)=>{
+  const date=new Date(Date.UTC(2026,9,19+wi*7+di)).toISOString().slice(0,10);
+  return {date,weekday:['Mon','Tue','Wed','Thu','Fri'][di],pre:[],post:[]};
+ })}));
+ return {updatedAt:'2026-10-21 16:30 (Berlin)',source:'Synthetic test fixture',weeks,changes:[]};
+}
+function boot(date='2026-10-29T12:00:00',payload=calendarFixture()){
  let now=new Date(date).getTime();
  const elements=new Map(), listeners={}, intervals=[];
  function element(id){
