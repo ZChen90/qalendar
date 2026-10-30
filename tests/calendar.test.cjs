@@ -121,3 +121,13 @@ test('selected cross-listing is not silently replaced by a ticker with earnings 
  app.element('searchResults').click({target:{closest:s=>s==='[data-padd]'?{getAttribute:()=> '0'}:null}});
  assert.ok(app.run('lists[0].t.includes("BABA")'));
 });
+
+test('search shows known index labels but omits unavailable membership and earnings messages',async()=>{
+ const app=boot();app.element('searchBox').value='Critical Metals';app.element('searchBox').input();
+ app.ctx.fetch=async()=>({ok:true,json:async()=>({results:[{symbol:'CRML',name:'Critical Metals Corp.',market:'US',exchange:'NASDAQ'}]})});
+ await app.run('lookupStocks(sBox.value.trim(),searchVersion)');
+ assert.match(app.element('searchResults').innerHTML,/CRML/);
+ assert.doesNotMatch(app.element('searchResults').innerHTML,/No verified index membership|not in current data/);
+ app.element('searchBox').value='NVDA';app.element('searchBox').input();
+ assert.match(app.element('searchResults').innerHTML,/S&amp;P 500|Nasdaq-100/);
+});

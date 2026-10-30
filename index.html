@@ -762,8 +762,8 @@ function renderSearch(){
  searchEntries=rows.slice(0,raw?50:10);
  let html=!raw?`<div class="gn">${esc(searchText(1))}</div>`:'';
  html+=searchEntries.map(r=>{
-  const inData=SIDX.dataT.has(r.t),where=r.idx.length?r.idx.map(idxName).join(' · '):searchText(6);
-  let row=`<div class="sgrp"><button class="srowb" data-pick="${esc(r.t)}" aria-selected="${pick===r.t}"><span class="tk2">${esc(r.market)} · ${esc(r.t)}</span><span class="nm2">${esc(r.name)}${r.alias?' · '+esc(r.alias):''}</span></button><div class="search-detail">${esc(where)}${inData?'':' · '+esc(T('notInData'))}</div>`;
+  const where=r.idx.map(idxName).join(' · ');
+  let row=`<div class="sgrp"><button class="srowb" data-pick="${esc(r.t)}" aria-selected="${pick===r.t}"><span class="tk2">${esc(r.market)} · ${esc(r.t)}</span><span class="nm2">${esc(r.name)}${r.alias?' · '+esc(r.alias):''}</span></button>${where?`<div class="search-detail">${esc(where)}</div>`:''}`;
   if(pick===r.t)row+=`<div class="laddrow">${lists.map((ls,i)=>`<button class="lchip" data-padd="${i}">★ ${esc(dispName(ls,i))}</button>`).join('')}</div>`;
   return row+'</div>';
  }).join('');

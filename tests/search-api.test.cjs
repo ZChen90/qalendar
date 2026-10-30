@@ -17,3 +17,9 @@ test('search uses a fixed upstream and normalises equities',async()=>{
  const {handleSearch}=await load();const r=await handleSearch(new Request('https://qalendar.app/api/search?q=novavax'),async url=>{assert.equal(new URL(url).hostname,'query2.finance.yahoo.com');return Response.json({quotes:[{symbol:'NVAX',exchange:'NGM',quoteType:'EQUITY',longname:'Novavax'}]});});
  const body=await r.json();assert.equal(body.results[0].symbol,'NVAX');
 });
+
+test('excludes confirmed and explicitly named warrants without dropping ordinary tickers ending W',async()=>{
+ const {normaliseQuotes}=await load();
+ const quotes=[['CRML','Critical Metals Corp.'],['CRMLW','Critical Metals Corp.'],['ABCDW','Example Warrants'],['BMW.DE','Bayerische Motoren Werke'],['CDW','CDW Corporation']].map(([symbol,longname])=>({symbol,longname,exchange:symbol.endsWith('.DE')?'GER':'NMS',quoteType:'EQUITY'}));
+ assert.deepEqual(normaliseQuotes(quotes).map(q=>q.symbol),['CRML','BMW.DE','CDW']);
+});

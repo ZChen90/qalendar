@@ -1,8 +1,11 @@
 const EXCHANGES={NMS:'US',NGM:'US',NCM:'US',NYQ:'US',ASE:'US',PCX:'US',BTS:'US',PNK:'US',OQB:'US',OQX:'US',HKG:'HK',GER:'DE',FRA:'DE',STU:'DE',MUN:'DE',BER:'DE',DUS:'DE',HAM:'DE',HAN:'DE',LSE:'UK',PAR:'FR',JPX:'JP',TYO:'JP',KSC:'KR',KOE:'KR',SHH:'CN',SHZ:'CN'};
+// Provider labels some warrants as EQUITY without identifying them in the name.
+// Confirmed issuer classification: https://www.criticalmetalscorp.com/ir-resources/warrants/
+const NON_SHARE_SYMBOLS=new Set(['CRMLW']);
 export function normaliseQuotes(quotes){
  const seen=new Set();return quotes.flatMap(q=>{
   const market=EXCHANGES[q.exchange];
-  if(q.quoteType!=='EQUITY'||!market||typeof q.symbol!=='string'||!q.symbol||seen.has(q.symbol))return [];
+  if(NON_SHARE_SYMBOLS.has(q.symbol)||/\bwarrants?\b/i.test([q.longname,q.shortname,q.typeDisp].filter(Boolean).join(' '))||q.quoteType!=='EQUITY'||!market||typeof q.symbol!=='string'||!q.symbol||seen.has(q.symbol))return [];
   seen.add(q.symbol);return [{symbol:q.symbol,name:q.longname||q.shortname||q.symbol,market,exchange:q.exchDisp||q.exchange}];
  });
 }
