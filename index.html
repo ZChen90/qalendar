@@ -95,10 +95,10 @@ h1{margin:6px 0 2px;font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacin
 .chgnote{color:var(--ink-soft)}
 .hchip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-weight:700}
 .hchip button{border:0;background:none;cursor:pointer;color:var(--accent-ink);font-weight:600;font-size:12px;padding:0}
-.search{position:relative;margin-top:12px;max-width:380px;display:flex;gap:6px}
+.search{position:relative;margin-top:12px;max-width:560px;display:flex;gap:6px}
 .search input{flex:1;min-width:0;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:7px 10px;font-size:14px}
 .search input:focus{outline:2px solid var(--accent);outline-offset:1px}
-.sresults{position:absolute;top:calc(100% + 4px);left:0;right:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.12);z-index:20;overflow:hidden}
+.sresults{max-height:420px;overflow-y:auto!important;overscroll-behavior:contain;position:absolute;top:calc(100% + 4px);left:0;right:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.12);z-index:20;overflow:hidden}
 .sitem{display:flex;align-items:center;gap:8px;width:100%;border:0;background:none;color:var(--ink);padding:8px 10px;font-size:13px;cursor:pointer;text-align:left}
 .sitem:hover{background:var(--today)}
 .sitem .tk2{font-weight:800}
@@ -110,7 +110,8 @@ h1{margin:6px 0 2px;font-size:clamp(26px,4vw,38px);font-weight:900;letter-spacin
 .srowb{display:flex;align-items:center;gap:8px;width:100%;border:0;background:none;color:var(--ink);padding:6px 10px 6px 20px;font-size:12.5px;cursor:pointer;text-align:left}
 .srowb:hover,.srowb[aria-selected="true"]{background:var(--today)}
 .srowb .tk2{font-weight:800;white-space:nowrap}
-.srowb .nm2{color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search-detail{padding:0 12px 6px 20px;font-size:11px;color:var(--ink-soft)}
+.srowb .nm2{white-space:normal;color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .laddrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:2px 10px 8px 20px}
 .laddrow .nm2{color:var(--ink-soft);font-size:11.5px}
 .lchip{border:1px solid var(--accent);color:var(--accent-ink);background:none;border-radius:999px;padding:2px 10px;font-size:11.5px;cursor:pointer;font-weight:700}
@@ -734,39 +735,94 @@ function buildSidx(){
   SIDX={dataT,comps};
 }
 const sBox=document.getElementById("searchBox"), sRes=document.getElementById("searchResults");
+const SEARCH_COPY={
+ en:['Search company or ticker','Suggested stocks','Searching markets…','Online search unavailable; showing local matches.','No matching stocks found. Try a ticker with its market suffix.','Online matches · Yahoo Finance','No verified index membership','Some markets could not be searched.'],
+ zh:['搜索公司名称或股票代码','推荐股票','正在搜索各市场…','在线搜索暂不可用；当前显示本地匹配。','未找到匹配股票，请尝试带市场后缀的代码。','在线匹配 · Yahoo Finance','暂无已核实的指数归属','部分市场未能完成搜索。'],
+ de:['Firma oder Börsenkürzel suchen','Vorgeschlagene Aktien','Märkte werden durchsucht…','Online-Suche nicht verfügbar; lokale Treffer.','Keine Treffer. Versuchen Sie ein Kürzel mit Marktsuffix.','Online-Treffer · Yahoo Finance','Keine bestätigte Indexzugehörigkeit','Einige Märkte konnten nicht durchsucht werden.'],
+ fr:['Rechercher une société ou un symbole','Actions suggérées','Recherche sur les marchés…','Recherche en ligne indisponible ; résultats locaux.','Aucun résultat. Essayez un symbole avec son suffixe de marché.','Résultats en ligne · Yahoo Finance','Appartenance à un indice non vérifiée','Certains marchés n’ont pas pu être consultés.'],
+ ja:['会社名または銘柄コードで検索','候補銘柄','市場を検索中…','オンライン検索を利用できません。ローカル候補を表示しています。','該当なし。市場の接尾辞を付けたコードをお試しください。','オンライン候補 · Yahoo Finance','指数への採用は未確認','一部の市場を検索できませんでした。'],
+ ko:['회사명 또는 종목 코드 검색','추천 종목','시장 검색 중…','온라인 검색 불가; 로컬 결과를 표시합니다.','검색 결과 없음. 시장 접미사가 포함된 코드를 입력하세요.','온라인 결과 · Yahoo Finance','지수 편입 여부 미확인','일부 시장을 검색하지 못했습니다.']
+};
+const searchText=i=>(SEARCH_COPY[lang]||SEARCH_COPY.en)[i];
+for(const k of Object.keys(I18N))I18N[k].searchPh=SEARCH_COPY[k][0];
+let searchOpen=false,searchTimer=null,searchController=null,searchVersion=0;
+let remoteRows=[],remoteQuery='',searchState='',searchEntries=[];
+const searchCache=new Map();
+function matchStock(c,q){return c.k.some(k=>k.includes(q))||c.l.some(L=>/^\d+$/.test(q)&&L[0].split('.')[0].replace(/^0+/,'')===q.replace(/^0+/,''));}
+function searchRank(c,q){return c.l.some(L=>nrm(L[0])===q)?0:c.l.some(L=>nrm(L[0]).startsWith(q))?1:nrm(c.n).startsWith(q)?2:3;}
 function renderSearch(){
-  const raw=sBox.value.trim();
-  if(!raw){sRes.hidden=true;sRes.innerHTML="";pick="";return;}
-  if(!SIDX)buildSidx();
-  const nq=nrm(raw);
-  const hits=SIDX.comps.filter(c=>c.k.some(k=>k.includes(nq))).slice(0,8);
-  let html=hits.map((c,ci)=>{
-    const cj=(c.a||[]).find(x=>/[\u3040-\u30ff\u4e00-\u9fff\uac00-\ud7af]/.test(x))||"";
-    return `<div class="sgrp"><div class="gn">${esc(c.n)}${cj?` <span class="gal">${esc(cj)}</span>`:""}</div>`+c.l.map((L,li)=>{
-      const id=ci+":"+li, inData=SIDX.dataT.has(L[0]);
-      const where=L[2]&&L[2].length?idxName(L[2][0]):dispName(lists[defIdx()],defIdx());
-      let row=`<button class="srowb" data-pick="${id}" aria-selected="${pick===id}"><span class="tk2">${L[1]} · ${L[0]}</span><span class="nm2">${esc(where)}${inData?"":" · "+T("notInData")}${hidden.includes(L[0])?" · "+T("hiddenTag"):""}</span></button>`;
-      if(pick===id)row+=`<div class="laddrow"><span class="nm2">${L[2]&&L[2].length?T("showsUnder").replace("{x}",esc(idxName(L[2][0]))):T("notCovered")}</span>${lists.map((ls,i)=>`<button class="lchip" data-padd="${i}">★ ${esc(dispName(ls,i))}</button>`).join("")}</div>`;
-      return row;
-    }).join("")+`</div>`;
-  }).join("");
-  const qt=raw.toUpperCase().replace(/[^A-Z0-9.\-]/g,"");
-  if(qt&&!SIDX.comps.some(c=>c.l.some(L=>L[0]===qt)))html+=`<button class="sitem" data-add="${qt}"><span class="tk2">${esc(T("addNew").replace("{t}",qt).replace("{list}",dispName(lists[defIdx()],defIdx())))}</span><span class="nm2">${T("notIn4w")}</span></button>`;
-  sRes.innerHTML=html;sRes.hidden=!html;
+ if(!searchOpen){sRes.hidden=true;return;}
+ if(!SIDX)buildSidx();
+ const raw=sBox.value.trim(),nq=nrm(raw);
+ const local=SIDX.comps.filter(c=>!nq||matchStock(c,nq)).sort((a,b)=>searchRank(a,nq)-searchRank(b,nq));
+ const rows=local.flatMap(c=>c.l.map(L=>({t:L[0],market:L[1],idx:L[2],name:c.n,alias:(c.a||[]).find(x=>/[\u3040-\u30ff\u4e00-\u9fff\uac00-\ud7af]/.test(x))||'',online:false})));
+ const seen=new Set(rows.map(r=>r.t));
+ if(remoteQuery===raw)for(const r of remoteRows){if(!seen.has(r.symbol)){rows.push({t:r.symbol,market:r.market,idx:[],name:r.name,alias:r.exchange,online:true});seen.add(r.symbol);}}
+ rows.sort((a,b)=>(nrm(a.t)===nq?0:nrm(a.t).startsWith(nq)?1:2)-(nrm(b.t)===nq?0:nrm(b.t).startsWith(nq)?1:2));
+ searchEntries=rows.slice(0,raw?50:10);
+ let html=!raw?`<div class="gn">${esc(searchText(1))}</div>`:'';
+ html+=searchEntries.map(r=>{
+  const inData=SIDX.dataT.has(r.t),where=r.idx.length?r.idx.map(idxName).join(' · '):searchText(6);
+  let row=`<div class="sgrp"><button class="srowb" data-pick="${esc(r.t)}" aria-selected="${pick===r.t}"><span class="tk2">${esc(r.market)} · ${esc(r.t)}</span><span class="nm2">${esc(r.name)}${r.alias?' · '+esc(r.alias):''}</span></button><div class="search-detail">${esc(where)}${inData?'':' · '+esc(T('notInData'))}</div>`;
+  if(pick===r.t)row+=`<div class="laddrow">${lists.map((ls,i)=>`<button class="lchip" data-padd="${i}">★ ${esc(dispName(ls,i))}</button>`).join('')}</div>`;
+  return row+'</div>';
+ }).join('');
+ if(raw&&searchState==='loading')html+=`<div class="gn" role="status">${esc(searchText(2))}</div>`;
+ else if(raw&&searchState==='error')html+=`<div class="gn" role="status">${esc(searchText(3))}</div>`;
+ else if(raw&&!searchEntries.length)html+=`<div class="gn" role="status">${esc(searchText(4))}</div>`;
+ if(raw&&searchState==='partial')html+=`<div class="gn" role="status">${esc(searchText(7))}</div>`;
+ if(searchEntries.some(r=>r.online))html+=`<div class="search-detail">${esc(searchText(5))}</div>`;
+ sRes.innerHTML=html;sRes.hidden=false;
 }
-sBox.addEventListener("input",()=>{pick="";renderSearch();});
-sBox.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();addToList(defIdx(),sBox.value);sBox.value="";sRes.hidden=true;pick="";}});
-sRes.addEventListener("click",e=>{
-  const pb=e.target.closest("[data-pick]");
-  if(pb){const id=pb.getAttribute("data-pick");pick=pick===id?"":id;renderSearch();return;}
-  const pa=e.target.closest("[data-padd]");
-  if(pa&&pick){const p=pick.split(":");const c=SIDX.comps[+p[0]],L=c.l[+p[1]];
-    let t=L[0];if(!SIDX.dataT.has(t)){const sib=c.l.find(x=>SIDX.dataT.has(x[0]));if(sib)t=sib[0];}
-    addToList(+pa.getAttribute("data-padd"),t);sBox.value="";sRes.hidden=true;sRes.innerHTML="";pick="";return;}
-  const b=e.target.closest("[data-add]");
-  if(b){addToList(defIdx(),b.getAttribute("data-add"));sBox.value="";sRes.hidden=true;sRes.innerHTML="";pick="";}
+async function lookupStocks(query,version){
+ const controller=new AbortController();searchController=controller;
+ const timeout=setTimeout(()=>controller.abort(),10000);
+ try{
+  const response=await fetch('/api/search?q='+encodeURIComponent(query),{signal:controller.signal});
+  if(!response.ok)throw Error('search unavailable');
+  const result=await response.json();
+  if(!Array.isArray(result.results)||!result.results.every(r=>r&&typeof r.symbol==='string'&&typeof r.name==='string'&&typeof r.market==='string'))throw Error('invalid search results');
+  if(version!==searchVersion||query!==sBox.value.trim())return;
+  remoteRows=result.results;remoteQuery=query;searchState=result.partial?'partial':'ready';
+  if(searchCache.size>=50)searchCache.delete(searchCache.keys().next().value);
+  searchCache.set(query,{rows:remoteRows,state:searchState});
+ }catch(e){if(version!==searchVersion)return;remoteRows=[];remoteQuery=query;searchState='error';}
+ finally{clearTimeout(timeout);if(version===searchVersion)renderSearch();}
+}
+function startSearch(){
+ searchOpen=true;pick='';searchVersion++;clearTimeout(searchTimer);if(searchController)searchController.abort();
+ const query=sBox.value.trim(),version=searchVersion;
+ remoteRows=[];remoteQuery=query;searchState='';
+ if(query){const cached=searchCache.get(query);if(cached){remoteRows=cached.rows;searchState=cached.state;}else{searchState='loading';searchTimer=setTimeout(()=>lookupStocks(query,version),300);}}
+ renderSearch();
+}
+function closeSearch(){searchOpen=false;sRes.hidden=true;pick='';searchVersion++;clearTimeout(searchTimer);if(searchController)searchController.abort();}
+function addSearchResult(listIndex,ticker){
+ if(!searchEntries.some(r=>r.t===ticker))return;
+ addToList(listIndex,ticker);sBox.value='';closeSearch();
+}
+sBox.addEventListener('focus',startSearch);
+sBox.addEventListener('input',startSearch);
+sBox.addEventListener('keydown',e=>{
+ if(e.key==='Escape'){closeSearch();return;}
+ if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+  e.preventDefault();searchOpen=true;if(!searchEntries.length)renderSearch();
+  if(searchEntries.length){const old=searchEntries.findIndex(r=>r.t===pick),step=e.key==='ArrowDown'?1:-1;pick=searchEntries[(old+step+searchEntries.length)%searchEntries.length].t;renderSearch();}return;
+ }
+ if(e.key==='Enter'){
+  e.preventDefault();const exact=searchEntries.find(r=>nrm(r.t)===nrm(sBox.value.trim()));
+  const selected=searchEntries.find(r=>r.t===pick)||exact||(searchEntries.length===1?searchEntries[0]:null);
+  if(selected)addSearchResult(defIdx(),selected.t);else{searchOpen=true;renderSearch();}
+ }
 });
-document.addEventListener("click",e=>{if(!e.target.closest(".search"))sRes.hidden=true;});
+sRes.addEventListener('click',e=>{
+ e.stopPropagation?.();
+ const pb=e.target.closest('[data-pick]');
+ if(pb){const ticker=pb.getAttribute('data-pick');pick=pick===ticker?'':ticker;renderSearch();return;}
+ const pa=e.target.closest('[data-padd]');if(pa&&pick)addSearchResult(+pa.getAttribute('data-padd'),pick);
+});
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))closeSearch();});
+
 try{
   data=JSON.parse(document.getElementById("week-data").textContent);
   if(!Array.isArray(data.weeks))data={weeks:[]};

@@ -20,3 +20,13 @@ node tests/validate.cjs index.html
 ```
 
 The regression suite covers the reported October 29 date error, Sunday/Monday rollover, exhausted data and year boundaries, stale-data messaging, successful refresh with preserved lists/week selection, invalid/offline refreshes, and rejecting older snapshots. Run with TZ=Europe/Berlin, TZ=America/Los_Angeles and TZ=Asia/Tokyo for local-calendar checks.
+
+## Market-wide company search
+
+Search accepts company names and ticker symbols, independent of index filters and earnings coverage. Cloudflare Pages serves `/api/search` from `functions/api/search.js`; `_routes.json` limits function invocation to that endpoint. Deploy the repository root, including functions, through Pages.
+
+The endpoint queries Yahoo Finance and filters equity results to US, Hong Kong, German, UK, French, Japanese, Korean and mainland Chinese exchanges. Numeric queries also try market suffixes. Up to 50 matches are returned per query; this is broad provider-backed lookup, not an exhaustive exchange security master. Availability, name languages, instrument classification and coverage depend on the provider. Exact symbols with market suffixes are the most reliable query. No API key is embedded.
+
+Local aliases remain available offline. Loading, partial failures and unavailable searches are displayed explicitly. Selecting a result preserves its exact ticker; it does not switch to another listing or invent earnings dates or index membership. Unknown memberships are labeled. Company-name input is not saved as a made-up ticker.
+
+Search validation: `node --test tests/*.test.cjs` and `node tests/validate.cjs index.html`. Browser verification must include CRML by ticker and Critical Metals by name, selecting the listing and adding it to a list.

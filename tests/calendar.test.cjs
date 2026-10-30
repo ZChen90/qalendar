@@ -73,3 +73,43 @@ test('daily rollover preserves future browsing until Monday resets to the curren
  app.setDate('2026-10-30T00:01:00');await app.tick();
  assert.equal(app.run('W()[active].days[0].date'),'2026-11-09');
 });
+test('search selection adds the matching ticker, not an unrelated directory row',()=>{
+ const app=boot();app.element('searchBox').value='NVDA';app.element('searchBox').input();
+ const id=app.element('searchResults').innerHTML.match(/data-pick="([^"]+)"/)[1];
+ const click=(selector,value)=>app.element('searchResults').click({target:{closest:s=>s===selector?{getAttribute:()=>value}:null}});
+ click('[data-pick]',id);click('[data-padd]','0');
+ assert.ok(app.run('lists[0].t.includes("NVDA")'));
+});
+test('focus on an empty search shows selectable suggestions',()=>{
+ const app=boot();app.element('searchBox').focus?.();
+ assert.match(app.element('searchResults').innerHTML,/data-pick/);
+});
+test('Enter resolves the company name to a ticker rather than saving the typed name',()=>{
+ const app=boot();app.element('searchBox').value='Microsoft';app.element('searchBox').input();
+ app.element('searchBox').keydown({key:'Enter',preventDefault(){}});
+ assert.ok(app.run('lists[0].t.includes("MSFT")'));
+ assert.equal(app.run('lists[0].t.includes("MICROSOFT")'),false);
+});
+test('online results can be selected outside the local directory',async()=>{
+ const app=boot();app.element('searchBox').value='New Test';app.element('searchBox').input();
+ app.ctx.fetch=async()=>({ok:true,json:async()=>({results:[{symbol:'NEWX',name:'New Test Company',market:'US',exchange:'NASDAQ'}]})});
+ await app.run('lookupStocks(sBox.value.trim(),searchVersion)');
+ assert.match(app.element('searchResults').innerHTML,/NEWX/);
+ app.element('searchBox').keydown({key:'Enter',preventDefault(){}});
+ assert.ok(app.run('lists[0].t.includes("NEWX")'));
+});
+test('a late response cannot replace results for a newer query',async()=>{
+ const app=boot();app.element('searchBox').value='old query';app.element('searchBox').input();
+ let resolve;app.ctx.fetch=()=>new Promise(r=>{resolve=r;});const pending=app.run('lookupStocks(sBox.value.trim(),searchVersion)');
+ app.element('searchBox').value='NVDA';app.element('searchBox').input();
+ resolve({ok:true,json:async()=>({results:[{symbol:'OLD',name:'Old query',market:'US'}]})});await pending;
+ assert.doesNotMatch(app.element('searchResults').innerHTML,/data-pick="OLD"/);
+ assert.match(app.element('searchResults').innerHTML,/data-pick="NVDA"/);
+});
+test('selected cross-listing is not silently replaced by a ticker with earnings data',()=>{
+ const app=boot();app.element('searchBox').value='Alibaba';app.element('searchBox').input();
+ assert.match(app.element('searchResults').innerHTML,/data-pick="BABA"/);
+ app.element('searchResults').click({target:{closest:s=>s==='[data-pick]'?{getAttribute:()=> 'BABA'}:null}});
+ app.element('searchResults').click({target:{closest:s=>s==='[data-padd]'?{getAttribute:()=> '0'}:null}});
+ assert.ok(app.run('lists[0].t.includes("BABA")'));
+});
