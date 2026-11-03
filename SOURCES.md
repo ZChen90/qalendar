@@ -1,5 +1,27 @@
 # Earnings verification log
 
+## 2026-11-03 09:03 Berlin — stale snapshot recovered with primary-source-only partial coverage
+
+Published window: 2026-11-02 through 2026-11-29, Monday–Sunday boundaries in Europe/Berlin; the board continues to display Monday–Friday. The prior October 21 snapshot was stale and contained numerous unverified seeded records. It was replaced rather than carried forward. Coverage is deliberately partial: only issuer-confirmed dates with an explicit release session were retained. Empty days and weeks mean that no event was verified in this run, not that no constituent reports.
+
+### Published primary evidence
+
+- Palantir: Q3 2026 results on November 2 following the close of U.S. markets. https://investors.palantir.com/news-details/2026/Palantir-Announces-Date-of-Third-Quarter-2026-Earnings-Release-and-Webcast/
+- AMD: fiscal Q3 2026 results on November 3 after market close. The 5:00 p.m. ET conference call was not used as the release time. https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results
+- Amgen: Q3 2026 results on November 3 after the close of U.S. financial markets. The 4:30 p.m. ET conference call was kept distinct. https://investors.amgen.com/news-releases/news-release-details/amgen-announces-webcast-2026-third-quarter-financial-results
+- Current index evidence: Nasdaq identifies Palantir as a current Nasdaq-100 constituent; its May 1 constituent file contains AMD; its Amgen quote page identifies Nasdaq-100 membership. S&P's September 2024 announcement records Palantir's S&P 500 addition; S&P materials identify AMD in the S&P 500 technology sector, and the existing Amgen S&P 500 claim was retained. https://www.nasdaq.com/articles/global-indexes/inside-the-index/pltr ; https://www.nasdaq.com/docs/2026/05/04/NDX.pdf ; https://www.nasdaq.com/market-activity/stocks/amgn/real-time?page=1 ; https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20240906-1474143/1474143_septembershuffle546.pdf ; https://www.spglobal.com/spdji/en/documents/additional-material/brochure-side-by-side-sectors.pdf
+
+### Verified but omitted because the release session was not established
+
+- Apple announced results on November 2, but the primary page only establishes the 2:00 p.m. PT conference-call time; it does not explicitly establish the release session. https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/
+- Pfizer lists a November 3 quarterly-performance webcast but the issuer page did not establish when results were released. https://investors.pfizer.com/Investors/news-events/default.aspx?showevents=PAST
+- Booking Holdings confirms November 3, but the retrieved issuer material did not establish a pre-market or post-market release. https://ir.bookingholdings.com/overview/default.aspx
+- SoftBank Group confirms November 10 results, but the retrieved issuer calendar did not establish a release session. https://group.softbank/en/ir/calendar
+
+### Scope and gaps
+
+This run does not claim exhaustive coverage of the S&P 500, Nasdaq-100, Hang Seng, DAX 40, FTSE 100, CAC 40, Nikkei 225, KOSPI, SSE Composite, or the owner watch list. No event from HK, DE, UK, FR, KR, CN, or the later two weeks was published without primary evidence. No conference-call time was substituted for a results-release time. The search directory was not comprehensively re-audited, and the historical SpaceX index-change item was preserved from the prior issuer/index-provider evidence log. UI and search code were unchanged.
+
 ## 2026-10-29 22:25 Berlin — candidate rejected by required tests
 
 A candidate for October 26–November 22 was prepared locally with four verified events and explicit partial-coverage labeling. It was NOT published. Required calendar tests returned 6 passes / 2 failures. The stale-data test assumes the live embedded snapshot is stale on October 29; the refresh test assumes its hard-coded October 29 12:00 snapshot is newer than the embedded data and puts its event in a fixed week-array position. These assumptions prevent the tests from reliably validating a current rolling snapshot. Tests need deterministic fixtures independent of published data. No UI or test code was changed in this data/source-log-only run.
