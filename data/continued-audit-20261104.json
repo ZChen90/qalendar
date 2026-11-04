@@ -1,0 +1,25 @@
+{
+  "checkedOn": "2026-11-04",
+  "window": ["2026-11-02", "2026-11-29"],
+  "scope": "Incremental issuer checks; not a complete five-index audit",
+  "confirmed": [
+    ["III.L", "3i Group — half-year results", "2026-11-12", "https://www.3i.com/investor-relations/financial-calendar/"],
+    ["BAB.L", "Babcock — half-year results", "2026-11-19", "https://www.babcockinternational.com/investors/financial-calendar/"],
+    ["BTRW.L", "Barratt Redrow — trading update", "2026-11-04", "https://www.barrattredrow.co.uk/investors/financial-calendar"],
+    ["CCH.L", "Coca-Cola HBC — Q3 trading update", "2026-11-04", "https://www.coca-colahellenic.com/"],
+    ["DGE.L", "Diageo — Q1 FY27 trading statement", "2026-11-05", "https://www.diageo.com/en/investors/results-reports-and-events/results"],
+    ["HSX.L", "Hiscox — Q3 trading statement", "2026-11-03", "https://www.hiscoxgroup.com/investors/results-and-presentations"],
+    ["HWDN.L", "Howden Joinery — trading update", "2026-11-05", "https://www.howdenjoinerygroupplc.com/investors/share-price/events-calendar.asp"]
+  ],
+  "outsideWindow": [
+    {"ticker":"IMI.L","date":"2026-10-29","source":"https://www.imiplc.com/en/news-insights/trading-update-q3-2026/","finding":"Actual Q3 trading update supersedes secondary November 5 candidate; next full-year results March 9 2027."},
+    {"ticker":"ITRK.L","date":"2026-10-28","source":"https://www.intertek.com/investors/financial-calendar/","finding":"Official calendar has October 28 trading update, not secondary November 24 candidate; other unscheduled events not excluded."}
+  ],
+  "unresolved": [
+    {"ticker":"DPLM.L","source":"https://www.diplomaplc.com/investors/results-reports-and-presentations/latest-results/","finding":"November 17 results presentation confirmed; release date still needs explicit confirmation."},
+    {"ticker":"INVP.L","source":"https://www.investec.com/en_us/welcome-to-investec/about-us/investor-relations.html","finding":"November 19 results presentation confirmed; release date still needs explicit confirmation."},
+    {"ticker":"CTEC.L","source":"https://www.convatecgroup.com/investors/financial-calendar/","finding":"Search retrieval did not expose calendar dates; further retrieval needed."},
+    {"ticker":"NXT.L","finding":"Conflicting secondary dates November 4 and 5; primary confirmation still needed."},
+    {"ticker":"ICG.L","finding":"Search did not establish primary November release date."}
+  ]
+}

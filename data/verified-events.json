@@ -1850,5 +1850,68 @@
     "source": "https://renewal.bandainamco.co.jp/en/ir/calendar/index.html",
     "verifiedOn": "2026-11-04",
     "evidence": "Issuer calendar explicitly schedules Q2 FY2027.3 financial results on November 10; subject to change, release time unspecified."
+  },
+  {
+    "ticker": "III.L",
+    "name": "3i Group — half-year results",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.3i.com/investor-relations/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "BAB.L",
+    "name": "Babcock — half-year results",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://www.babcockinternational.com/investors/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "BTRW.L",
+    "name": "Barratt Redrow — trading update",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.barrattredrow.co.uk/investors/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "CCH.L",
+    "name": "Coca-Cola HBC — Q3 trading update",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.coca-colahellenic.com/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "DGE.L",
+    "name": "Diageo — Q1 FY27 trading statement",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.diageo.com/en/investors/results-reports-and-events/results",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "HSX.L",
+    "name": "Hiscox — Q3 trading statement",
+    "date": "2026-11-03",
+    "session": "other",
+    "source": "https://www.hiscoxgroup.com/investors/results-and-presentations",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "HWDN.L",
+    "name": "Howden Joinery — trading update",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.howdenjoinerygroupplc.com/investors/share-price/events-calendar.asp",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
   }
 ]
