@@ -131,3 +131,17 @@ test('search shows known index labels but omits unavailable membership and earni
  app.element('searchBox').value='NVDA';app.element('searchBox').input();
  assert.match(app.element('searchResults').innerHTML,/S&amp;P 500|Nasdaq-100/);
 });
+test('date-only releases render and export without an invented market session',()=>{
+ const payload=calendarFixture();payload.weeks[1].days[3].other=[{t:'MSFT',n:'Date-only release',idx:['NDX']}];
+ const app=boot('2026-10-29T12:00:00',payload);
+ assert.match(app.element('content').innerHTML,/Date-only release/);
+ assert.match(app.element('content').innerHTML,/Time unconfirmed/);
+ assert.match(app.run("buildICS(new Set(['MSFT']))"),/Time unconfirmed/);
+});
+test('every reviewed constituent is searchable with its index tag',()=>{
+ const universe=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/index-universe.json'),'utf8'));
+ const dir=JSON.parse(html.match(/id="dir">([\s\S]*?)<\/script>/)[1]);
+ const listings=new Map(dir.flatMap(c=>c.l.map(l=>[l[0],l[2]])));
+ for(const [ix,r] of Object.entries(universe.indices))for(const c of r.constituents)assert.ok(listings.get(c.Symbol)?.includes(ix),ix+': '+c.Symbol);
+ assert.ok(listings.get('BAYN.DE').includes('DAX'));
+});

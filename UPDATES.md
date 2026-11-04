@@ -30,3 +30,11 @@ The endpoint queries Yahoo Finance and filters equity results to US, Hong Kong, 
 Local aliases remain available offline. Loading, partial failures and unavailable searches are displayed explicitly. Selecting a result preserves its exact ticker; it does not switch to another listing or invent earnings dates or index membership. Only known index memberships are shown; unknown membership and missing-earnings messages are omitted from search suggestions. Explicitly named warrants and issuer-confirmed CRMLW warrants are excluded from company-share search results. Company-name input is not saved as a made-up ticker.
 
 Search validation: `node --test tests/*.test.cjs` and `node tests/validate.cjs index.html`. Browser verification must include CRML by ticker and Critical Metals by name, selecting the listing and adding it to a list.
+
+## November 4 coverage update
+
+The board now supports Monday–Sunday data, including an optional `other` array for confirmed dates without a confirmed pre/post-market release session. Search, reminders and calendar export include that array. Calendar exports remain all-day events.
+
+`data/index-universe.json` is the reviewed roster snapshot and per-company earnings-review checklist. `scripts/sync-universe.cjs` reconciles the embedded directory to those reviewed rosters without advancing freshness. `data/verified-events.json` contains source-backed additions; `scripts/import-verified-events.cjs` is a one-time November 4 snapshot importer, not an unattended date generator. Review new evidence before changing its date or inputs.
+
+The coverage panel distinguishes roster size from companies with known release dates and explicitly identifies incomplete KOSPI verification and partial earnings coverage. Secondary rosters are labeled. The earlier weekday-only/schema restriction above is superseded by this user-authorized update.

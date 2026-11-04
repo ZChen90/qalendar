@@ -89,3 +89,20 @@ Requested window: 2026-10-26 through 2026-11-22 inclusive, Monday–Sunday in Eu
 ### Publication status
 
 Source-log-only publication. Existing calendar data and all UI code preserved. Full scheduled refresh is incomplete and requires follow-up; this log is not a claim of real-time or exhaustive coverage.
+
+## 2026-11-04: Bayer correction and constituent coverage expansion
+
+This publication adds Bayer's November 3 Q3 release and 24 other verified event records. Per-event issuer URLs, dates and verification notes are preserved in `data/verified-events.json`. Existing events retain their earlier evidence above. Date-only announcements now appear under “Time unconfirmed / other session”; conference-call times are not substituted for release times. The four-week window includes weekends. The timestamp records the verification snapshot, not deployment time.
+
+The reviewed constituent snapshot and per-company earnings checklist are in `data/index-universe.json`. All entries from those eight rosters are embedded in search and tagged by index. Source URLs, effective dates and source quality are recorded for each roster:
+
+- DAX: 40 securities, checked against Deutsche Boerse's DAX blue-chip roster.
+- Hang Seng: 95 securities, official September 7 composition from the August 21 HSI review appendix.
+- Nikkei 225: 225 securities, official Nikkei constituent page.
+- SSE Composite: 2,233 securities, official CSI constituent spreadsheet dated November 4.
+- S&P 500: 503 securities; Nasdaq-100: 101; FTSE 100: 100; CAC 40: 40. These use identified secondary constituent lists; full provider reconciliation remains outstanding.
+- Korea: 829 KIND main-market issuer records added to search. These are not asserted to be the KOSPI constituent list. The KRX constituent request failed with HTTP 400; existing KOSPI tags remain partial and the coverage panel says so.
+
+Membership coverage is separate from earnings coverage. The full four-week earnings calendar for every constituent has NOT been verified. Every company checklist records that limitation; empty dates do not establish that no results are due. This publication corrects known omissions and exposes the remaining audit work rather than claiming comprehensive or real-time coverage.
+
+The scripts in `scripts/` support this manually reviewed November 4 snapshot. Fetching new files alone is not verification; do not import a new snapshot or advance freshness without reviewing evidence. Python roster ingestion uses xlrd for the official SSE spreadsheet.

@@ -1,0 +1,252 @@
+[
+  {
+    "ticker": "BAYN.DE",
+    "name": "Bayer",
+    "date": "2026-11-03",
+    "session": "pre",
+    "time": "07:30 CET",
+    "source": "https://www.bayer.com/media/en-us/bayer-increases-sales-and-ebitda-before-special-items-in-the-third-quarter-improves-full-year-outlook/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company release timestamp / publication time; not conference-call time."
+  },
+  {
+    "ticker": "HEN3.DE",
+    "name": "Henkel",
+    "date": "2026-11-10",
+    "session": "pre",
+    "time": "07:30 CET",
+    "source": "https://www.henkel.com/investors-and-analysts/events/2026-q3",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company release timestamp / publication time; not conference-call time."
+  },
+  {
+    "ticker": "ALV.DE",
+    "name": "Allianz",
+    "date": "2026-11-12",
+    "session": "pre",
+    "time": "07:00 CET",
+    "source": "https://www.allianz.com/en/investor_relations/results-reports/results.html",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company release timestamp / publication time; not conference-call time."
+  },
+  {
+    "ticker": "MUV2.DE",
+    "name": "Munich Re",
+    "date": "2026-11-12",
+    "session": "pre",
+    "time": "07:30 CET",
+    "source": "https://www.munichre.com/en/company/investors/event-calendar.html",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company release timestamp / publication time; not conference-call time."
+  },
+  {
+    "ticker": "CON.DE",
+    "name": "Continental",
+    "date": "2026-11-04",
+    "session": "pre",
+    "time": "07:30 CET",
+    "source": "https://www.continental.com/en/investors/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company release timestamp / publication time; not conference-call time."
+  },
+  {
+    "ticker": "SHL.DE",
+    "name": "Siemens Healthineers",
+    "date": "2026-11-05",
+    "session": "pre",
+    "time": "07:00 CET",
+    "source": "https://www.siemens-healthineers.com/press/features/pf-2026-q4",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company release timestamp / publication time; not conference-call time."
+  },
+  {
+    "ticker": "QIA.DE",
+    "name": "QIAGEN",
+    "date": "2026-11-04",
+    "session": "post",
+    "time": "22:05 CET",
+    "source": "https://corporate.qiagen.com/English/newsroom/press-releases/press-release-details/2026/QIAGEN-reports-preliminary-Q3-2026-results/default.aspx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company release timestamp / publication time; not conference-call time."
+  },
+  {
+    "ticker": "MRK.DE",
+    "name": "Merck KGaA",
+    "date": "2026-11-12",
+    "session": "pre",
+    "time": "07:00 CET",
+    "source": "https://www.emdgroup.com/en/events/q3-2026.html",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company release timestamp / publication time; not conference-call time."
+  },
+  {
+    "ticker": "BMW.DE",
+    "name": "BMW",
+    "date": "2026-11-04",
+    "session": "other",
+    "time": null,
+    "source": "https://www.bmwgroup.jobs/content/grpw/websites/bmwgroup_com/en/investor-relations/company-reports.html",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "BNR.DE",
+    "name": "Brenntag",
+    "date": "2026-11-11",
+    "session": "other",
+    "time": null,
+    "source": "https://corporate.brenntag.com/en/media/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "CBK.DE",
+    "name": "Commerzbank",
+    "date": "2026-11-05",
+    "session": "other",
+    "time": null,
+    "source": "https://investor-relations.commerzbank.com/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "FRE.DE",
+    "name": "Fresenius",
+    "date": "2026-11-04",
+    "session": "other",
+    "time": null,
+    "source": "https://www.fresenius.com/investor-news-and-ad-hoc-news",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "FME.DE",
+    "name": "Fresenius Medical Care — Q3 earnings release",
+    "date": "2026-11-03",
+    "session": "other",
+    "time": null,
+    "source": "https://freseniusmedicalcare.com/en/investors/events/events-overview/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "FME.DE",
+    "name": "Fresenius Medical Care — Q3 financial report",
+    "date": "2026-11-06",
+    "session": "other",
+    "time": null,
+    "source": "https://freseniusmedicalcare.com/en/investors/events/events-overview/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "HOT.DE",
+    "name": "HOCHTIEF",
+    "date": "2026-11-05",
+    "session": "other",
+    "time": null,
+    "source": "https://www.hochtief.com/investor-relations",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "DHL.DE",
+    "name": "DHL Group",
+    "date": "2026-11-05",
+    "session": "other",
+    "time": null,
+    "source": "https://group.dhl.com/en/investors/events.html",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "DTG.DE",
+    "name": "Daimler Truck",
+    "date": "2026-11-06",
+    "session": "other",
+    "time": null,
+    "source": "https://www.daimlertruck.com/en/investors/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "DTE.DE",
+    "name": "Deutsche Telekom",
+    "date": "2026-11-05",
+    "session": "other",
+    "time": null,
+    "source": "https://www.telekom.com/en/investor-relations/publications/financial-results",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "HNR1.DE",
+    "name": "Hannover Re",
+    "date": "2026-11-09",
+    "session": "other",
+    "time": null,
+    "source": "https://www.hannover-re.com/en/investors/events-and-presentations/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "HEI.DE",
+    "name": "Heidelberg Materials",
+    "date": "2026-11-04",
+    "session": "other",
+    "time": null,
+    "source": "https://www.heidelbergmaterials.com/en/pr-2026-11-04",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "G24.DE",
+    "name": "Scout24",
+    "date": "2026-11-04",
+    "session": "other",
+    "time": null,
+    "source": "https://www.scout24.com/en/news-media/news/detail/scout24-sustains-revenue-momentum-in-q3-and-accelerates-earnings-growth-revenue-guidance-specified-to-c-18",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "VNA.DE",
+    "name": "Vonovia",
+    "date": "2026-11-04",
+    "session": "other",
+    "time": null,
+    "source": "https://www.vonovia.com/en/press/agenda/finances",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "RHM.DE",
+    "name": "Rheinmetall",
+    "date": "2026-11-05",
+    "session": "other",
+    "time": null,
+    "source": "https://www.rheinmetall.com/en/investor-relations/calendar-and-events/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "ZAL.DE",
+    "name": "Zalando",
+    "date": "2026-11-03",
+    "session": "other",
+    "time": null,
+    "source": "https://corporate.zalando.com/en/investor-relations/financial-calendar?category=189&tag=83",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "date": "2026-11-02",
+    "session": "other",
+    "time": null,
+    "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Company report publication date confirmed; release session not established."
+  }
+]
