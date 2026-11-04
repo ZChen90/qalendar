@@ -1,5 +1,27 @@
 # Earnings verification log
 
+## 2026-11-04 08:57 Berlin — three issuer-confirmed events added
+
+Published window: 2026-11-02 through 2026-11-29, using Monday–Sunday boundaries in Europe/Berlin and weekday display rows. This run added three events for which the issuer explicitly states both the results date and the release session. Existing verified events were retained. Coverage remains partial; empty rows do not mean that no constituent reports.
+
+### Published primary evidence
+
+- Qualcomm: fiscal Q4 and fiscal 2026 results will be published on November 4 after the close of the U.S. market. The 1:45 p.m. PT conference call was kept separate. https://investor.qualcomm.com/news-events/press-releases/news-details/2026/Qualcomm-Schedules-Fourth-Quarter-and-Fiscal-2026-Earnings-Release-and-Conference-Call/default.aspx
+- Siemens: Q4 and preliminary fiscal 2026 results will be released on November 12 at 07:00 CET, before Xetra's regular session. The 08:00 press call and 09:30 analyst call were not substituted for the release time. https://press.siemens.com/global/en/event/fourth-quarter-and-preliminary-figures-fiscal-2026
+- Walt Disney: fiscal Q4 and full-year 2026 results will be released before regular U.S. trading opens on November 17. The 08:30 ET webcast is separately identified. https://investors.thewaltdisneycompany.com/news/news-details/2026/The-Walt-Disney-Company-Executives-to-Discuss-Fiscal-Full-Year-and-Fourth-Quarter-2026-Financial-Results-via-Webcast/default.aspx
+- Membership checks: Nasdaq's May 4 constituent file contains QCOM; S&P materials identify Qualcomm and Disney as S&P 500 constituents; Deutsche Börse's current DAX share page lists Siemens and reports no September DAX changes. https://www.nasdaq.com/docs/2026/05/04/NDX.pdf ; https://www.spglobal.com/spdji/en/indices/sustainability/sp-500-plus-information-technology-enhanced-weighted-screened-index ; https://www.spglobal.com/spdji/en/documents/additional-material/brochure-side-by-side-sectors.pdf ; https://www.cashmarket.deutsche-boerse.com/cash-en/trading/Equities/dax-listed-blue-chips-xetra ; https://live.deutsche-boerse.com/news/index-compositions-stroeer-moves-up-to-the-mdax
+
+### Verified dates omitted because the release session remains unestablished
+
+- Arm confirms November 4 and a 14:00 PT results webcast, but the retrieved issuer material does not explicitly state when the results themselves are released. https://investors.arm.com/financials/quarterly-annual-results
+- Uber confirms a November 4 results conference call at 08:00 ET; the issuer announcement does not explicitly establish the results-release session. https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx
+- Cisco lists a November 12 earnings-results webcast, but the retrieved issuer pages do not explicitly establish the results-release session. https://investor.cisco.com/overview/default.aspx
+- Target lists a November 18 earnings conference call at 08:00 ET, but the retrieved event page does not explicitly establish the results-release session. https://corporate.target.com/investors/events-presentations
+
+### Scope and gaps
+
+This is not exhaustive coverage of any requested index. The later two weeks and HK, UK, FR, JP, KR and CN issuers remain especially incomplete. The search directory and the historical SpaceX change item were preserved. No UI or search code changed, and no conference-call time was used as a release time.
+
 ## 2026-11-03 09:03 Berlin — stale snapshot recovered with primary-source-only partial coverage
 
 Published window: 2026-11-02 through 2026-11-29, Monday–Sunday boundaries in Europe/Berlin; the board continues to display Monday–Friday. The prior October 21 snapshot was stale and contained numerous unverified seeded records. It was replaced rather than carried forward. Coverage is deliberately partial: only issuer-confirmed dates with an explicit release session were retained. Empty days and weeks mean that no event was verified in this run, not that no constituent reports.
