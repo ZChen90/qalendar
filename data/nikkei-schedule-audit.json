@@ -59,10 +59,19 @@
     },
     {
       "ticker": "6506.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-09",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-09"
     },
     {
       "ticker": "6525.T",
@@ -125,7 +134,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "SEIKO EPSON CORPORATION"
+      "name": "SEIKO EPSON CORPORATION",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "6752.T",
@@ -152,7 +169,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "SONY GROUP CORPORATION"
+      "name": "SONY GROUP CORPORATION",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "6762.T",
@@ -233,7 +258,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "ROHM COMPANY LIMITED"
+      "name": "ROHM COMPANY LIMITED",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "6971.T",
@@ -251,7 +284,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "TAIYO YUDEN CO.,LTD."
+      "name": "TAIYO YUDEN CO.,LTD.",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "6981.T",
@@ -323,7 +364,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "TOYOTA MOTOR CORPORATION"
+      "name": "TOYOTA MOTOR CORPORATION",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "7211.T",
@@ -404,7 +453,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "NIKON CORPORATION"
+      "name": "NIKON CORPORATION",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "7733.T",
@@ -444,10 +501,19 @@
     },
     {
       "ticker": "3697.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-15",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-15"
     },
     {
       "ticker": "4307.T",
@@ -472,7 +538,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "LY Corporation"
+      "name": "LY Corporation",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "4704.T",
@@ -490,7 +564,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "Nintendo Co.,Ltd."
+      "name": "Nintendo Co.,Ltd.",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "9432.T",
@@ -521,10 +603,19 @@
     },
     {
       "ticker": "9602.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-15",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-15"
     },
     {
       "ticker": "9697.T",
@@ -915,10 +1006,19 @@
     },
     {
       "ticker": "3086.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-13",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-13"
     },
     {
       "ticker": "3092.T",
@@ -940,17 +1040,35 @@
     },
     {
       "ticker": "3382.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-08",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-08"
     },
     {
       "ticker": "7453.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-14",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-14"
     },
     {
       "ticker": "7532.T",
@@ -963,10 +1081,19 @@
     },
     {
       "ticker": "8233.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-15",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-15"
     },
     {
       "ticker": "8252.T",
@@ -979,10 +1106,19 @@
     },
     {
       "ticker": "8267.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-13",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-13"
     },
     {
       "ticker": "9843.T",
@@ -995,10 +1131,19 @@
     },
     {
       "ticker": "9983.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-08",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-08"
     },
     {
       "ticker": "2413.T",
@@ -1065,10 +1210,19 @@
     },
     {
       "ticker": "6532.T",
-      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+      "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
       "checkedOn": "2026-11-04",
       "sourceAsOf": "2026-10-29",
-      "status": "not listed in this fiscal-period schedule; further review required"
+      "status": "Additional official schedule matched; outside window",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan08_1002.xlsx",
+          "date": "2026-10-15",
+          "checkedOn": "2026-11-04",
+          "sha256": "afce0ffdd7438fe2e40119eded228bea830c40e192ba212c23d60ef171a551ef"
+        }
+      ],
+      "date": "2026-10-15"
     },
     {
       "ticker": "9735.T",
@@ -1095,7 +1249,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "TEIJIN LIMITED"
+      "name": "TEIJIN LIMITED",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "3402.T",
@@ -1131,7 +1293,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "ASAHI KASEI CORPORATION"
+      "name": "ASAHI KASEI CORPORATION",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "4004.T",
@@ -1167,7 +1337,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "TOSOH CORPORATION"
+      "name": "TOSOH CORPORATION",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "4043.T",
@@ -1212,7 +1390,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "Mitsubishi Chemical Group Corporation"
+      "name": "Mitsubishi Chemical Group Corporation",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "4208.T",
@@ -1221,7 +1407,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "UBE Corporation"
+      "name": "UBE Corporation",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "4452.T",
@@ -1356,7 +1550,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "NIPPON STEEL CORPORATION"
+      "name": "NIPPON STEEL CORPORATION",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "5406.T",
@@ -1685,7 +1887,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "DAIKIN INDUSTRIES,LTD."
+      "name": "DAIKIN INDUSTRIES,LTD.",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "6471.T",
@@ -1773,7 +1983,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "YAMAHA CORPORATION"
+      "name": "YAMAHA CORPORATION",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "3289.T",
@@ -1827,7 +2045,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "TOBU RAILWAY CO.,LTD."
+      "name": "TOBU RAILWAY CO.,LTD.",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "9005.T",
@@ -1881,7 +2107,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "West Japan Railway Company"
+      "name": "West Japan Railway Company",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "9022.T",
@@ -1917,7 +2151,15 @@
       "sourceAsOf": "2026-10-29",
       "status": "scheduled in window",
       "date": "2026-11-05",
-      "name": "Nippon Yusen Kabushiki Kaisha"
+      "name": "Nippon Yusen Kabushiki Kaisha",
+      "additionalChecks": [
+        {
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan.xlsx",
+          "date": "2026-11-05",
+          "checkedOn": "2026-11-04",
+          "sha256": "406c80edc5f673bd3ea9546d4a0d3cf129bd28fccd452df9e0d42b837a6eb45f"
+        }
+      ]
     },
     {
       "ticker": "9104.T",

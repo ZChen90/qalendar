@@ -1,5 +1,5 @@
 {
-  "scope": "All 2233 SSE Composite securities matched to all 2323 SSE Q3 report appointments. Appointment dates are filing dates, not necessarily first earnings announcements.",
+  "scope": "All 2233 constituent securities screened; 37 B-share listings additionally linked by exact issuer name to A-share filing records. This is a periodic-filing audit, not proof of first earnings release timing.",
   "query": {
     "sqlId": "SSE_SZSGG_DQBGYYQK_CAST_NEW",
     "bulletintype": "L014",
@@ -39484,151 +39484,501 @@
       "ticker": "900901.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-28",
+      "matchedIssuerTicker": "600602.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600602",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-28",
+        "companyAbbr": "云赛智联",
+        "actualDate": "2026-10-28",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900902.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-24",
+      "matchedIssuerTicker": "600604.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600604",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-24",
+        "companyAbbr": "市北高新",
+        "actualDate": "2026-10-24",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900903.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600611.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600611",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "大众交通",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900904.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600613.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600613",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "神奇制药",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900905.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600612.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600612",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "老凤祥",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900906.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-22",
+      "matchedIssuerTicker": "600610.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600610",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-22",
+        "companyAbbr": "中毅达",
+        "actualDate": "2026-10-22",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900908.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-28",
+      "matchedIssuerTicker": "600618.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600618",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-28",
+        "companyAbbr": "氯碱化工",
+        "actualDate": "2026-10-28",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900909.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-27",
+      "matchedIssuerTicker": "600623.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600623",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-27",
+        "companyAbbr": "华谊集团",
+        "actualDate": "2026-10-27",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900910.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600619.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600619",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "海立股份",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900911.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600639.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600639",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "浦东金桥",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900912.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-30",
+      "matchedIssuerTicker": "600648.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600648",
+        "publishDate3": "",
+        "publishDate1": "2026-10-30",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "外高桥",
+        "actualDate": "2026-10-30",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900913.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-27",
+      "matchedIssuerTicker": "600617.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600617",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-27",
+        "companyAbbr": "国新能源",
+        "actualDate": "2026-10-27",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900914.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600650.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600650",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "锦江在线",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900916.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-28",
+      "matchedIssuerTicker": "600679.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600679",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-28",
+        "companyAbbr": "上海凤凰",
+        "actualDate": "2026-10-28",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900917.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-30",
+      "matchedIssuerTicker": "600851.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600851",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-30",
+        "companyAbbr": "海欣股份",
+        "actualDate": "2026-10-30",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900918.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600819.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600819",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "耀皮玻璃",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900920.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-29",
+      "matchedIssuerTicker": "600841.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600841",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-29",
+        "companyAbbr": "动力新科",
+        "actualDate": "2026-10-29",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900921.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600844.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600844",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "金煤科技",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900922.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600689.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600689",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "上海三毛",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900923.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600827.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600827",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "百联股份",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900924.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600843.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600843",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "上工申贝",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900925.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-29",
+      "matchedIssuerTicker": "600835.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600835",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-29",
+        "companyAbbr": "上海机电",
+        "actualDate": "2026-10-29",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900926.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-28",
+      "matchedIssuerTicker": "600845.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600845",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-28",
+        "companyAbbr": "宝信软件",
+        "actualDate": "2026-10-28",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900927.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600822.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600822",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "上海物贸",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900928.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-29",
+      "matchedIssuerTicker": "600848.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600848",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-29",
+        "companyAbbr": "上海临港",
+        "actualDate": "2026-10-29",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900929.SS",
@@ -39652,31 +40002,101 @@
       "ticker": "900932.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-30",
+      "matchedIssuerTicker": "600663.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600663",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-30",
+        "companyAbbr": "陆家嘴",
+        "actualDate": "2026-10-30",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900934.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600754.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600754",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "锦江酒店",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900936.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-30",
+      "matchedIssuerTicker": "600295.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600295",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-30",
+        "companyAbbr": "鄂尔多斯",
+        "actualDate": "2026-10-30",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900937.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-30",
+      "matchedIssuerTicker": "600726.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600726",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-30",
+        "companyAbbr": "华电能源",
+        "actualDate": "2026-10-30",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900938.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-28",
+      "matchedIssuerTicker": "600751.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600751",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-28",
+        "companyAbbr": "海航科技",
+        "actualDate": "2026-10-28",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900939.SS",
@@ -39700,43 +40120,141 @@
       "ticker": "900940.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-29",
+      "matchedIssuerTicker": "600094.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600094",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-29",
+        "companyAbbr": "大名城",
+        "actualDate": "2026-10-29",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900941.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-30",
+      "matchedIssuerTicker": "600776.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600776",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-30",
+        "companyAbbr": "东方通信",
+        "actualDate": "2026-10-30",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900942.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-29",
+      "matchedIssuerTicker": "600054.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600054",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-29",
+        "companyAbbr": "黄山旅游",
+        "actualDate": "2026-10-29",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900943.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-30",
+      "matchedIssuerTicker": "600272.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600272",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-30",
+        "companyAbbr": "开开实业",
+        "actualDate": "2026-10-30",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900945.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-31",
+      "matchedIssuerTicker": "600221.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600221",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-31",
+        "companyAbbr": "海航控股",
+        "actualDate": "2026-10-31",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900946.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-30",
+      "matchedIssuerTicker": "600698.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600698",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-30",
+        "companyAbbr": "湖南天雁",
+        "actualDate": "2026-10-30",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900947.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "not matched; review required"
+      "status": "Issuer Q3 filing outside window; separate B-share publication and other releases not independently excluded",
+      "date": "2026-10-29",
+      "matchedIssuerTicker": "600320.SS",
+      "matchEvidence": "Exact normalized issuer name in official CSI constituent file; same issuer A/B listings",
+      "appointment": {
+        "companyCode": "600320",
+        "publishDate3": "",
+        "publishDate1": "",
+        "publishYear": "2026",
+        "publishDate2": "",
+        "publishDate0": "2026-10-29",
+        "companyAbbr": "振华重工",
+        "actualDate": "2026-10-29",
+        "bulletinType": "L014"
+      }
     },
     {
       "ticker": "900948.SS",

@@ -1,53 +1,741 @@
 {
   "checkedOn": "2026-11-04",
-  "window": ["2026-11-02", "2026-11-29"],
-  "scope": "Incremental issuer checks; not a complete five-index audit",
+  "window": [
+    "2026-11-02",
+    "2026-11-29"
+  ],
+  "scope": "Constituent-by-constituent periodic-release screening for November 2–29, 2026, with explicit unresolved issuer dates. SSE filing-schedule and Nikkei exchange checks are recorded separately. Outside-window results do not exclude other updates.",
   "confirmed": [
-    ["SN.L", "Smith+Nephew — Q3 trading update", "2026-11-04", "https://www.smith-nephew.com/en/news/2026/11/04/smithnephew-third-quarter-2026-trading-update"],
-    ["SMIN.L", "Smiths Group — Q1 trading update", "2026-11-18", "https://www.smiths.com/investors/shareholder-services/events-calendar"],
-    ["SVT.L", "Severn Trent — interim results", "2026-11-18", "https://www.severntrent.com/content/dam/stw-plc/fy-results-26/severn-trent-plc-results-for-the-year-to-31-march-2026.pdf"],
-    ["III.L", "3i Group — half-year results", "2026-11-12", "https://www.3i.com/investor-relations/financial-calendar/"],
-    ["BAB.L", "Babcock — half-year results", "2026-11-19", "https://www.babcockinternational.com/investors/financial-calendar/"],
-    ["BTRW.L", "Barratt Redrow — trading update", "2026-11-04", "https://www.barrattredrow.co.uk/investors/financial-calendar"],
-    ["CCH.L", "Coca-Cola HBC — Q3 trading update", "2026-11-04", "https://www.coca-colahellenic.com/"],
-    ["DGE.L", "Diageo — Q1 FY27 trading statement", "2026-11-05", "https://www.diageo.com/en/investors/results-reports-and-events/results"],
-    ["HSX.L", "Hiscox — Q3 trading statement", "2026-11-03", "https://www.hiscoxgroup.com/investors/results-and-presentations"],
-    ["HWDN.L", "Howden Joinery — trading update", "2026-11-05", "https://www.howdenjoinerygroupplc.com/investors/share-price/events-calendar.asp"]
+    [
+      "AV.L",
+      "Aviva — Q3 trading update",
+      "2026-11-13",
+      "https://www.aviva.com/investors/events/2026/q3-2026-update/"
+    ],
+    [
+      "MTLN.L",
+      "Metlen — nine-month trading update",
+      "2026-11-05",
+      "https://www.metlen.com/investor-relations/financial-calendar/"
+    ],
+    [
+      "BBY.L",
+      "Balfour Beatty — trading update",
+      "2026-11-24",
+      "https://www.balfourbeatty.com/investors/financial-calendar/"
+    ],
+    [
+      "DCC.L",
+      "DCC Energy — interim results",
+      "2026-11-10",
+      "https://www.dccenergy.com/investors/shareholder-information/financial-calendar"
+    ],
+    [
+      "CCEP.L",
+      "Coca-Cola Europacific Partners — Q3 trading update",
+      "2026-11-03",
+      "https://www.cocacolaep.com/news-and-stories/ccep-q3-2026-trading-update/"
+    ],
+    [
+      "EDV.L",
+      "Endeavour Mining — Q3 results",
+      "2026-11-12",
+      "https://www.endeavourmining.com/disclosure-portal/"
+    ],
+    [
+      "EXPN.L",
+      "Experian — half-yearly financial report",
+      "2026-11-18",
+      "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf"
+    ],
+    [
+      "SN.L",
+      "Smith+Nephew — Q3 trading update",
+      "2026-11-04",
+      "https://www.smith-nephew.com/en/news/2026/11/04/smithnephew-third-quarter-2026-trading-update"
+    ],
+    [
+      "SMIN.L",
+      "Smiths Group — Q1 trading update",
+      "2026-11-18",
+      "https://www.smiths.com/investors/shareholder-services/events-calendar"
+    ],
+    [
+      "SVT.L",
+      "Severn Trent — interim results",
+      "2026-11-18",
+      "https://www.severntrent.com/content/dam/stw-plc/fy-results-26/severn-trent-plc-results-for-the-year-to-31-march-2026.pdf"
+    ],
+    [
+      "III.L",
+      "3i Group — half-year results",
+      "2026-11-12",
+      "https://www.3i.com/investor-relations/financial-calendar/"
+    ],
+    [
+      "BAB.L",
+      "Babcock — half-year results",
+      "2026-11-19",
+      "https://www.babcockinternational.com/investors/financial-calendar/"
+    ],
+    [
+      "BTRW.L",
+      "Barratt Redrow — trading update",
+      "2026-11-04",
+      "https://www.barrattredrow.co.uk/investors/financial-calendar"
+    ],
+    [
+      "CCH.L",
+      "Coca-Cola HBC — Q3 trading update",
+      "2026-11-04",
+      "https://www.coca-colahellenic.com/"
+    ],
+    [
+      "DGE.L",
+      "Diageo — Q1 FY27 trading statement",
+      "2026-11-05",
+      "https://www.diageo.com/en/investors/results-reports-and-events/results"
+    ],
+    [
+      "HSX.L",
+      "Hiscox — Q3 trading statement",
+      "2026-11-03",
+      "https://www.hiscoxgroup.com/investors/results-and-presentations"
+    ],
+    [
+      "HWDN.L",
+      "Howden Joinery — trading update",
+      "2026-11-05",
+      "https://www.howdenjoinerygroupplc.com/investors/share-price/events-calendar.asp"
+    ],
+    [
+      "KGF.L",
+      "Kingfisher — Q3 trading update",
+      "2026-11-24",
+      "https://www.kingfisher.com/investors/financial-calendar"
+    ],
+    [
+      "LGEN.L",
+      "Legal & General — quarterly trading update",
+      "2026-11-16",
+      "https://group.legalandgeneral.com/investors/financial-calendar/"
+    ],
+    [
+      "MRO.L",
+      "Melrose — trading update",
+      "2026-11-18",
+      "https://www.melroseplc.net/investors/financial-calendar/"
+    ],
+    [
+      "CRDA.L",
+      "Croda — Q3 sales update",
+      "2026-11-05",
+      "https://www.croda.com/en-gb/investors/financial-calendar"
+    ],
+    [
+      "DPLM.L",
+      "Diploma — preliminary results",
+      "2026-11-17",
+      "https://www.diplomaplc.com/investors/financial-calendar/"
+    ],
+    [
+      "CTEC.L",
+      "Convatec — ten-month trading update",
+      "2026-11-18",
+      "https://www.investegate.eu/announcement/rns/convatec-group--ctec/further-re-interim-results-for-first-half-of-2026/9704209"
+    ],
+    [
+      "INVP.L",
+      "Investec — interim results",
+      "2026-11-19",
+      "https://uk.advfn.com/stock-market/london/investec-INVP/share-news/Investec-PLC-Pre-Close-Trading-Statement/99334086"
+    ],
+    [
+      "NXT.L",
+      "Next — Q3 trading statement",
+      "2026-11-05",
+      "https://www.nextplc.co.uk/investors"
+    ],
+    [
+      "ICG.L",
+      "ICG — half-year results",
+      "2026-11-11",
+      "https://www.icgam.com/shareholders-and-debtholders/"
+    ],
+    [
+      "BGEO.L",
+      "Lion Finance — Q3 and nine-month results",
+      "2026-11-04",
+      "https://www.lse.co.uk/rns/notice-of-results-d4reyp98oluz7iy.html"
+    ],
+    [
+      "SPX.L",
+      "Spirax — trading update",
+      "2026-11-11",
+      "https://www.spiraxgroup.com/en/investors/investment-case/events-calendar"
+    ],
+    [
+      "WEIR.L",
+      "Weir — Q3 interim management statement",
+      "2026-11-04",
+      "https://www.global.weir/pt-BR/investors/financial-calendar/"
+    ],
+    [
+      "JD.L",
+      "JD Sports — Q3 trading statement",
+      "2026-11-19",
+      "https://www.jdplc.com/?p=8172"
+    ],
+    [
+      "RR.L",
+      "Rolls-Royce — trading update",
+      "2026-11-12",
+      "https://www.rolls-royce.com/investors/financial-calendar.aspx"
+    ],
+    [
+      "LAND.L",
+      "Landsec — half-year results",
+      "2026-11-13",
+      "https://www.londonstockexchange.com/en/news/article/LAND/confirmation-of-half-year-results-date/17828664"
+    ],
+    [
+      "LMP.L",
+      "LondonMetric — half-year results",
+      "2026-11-24",
+      "https://www.londonmetric.com/news-and-media/press-release/2026/26%2010%2029%20trading%20update"
+    ]
   ],
   "outsideWindow": [
-    {"ticker":"6506.T","date":"2026-10-09","source":"https://www.yaskawa-global.com/ir/calendar","finding":"Half-year results published October 9; outside November window."},
-    {"ticker":"3697.T","date":"2026-10-15","source":"https://www.shiftinc.jp/news/fy2026-4q/","finding":"FY2026 results published October 15; November calendar event is AGM."},
-    {"ticker":"9602.T","date":"2026-10-15","source":"https://www.toho.co.jp/en/ir/calendar/","finding":"Q2 FY2/27 results October 15; next scheduled quarterly results January 14 2027."},
-    {"ticker":"SAF.PA","date":"2026-10-23","source":"https://www.safran-group.com/pressroom/safran-reports-its-third-quarter-2026-revenue-2026-10-23","finding":"Q3 revenue outside November window; other events not excluded."},
-    {"ticker":"SGO.PA","date":"2026-10-27","source":"https://www.saint-gobain.com/en/news/nine-month-2026-sales","finding":"Nine-month sales outside November window; other events not excluded."},
-    {"ticker":"SU.PA","date":"2026-10-16","source":"https://www.se.com/ww/en/about-us/investor-relations/financial-calendar-and-events/","finding":"Q3 revenue outside November window; other events not excluded."},
-    {"ticker":"STLAP.PA","date":"2026-10-28","source":"https://www.stellantis.com/en/news/press-releases/2026/october/third-quarter-2026-financial-results","finding":"Q3 results outside November window; other events not excluded."},
-    {"ticker":"AI.PA","date":"2026-10-29","source":"https://www.airliquide.com/group/press-releases-news/2026-10-07/availability-pre-q3-2026-sales-communication","finding":"Q3 revenue publication outside November window; unscheduled events not excluded."},
-    {"ticker":"AIR.PA","date":"2026-10-28","source":"https://www.airbus.com/en/newsroom/press-releases/2026-10-airbus-reports-nine-month-9m-2026-results","finding":"Nine-month results outside November window; unscheduled events not excluded."},
-    {"ticker":"BVI.PA","date":"2026-10-21","source":"https://group.bureauveritas.com/newsroom","finding":"Official newsroom states Q3 revenue published October 21; other events not excluded."},
-    {"ticker":"BN.PA","date":"2026-10-28","source":"https://www.danone.com/investors/publications-and-events/press-releases.html","finding":"Q3 sales release outside November window; other events not excluded."},
-    {"ticker":"ERF.PA","date":"2026-10-21","source":"https://www.eurofins.com/en/media-centre/press-releases/eurofins-delivers-improving-organic-growth-through-9m-2026-remains-on-track-for-2026-and-mid-term-profitability-objectives/","finding":"Nine-month revenue release outside November window; other events not excluded."},
-    {"ticker":"OR.PA","date":"2026-10-22","source":"https://www.loreal-finance.com/eng/press-release/sales-30-september-2026","finding":"Nine-month sales release outside November window; other events not excluded."},
-    {"ticker":"KER.PA","date":"2026-10-22","source":"https://www.kering.com/en/news/revenue-for-the-3rd-quarter-of-2026/","finding":"Q3 revenue release outside November window; other events not excluded."},
-    {"ticker":"MC.PA","date":"2026-10-12","source":"https://www.lvmh.com/en/publications/continued-growth-in-the-third-quarter-of-2026","finding":"Q3 revenue release outside November window; other events not excluded."},
-    {"ticker":"ML.PA","date":"2026-10-20","source":"https://www.michelin.com/en/publications/group/financial-information-at-september-30-2026","finding":"Nine-month financial information outside November window; other events not excluded."},
-    {"ticker":"RI.PA","date":"2026-10-15","source":"https://www.pernod-ricard.com/en/investors/investor-calendar","finding":"Q1 FY27 sales October 15; November 20 event is AGM, not earnings; next scheduled results February 18 2027."},
-    {"ticker":"IMI.L","date":"2026-10-29","source":"https://www.imiplc.com/en/news-insights/trading-update-q3-2026/","finding":"Actual Q3 trading update supersedes secondary November 5 candidate; next full-year results March 9 2027."},
-    {"ticker":"ITRK.L","date":"2026-10-28","source":"https://www.intertek.com/investors/financial-calendar/","finding":"Official calendar has October 28 trading update, not secondary November 24 candidate; other unscheduled events not excluded."}
+    {
+      "ticker": "1928.T",
+      "date": "2026-12-10",
+      "source": "https://www.sekisuihouse.co.jp/english/company/financial/calendar/2026/",
+      "finding": "Q3 results December 10; November 10 is monthly orders, not quarterly earnings."
+    },
+    {
+      "ticker": "AZN.L",
+      "date": "2026-10-30",
+      "source": "https://www.astrazeneca.com/investor-relations/9m-and-q3-2026-results-event.html",
+      "finding": "Actual results announced October 30; supersedes stale November 10 search calendar snippet."
+    },
+    {
+      "ticker": "ABDN.L",
+      "date": "2026-10-21",
+      "source": "https://www.aberdeenplc.com/en-gb/investors/financial-calendar",
+      "finding": "Q3 AUMA and flows update October 21; no November earnings on calendar."
+    },
+    {
+      "ticker": "AAF.L",
+      "date": "2026-10-30",
+      "source": "https://www.airtel.africa/financial-calendar",
+      "finding": "HY27 results October 30; next quarterly results January 29 2027."
+    },
+    {
+      "ticker": "BNZL.L",
+      "date": "2026-10-20",
+      "source": "https://www.bunzl.com/investors/shareholder-information/financial-calendar/",
+      "finding": "Q3 update October 20; next scheduled trading statement December 17."
+    },
+    {
+      "ticker": "CCC.L",
+      "date": "2026-10-26",
+      "source": "https://investors.computacenter.com/events",
+      "finding": "Q3 update October 26; November 24 is Capital Markets Day, not earnings."
+    },
+    {
+      "ticker": "GLEN.L",
+      "date": "2026-10-29",
+      "source": "https://www.glencore.com/media-and-insights/news/third-quarter-2026-production-report",
+      "finding": "Q3 production report October 29; other releases not excluded."
+    },
+    {
+      "ticker": "GSK.L",
+      "date": "2026-10-28",
+      "source": "https://www.gsk.com/en-gb/investors/quarterly-results",
+      "finding": "Q3 results October 28; other releases not excluded."
+    },
+    {
+      "ticker": "HSBA.L",
+      "date": "2026-10-27",
+      "source": "https://www.hsbc.com/results",
+      "finding": "Q3 earnings October 27; other releases not excluded."
+    },
+    {
+      "ticker": "6506.T",
+      "date": "2026-10-09",
+      "source": "https://www.yaskawa-global.com/ir/calendar",
+      "finding": "Half-year results published October 9; outside November window."
+    },
+    {
+      "ticker": "3697.T",
+      "date": "2026-10-15",
+      "source": "https://www.shiftinc.jp/news/fy2026-4q/",
+      "finding": "FY2026 results published October 15; November calendar event is AGM."
+    },
+    {
+      "ticker": "9602.T",
+      "date": "2026-10-15",
+      "source": "https://www.toho.co.jp/en/ir/calendar/",
+      "finding": "Q2 FY2/27 results October 15; next scheduled quarterly results January 14 2027."
+    },
+    {
+      "ticker": "SAF.PA",
+      "date": "2026-10-23",
+      "source": "https://www.safran-group.com/pressroom/safran-reports-its-third-quarter-2026-revenue-2026-10-23",
+      "finding": "Q3 revenue outside November window; other events not excluded."
+    },
+    {
+      "ticker": "SGO.PA",
+      "date": "2026-10-27",
+      "source": "https://www.saint-gobain.com/en/news/nine-month-2026-sales",
+      "finding": "Nine-month sales outside November window; other events not excluded."
+    },
+    {
+      "ticker": "SU.PA",
+      "date": "2026-10-16",
+      "source": "https://www.se.com/ww/en/about-us/investor-relations/financial-calendar-and-events/",
+      "finding": "Q3 revenue outside November window; other events not excluded."
+    },
+    {
+      "ticker": "STLAP.PA",
+      "date": "2026-10-28",
+      "source": "https://www.stellantis.com/en/news/press-releases/2026/october/third-quarter-2026-financial-results",
+      "finding": "Q3 results outside November window; other events not excluded."
+    },
+    {
+      "ticker": "AI.PA",
+      "date": "2026-10-29",
+      "source": "https://www.airliquide.com/group/press-releases-news/2026-10-07/availability-pre-q3-2026-sales-communication",
+      "finding": "Q3 revenue publication outside November window; unscheduled events not excluded."
+    },
+    {
+      "ticker": "AIR.PA",
+      "date": "2026-10-28",
+      "source": "https://www.airbus.com/en/newsroom/press-releases/2026-10-airbus-reports-nine-month-9m-2026-results",
+      "finding": "Nine-month results outside November window; unscheduled events not excluded."
+    },
+    {
+      "ticker": "BVI.PA",
+      "date": "2026-10-21",
+      "source": "https://group.bureauveritas.com/newsroom",
+      "finding": "Official newsroom states Q3 revenue published October 21; other events not excluded."
+    },
+    {
+      "ticker": "BN.PA",
+      "date": "2026-10-28",
+      "source": "https://www.danone.com/investors/publications-and-events/press-releases.html",
+      "finding": "Q3 sales release outside November window; other events not excluded."
+    },
+    {
+      "ticker": "ERF.PA",
+      "date": "2026-10-21",
+      "source": "https://www.eurofins.com/en/media-centre/press-releases/eurofins-delivers-improving-organic-growth-through-9m-2026-remains-on-track-for-2026-and-mid-term-profitability-objectives/",
+      "finding": "Nine-month revenue release outside November window; other events not excluded."
+    },
+    {
+      "ticker": "OR.PA",
+      "date": "2026-10-22",
+      "source": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+      "finding": "Nine-month sales release outside November window; other events not excluded."
+    },
+    {
+      "ticker": "KER.PA",
+      "date": "2026-10-22",
+      "source": "https://www.kering.com/en/news/revenue-for-the-3rd-quarter-of-2026/",
+      "finding": "Q3 revenue release outside November window; other events not excluded."
+    },
+    {
+      "ticker": "MC.PA",
+      "date": "2026-10-12",
+      "source": "https://www.lvmh.com/en/publications/continued-growth-in-the-third-quarter-of-2026",
+      "finding": "Q3 revenue release outside November window; other events not excluded."
+    },
+    {
+      "ticker": "ML.PA",
+      "date": "2026-10-20",
+      "source": "https://www.michelin.com/en/publications/group/financial-information-at-september-30-2026",
+      "finding": "Nine-month financial information outside November window; other events not excluded."
+    },
+    {
+      "ticker": "RI.PA",
+      "date": "2026-10-15",
+      "source": "https://www.pernod-ricard.com/en/investors/investor-calendar",
+      "finding": "Q1 FY27 sales October 15; November 20 event is AGM, not earnings; next scheduled results February 18 2027."
+    },
+    {
+      "ticker": "IMI.L",
+      "date": "2026-10-29",
+      "source": "https://www.imiplc.com/en/news-insights/trading-update-q3-2026/",
+      "finding": "Actual Q3 trading update supersedes secondary November 5 candidate; next full-year results March 9 2027."
+    },
+    {
+      "ticker": "ITRK.L",
+      "date": "2026-10-28",
+      "source": "https://www.intertek.com/investors/financial-calendar/",
+      "finding": "Official calendar has October 28 trading update, not secondary November 24 candidate; other unscheduled events not excluded."
+    },
+    {
+      "ticker": "LLOY.L",
+      "date": "2026-10-29",
+      "source": "https://www.lloydsbankinggroup.com/investors/shareholder-information/financial-calendar.html",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "LSEG.L",
+      "date": "2026-10-22",
+      "source": "https://www.lseg.com/en/investor-relations/financial-calendar",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "NWG.L",
+      "date": "2026-10-30",
+      "source": "https://www.natwestgroup.com/news-and-insights/news-room/natwest-group-results-news.html",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "PSON.L",
+      "date": "2026-10-22",
+      "source": "https://plc.pearson.com/investors/performance/results-reports-presentations",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "RKT.L",
+      "date": "2026-10-27",
+      "source": "https://www.reckitt.com/news/q3-results-2026/",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "REL.L",
+      "date": "2026-10-22",
+      "source": "https://www.relx.com/investors/results/2026",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "RTO.L",
+      "date": "2026-10-22",
+      "source": "https://www.rentokil-initial.com/en/investors",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "RIO.L",
+      "date": "2026-10-14",
+      "source": "https://www.riotinto.com/en/news/releases/2026/rio-tinto-releases-third-quarter-2026-production-results",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "SHEL.L",
+      "date": "2026-10-29",
+      "source": "https://www.shell.com/news-and-insights/newsroom/news-and-media-releases/2026/third-quarter-2026-results-announcement.html",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "STAN.L",
+      "date": "2026-10-28",
+      "source": "https://www.sc.com/en/investors/events-and-presentations",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "SGRO.L",
+      "date": "2026-10-21",
+      "source": "https://www.segro.com/investors/financial-results-centre/previous-results",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "STJ.L",
+      "date": "2026-10-29",
+      "source": "https://www.sjp.co.uk/shareholders/shareholder-information/financial-calendar",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "TSCO.L",
+      "date": "2026-10-08",
+      "source": "https://www.tescoplc.com/interim-results-202627",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "ULVR.L",
+      "date": "2026-10-28",
+      "source": "https://www.unilever.com/investors/results-events/",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "WTB.L",
+      "date": "2026-10-13",
+      "source": "https://www.whitbread.co.uk/investors/news-events-and-alerts/financial-calendar/",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "WPP.L",
+      "date": "2026-10-29",
+      "source": "https://www.wpp.com/en/investors/results-presentations-and-reports",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "INF.L",
+      "date": "2026-10-27",
+      "source": "https://www.londonstockexchange.com/en/quote/equity/INF/informa-plc",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "STMPA.PA",
+      "date": "2026-10-29",
+      "source": "https://investors.st.com/static-files/48035c2b-6c9a-4621-b9bc-8925c38c9fb5",
+      "finding": "Issuer/exchange reports latest periodic results or trading/production update outside November 2–29; other releases are not excluded."
+    },
+    {
+      "ticker": "CS.PA",
+      "date": "2026-10-29",
+      "source": "https://www.axa.com/en/press/events",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "BNP.PA",
+      "date": "2026-10-28",
+      "source": "https://invest.bnpparibas/en/results",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "ACA.PA",
+      "date": "2026-10-30",
+      "source": "https://www.credit-agricole.com/en/finance/regulated-information",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "DSY.PA",
+      "date": "2026-10-28",
+      "source": "https://www.3ds.com/newsroom/press-releases/dassault-systemes-strong-q3-performance-improved-fy26-objectives-and-step-change-life-sciences",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "EL.PA",
+      "date": "2026-10-20",
+      "source": "https://www.essilorluxottica.com/en/newsroom/press-releases/q3-2026-revenue/",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "ORA.PA",
+      "date": "2026-10-27",
+      "source": "https://www.orange.com/en/finance",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "RMS.PA",
+      "date": "2026-10-22",
+      "source": "https://www.globenewswire.com/news-release/2026/07/29/3334976/0/en/herm%C3%A8s-international-2026-half-year-results.html",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "CAP.PA",
+      "date": "2026-10-30",
+      "source": "https://investors.capgemini.com/all-financial-events/?fiscal-year=2026",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "RNO.PA",
+      "date": "2026-10-29",
+      "source": "https://www.renaultgroup.com/en/finance/calendar-contacts/",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "TTE.PA",
+      "date": "2026-10-29",
+      "source": "https://totalenergies.com/newsroom/resultats-du-troisieme-trimestre-2026-516472/?lang=eng",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "URW.PA",
+      "date": "2026-10-22",
+      "source": "https://www.urw.com/investors/press-releases?ts=1792649374611&type=5znlx6LfMl70k5IYdgwarm",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "DG.PA",
+      "date": "2026-10-22",
+      "source": "https://www.vinci.com/en/newsroom/press-releases/further-growth-revenue-and-order-intake",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "AC.PA",
+      "date": "2026-10-22",
+      "source": "https://group.accor.com/en/finance/financial-results",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "CA.PA",
+      "date": "2026-10-20",
+      "source": "https://www.carrefour.com/sites/default/files/2026-04/Press%20release%20Carrefour%20Q1%202026_1.pdf",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "PUB.PA",
+      "date": "2026-10-13",
+      "source": "https://www.publicisgroupe.com/en/news/press-releases/publicis-groupe-invitation-third-quarter-2026-revenue",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "SAN.PA",
+      "date": "2026-10-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1121404/000112140426000009/pressreleaseq32026english.htm",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "GLE.PA",
+      "date": "2026-10-29",
+      "source": "https://www.globenewswire.com/news-release/2026/10/29/3390904/0/en/societe-generale-third-quarter-2026-earnings.html",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "HO.PA",
+      "date": "2026-10-22",
+      "source": "https://webdisclosure.fr/press-release/thales-epa-ho-thales-reports-its-order-intake-and-sales-as-of-september-30-2026-press-release-22-october-2026-gqnPtiEdIOv",
+      "finding": "Issuer calendar, release or issuer-distributed regulatory announcement confirms Q3/nine-month publication outside November 2–29. Other releases not excluded."
+    },
+    {
+      "ticker": "ADM.L",
+      "date": "2026-08-06",
+      "source": "https://www.admiralgroup.co.uk/investor-relations/financial-calendar",
+      "finding": "November 26 is an Admiral Money deep dive, not earnings. Other releases not excluded."
+    },
+    {
+      "ticker": "FRES.L",
+      "date": "2026-10-21",
+      "source": "https://www.fresnilloplc.com/?c=11252",
+      "finding": "Q3 production report. Other releases not excluded."
+    },
+    {
+      "ticker": "IHG.L",
+      "date": "2026-10-22",
+      "source": "https://www.ihgplc.com/investors/results-reports-and-presentations",
+      "finding": "November 3 investor pack is not a new earnings release. Other releases not excluded."
+    },
+    {
+      "ticker": "BP.L",
+      "date": "2026-10-30",
+      "source": "https://www.investegate.info/announcement/rns/bp--bp./3q26-bp-plc-part-1-of-1/9849203",
+      "finding": "Issuer RNS Q3 results; supersedes November candidate. Other releases not excluded."
+    },
+    {
+      "ticker": "AAL.L",
+      "date": "2026-10-22",
+      "source": "https://www.angloamerican.com/media/press-releases/2026",
+      "finding": "Q3 production report. Other releases not excluded."
+    },
+    {
+      "ticker": "ANTO.L",
+      "date": "2026-10-15",
+      "source": "https://www.antofagasta.co.uk/media/4905/49913-antofagasta-ar25-web-ready.pdf",
+      "finding": "Issuer calendar Q3 production report. Other releases not excluded."
+    },
+    {
+      "ticker": "HLN.L",
+      "date": "2026-10-29",
+      "source": "https://www.haleon.com/content/dam/haleon/corporate/documents/investors/results/Q1-2026-Press-Release.pdf",
+      "finding": "Issuer calendar Q3 results. Other releases not excluded."
+    },
+    {
+      "ticker": "IGG.L",
+      "date": "2026-10-02",
+      "source": "https://www.iggroup.com/investor-relations/press-releases/2026/capital-markets-event",
+      "finding": "Capital Markets Event references Q3 trading update on October 2; event itself excluded. Other releases not excluded."
+    },
+    {
+      "ticker": "BARC.L",
+      "date": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/312069/000165495426009079/0001654954-26-009079-index.htm",
+      "finding": "SEC issuer filing confirms Q3 results. Other releases not excluded."
+    },
+    {
+      "ticker": "SBRY.L",
+      "date": "2026-10-22",
+      "source": "https://corporate.sainsburys.co.uk/investors/results-reports-and-presentations/",
+      "finding": "Interim results publication. Other releases not excluded."
+    },
+    {
+      "ticker": "BBOX.L",
+      "date": "2026-08-06",
+      "source": "https://www.tritaxbigbox.co.uk/investors/shareholder-information/",
+      "finding": "Calendar lists August half-year results and no November earnings. Other releases not excluded."
+    },
+    {
+      "ticker": "CNA.L",
+      "date": "2026-07-23",
+      "source": "https://www.centrica.com/investors/financial-calendar/",
+      "finding": "Latest interim results; no November date exposed by official calendar. November trading update remains unconfirmed. Other releases not excluded."
+    },
+    {
+      "ticker": "BATS.L",
+      "date": "2026-07-30",
+      "source": "https://www.bat.com/DO72TJQU.html",
+      "finding": "Latest half-year results. Current financial-calendar fetch returns 403; later trading-update date remains unconfirmed. Other releases not excluded."
+    }
   ],
   "unresolved": [
-    {"ticker":"LAND.L","source":"https://www.investegate.co.uk/announcement/rns/land-securities-group--land/confirmation-of-half-year-results-date-/9815563","finding":"Syndicated RNS says November 13; issuer-hosted confirmation still to retrieve."},
-    {"ticker":"SPX.L","finding":"Targeted issuer search did not establish November release date."},
-    {"ticker":"RNO.PA","finding":"Targeted issuer search did not establish current release date."},
-    {"ticker":"CAP.PA","finding":"Secondary October 30 result found; issuer release still to retrieve."},
-    {"ticker":"ORA.PA","finding":"Targeted issuer search did not establish current release date."},
-    {"ticker":"SAN.PA","source":"https://www.sanofi.com/en/investors/financial-results-and-events/financial-results","finding":"October 30 results webcast confirmed; exact publication evidence still to retrieve."},
-    {"ticker":"GLE.PA","source":"https://www.globenewswire.com/news-release/2026/10/29/3390904/0/en/societe-generale-third-quarter-2026-earnings.html","finding":"Issuer-distributed release dated October 29; issuer-hosted source still to retrieve."},
-    {"ticker":"HO.PA","source":"https://webdisclosure.fr/press-release/thales-epa-ho-thales-reports-its-order-intake-and-sales-as-of-september-30-2026-press-release-22-october-2026-gqnPtiEdIOv","finding":"Distributed release dated October 22; issuer-hosted source still to retrieve."},
-    {"ticker":"DPLM.L","source":"https://www.diplomaplc.com/investors/results-reports-and-presentations/latest-results/","finding":"November 17 results presentation confirmed; release date still needs explicit confirmation."},
-    {"ticker":"INVP.L","source":"https://www.investec.com/en_us/welcome-to-investec/about-us/investor-relations.html","finding":"November 19 results presentation confirmed; release date still needs explicit confirmation."},
-    {"ticker":"CTEC.L","source":"https://www.convatecgroup.com/investors/financial-calendar/","finding":"Search retrieval did not expose calendar dates; further retrieval needed."},
-    {"ticker":"NXT.L","finding":"Conflicting secondary dates November 4 and 5; primary confirmation still needed."},
-    {"ticker":"ICG.L","finding":"Search did not establish primary November release date."}
+    {
+      "ticker": "4385.T",
+      "source": "https://about.mercari.com/en/ir/",
+      "finding": "IR access returns HTTP 403. Alternative Japanese IRpocket search returned prior-year reports only; November 4 candidate withheld."
+    },
+    {
+      "ticker": "BA.L",
+      "source": "https://investors.baesystems.com/financial-calendar",
+      "finding": "Current calendar lists July 30 results and December dividend; no November 2026 trading-update date. November 12 entry belongs to 2025."
+    },
+    {
+      "ticker": "EZJ.L",
+      "source": "https://corporate.easyjet.com/investors/financial-calendar/",
+      "finding": "Calendar/results pages expose empty dynamic content. Direct network fetch also returned HTTP 403. Secondary November 25/December 1 conflict not resolved."
+    },
+    {
+      "ticker": "GAW.L",
+      "source": "https://investor.games-workshop.com/category/trading-statements",
+      "finding": "Official trading-statement archive checked; no current November 2026 release date established."
+    },
+    {
+      "ticker": "ITH.L",
+      "source": "https://investors.ithacaenergy.com/news-events/financial-calendar",
+      "finding": "Issuer calendar explicitly states no upcoming events; latest H1 results August 19. Q3 date not established."
+    },
+    {
+      "ticker": "MNG.L",
+      "source": "https://www.mandg.com/investors/financial-calendar",
+      "finding": "Issuer calendar and IR return HTTP 403; LSE half-year release did not provide November date. Secondary November 5 candidate withheld."
+    },
+    {
+      "ticker": "PCT.L",
+      "source": "https://www.polarcapitaltechnologytrust.co.uk/Corporate-Information/Document-Library/",
+      "finding": "Official site returns generic dynamic shell across key information and document library. Exact next results date unverified; do not substitute Polar Capital Holdings calendar."
+    },
+    {
+      "ticker": "PRU.L",
+      "source": "https://www.prudentialplc.com/en/investors/financial-calendar/",
+      "finding": "Reopened calendar only exposes August results. Earlier November candidate not reproducible; held pending primary confirmation. Do not confuse Prudential Financial US."
+    },
+    {
+      "ticker": "SMT.L",
+      "source": "https://www.scottishmortgage.com/en/uk/individual-investors/frequently-asked-questions",
+      "finding": "Issuer confirms results in May and November but no exact November 2026 date retrieved from documents/events; November 24 investor event is not earnings."
+    }
+  ],
+  "reviewedNoVerifiedNovemberEvent": [
+    {
+      "ticker": "ALW.L",
+      "source": "https://www.alliancewitan.com/investor-information/events",
+      "finding": "Calendar reviewed; no November earnings date listed. Absence is not proof of no unscheduled updates."
+    },
+    {
+      "ticker": "FCIT.L",
+      "source": "https://www.fandc.com/fund-updates/",
+      "finding": "Issuer key dates specify March final and July half-year announcements; November is a quarterly dividend month."
+    },
+    {
+      "ticker": "PSH.L",
+      "source": "https://pershingsquareholdings.com/materials/",
+      "finding": "November 2 is a portfolio review, November 3 monthly NAV. Excluded from earnings calendar; distinguish PSH from Pershing Square Inc. NYSE:PS."
+    },
+    {
+      "ticker": "SDLF.L",
+      "source": "https://www.standardlifeplc.com/news-and-views/press-releases/article-page/2026-half-year-results",
+      "finding": "Issuer lists November 30 Capital Markets Update, outside November 2–29 and not a results publication."
+    }
   ]
 }

@@ -1940,5 +1940,212 @@
     "source": "https://www.severntrent.com/content/dam/stw-plc/fy-results-26/severn-trent-plc-results-for-the-year-to-31-march-2026.pdf",
     "verifiedOn": "2026-11-04",
     "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "AV.L",
+    "name": "Aviva — Q3 trading update",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.aviva.com/investors/events/2026/q3-2026-update/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "MTLN.L",
+    "name": "Metlen — nine-month trading update",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.metlen.com/investor-relations/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "BBY.L",
+    "name": "Balfour Beatty — trading update",
+    "date": "2026-11-24",
+    "session": "other",
+    "source": "https://www.balfourbeatty.com/investors/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "DCC.L",
+    "name": "DCC Energy — interim results",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.dccenergy.com/investors/shareholder-information/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "CCEP.L",
+    "name": "Coca-Cola Europacific Partners — Q3 trading update",
+    "date": "2026-11-03",
+    "session": "other",
+    "source": "https://www.cocacolaep.com/news-and-stories/ccep-q3-2026-trading-update/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "EDV.L",
+    "name": "Endeavour Mining — Q3 results",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.endeavourmining.com/disclosure-portal/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "EXPN.L",
+    "name": "Experian — half-yearly financial report",
+    "date": "2026-11-18",
+    "session": "other",
+    "source": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "KGF.L",
+    "name": "Kingfisher — Q3 trading update",
+    "date": "2026-11-24",
+    "session": "other",
+    "source": "https://www.kingfisher.com/investors/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "LGEN.L",
+    "name": "Legal & General — quarterly trading update",
+    "date": "2026-11-16",
+    "session": "other",
+    "source": "https://group.legalandgeneral.com/investors/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "MRO.L",
+    "name": "Melrose — trading update",
+    "date": "2026-11-18",
+    "session": "other",
+    "source": "https://www.melroseplc.net/investors/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "CRDA.L",
+    "name": "Croda — Q3 sales update",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.croda.com/en-gb/investors/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "DPLM.L",
+    "name": "Diploma — preliminary results",
+    "date": "2026-11-17",
+    "session": "other",
+    "source": "https://www.diplomaplc.com/investors/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "CTEC.L",
+    "name": "Convatec — ten-month trading update",
+    "date": "2026-11-18",
+    "session": "other",
+    "source": "https://www.investegate.eu/announcement/rns/convatec-group--ctec/further-re-interim-results-for-first-half-of-2026/9704209",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "INVP.L",
+    "name": "Investec — interim results",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://uk.advfn.com/stock-market/london/investec-INVP/share-news/Investec-PLC-Pre-Close-Trading-Statement/99334086",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "NXT.L",
+    "name": "Next — Q3 trading statement",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.nextplc.co.uk/investors",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "ICG.L",
+    "name": "ICG — half-year results",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.icgam.com/shareholders-and-debtholders/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "BGEO.L",
+    "name": "Lion Finance — Q3 and nine-month results",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.lse.co.uk/rns/notice-of-results-d4reyp98oluz7iy.html",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "SPX.L",
+    "name": "Spirax — trading update",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.spiraxgroup.com/en/investors/investment-case/events-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "WEIR.L",
+    "name": "Weir — Q3 interim management statement",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.global.weir/pt-BR/investors/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "JD.L",
+    "name": "JD Sports — Q3 trading statement",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://www.jdplc.com/?p=8172",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "RR.L",
+    "name": "Rolls-Royce — trading update",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.rolls-royce.com/investors/financial-calendar.aspx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "LAND.L",
+    "name": "Landsec — half-year results",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.londonstockexchange.com/en/news/article/LAND/confirmation-of-half-year-results-date/17828664",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "LMP.L",
+    "name": "LondonMetric — half-year results",
+    "date": "2026-11-24",
+    "session": "other",
+    "source": "https://www.londonmetric.com/news-and-media/press-release/2026/26%2010%2029%20trading%20update",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
   }
 ]
