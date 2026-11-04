@@ -248,5 +248,1589 @@
     "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
     "verifiedOn": "2026-11-04",
     "evidence": "Company report publication date confirmed; release session not established."
+  },
+  {
+    "ticker": "6479.T",
+    "name": "MINEBEA MITSUMI INC.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6525.T",
+    "name": "KOKUSAI ELECTRIC CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6645.T",
+    "name": "OMRON CORP.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6724.T",
+    "name": "SEIKO EPSON CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6753.T",
+    "name": "SHARP CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6758.T",
+    "name": "SONY GROUP CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6841.T",
+    "name": "YOKOGAWA ELECTRIC CORP.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6963.T",
+    "name": "ROHM CO., LTD.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6971.T",
+    "name": "KYOCERA CORP.",
+    "date": "2026-11-02",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6976.T",
+    "name": "TAIYO YUDEN CO., LTD.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7752.T",
+    "name": "RICOH CO., LTD.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7201.T",
+    "name": "NISSAN MOTOR CO., LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7202.T",
+    "name": "ISUZU MOTORS LTD.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7203.T",
+    "name": "TOYOTA MOTOR CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7211.T",
+    "name": "MITSUBISHI MOTORS CORP.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7261.T",
+    "name": "MAZDA MOTOR CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7267.T",
+    "name": "HONDA MOTOR CO., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7269.T",
+    "name": "SUZUKI MOTOR CORP.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7270.T",
+    "name": "SUBARU CORP.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7272.T",
+    "name": "YAMAHA MOTOR CO., LTD.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4543.T",
+    "name": "TERUMO CORP.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7731.T",
+    "name": "NIKON CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7733.T",
+    "name": "OLYMPUS CORP.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2432.T",
+    "name": "DENA CO., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "3659.T",
+    "name": "NEXON CO., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4689.T",
+    "name": "LY CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4704.T",
+    "name": "TREND MICRO INC.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7974.T",
+    "name": "NINTENDO CO., LTD.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9432.T",
+    "name": "NTT, INC.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9433.T",
+    "name": "KDDI CORP.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9434.T",
+    "name": "SOFTBANK CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9984.T",
+    "name": "SOFTBANK GROUP CORP.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5831.T",
+    "name": "SHIZUOKA FINANCIAL GROUP, INC.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7186.T",
+    "name": "YOKOHAMA FINANCIAL GROUP, INC.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8304.T",
+    "name": "AOZORA BANK, LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8306.T",
+    "name": "MITSUBISHI UFJ FINANCIAL GROUP, INC.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8308.T",
+    "name": "RESONA HOLDINGS, INC.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8309.T",
+    "name": "SUMITOMO MITSUI TRUST GROUP, INC.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8316.T",
+    "name": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8331.T",
+    "name": "THE CHIBA BANK, LTD.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8354.T",
+    "name": "FUKUOKA FINANCIAL GROUP, INC.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8411.T",
+    "name": "MIZUHO FINANCIAL GROUP, INC.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8253.T",
+    "name": "CREDIT SAISON CO., LTD.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8591.T",
+    "name": "ORIX CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8630.T",
+    "name": "SOMPO HOLDINGS, INC.",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8725.T",
+    "name": "MS&AD INSURANCE GROUP HOLDINGS, INC.",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8750.T",
+    "name": "DAIICHI LIFE GROUP, INC.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8766.T",
+    "name": "TOKIO MARINE HOLDINGS, INC.",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8795.T",
+    "name": "T&D HOLDINGS, INC.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1332.T",
+    "name": "NISSUI CORP.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2269.T",
+    "name": "MEIJI HOLDINGS CO., LTD.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2282.T",
+    "name": "NH FOODS LTD.",
+    "date": "2026-11-02",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2501.T",
+    "name": "SAPPORO BREWERIES LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2502.T",
+    "name": "ASAHI GROUP HOLDINGS, LTD.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2503.T",
+    "name": "KIRIN HOLDINGS CO., LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2801.T",
+    "name": "KIKKOMAN CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2802.T",
+    "name": "AJINOMOTO CO., INC.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2871.T",
+    "name": "NICHIREI CORP.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4151.T",
+    "name": "KYOWA KIRIN CO., LTD.",
+    "date": "2026-11-02",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4503.T",
+    "name": "ASTELLAS PHARMA INC.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4523.T",
+    "name": "EISAI CO., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "3099.T",
+    "name": "ISETAN MITSUKOSHI HOLDINGS LTD.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7532.T",
+    "name": "PAN PACIFIC INTERNATIONAL HOLDINGS CORP.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8252.T",
+    "name": "MARUI GROUP CO., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9843.T",
+    "name": "NITORI HOLDINGS CO., LTD.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "2413.T",
+    "name": "M3, INC.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4324.T",
+    "name": "DENTSU GROUP INC.",
+    "date": "2026-11-16",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4751.T",
+    "name": "CYBERAGENT, INC.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4755.T",
+    "name": "RAKUTEN GROUP, INC.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6098.T",
+    "name": "RECRUIT HOLDINGS CO., LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6178.T",
+    "name": "JAPAN POST HOLDINGS CO., LTD.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9735.T",
+    "name": "SECOM CO., LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1605.T",
+    "name": "INPEX CORP.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "3401.T",
+    "name": "TEIJIN LTD.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "3402.T",
+    "name": "TORAY INDUSTRIES, INC.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "3861.T",
+    "name": "OJI HOLDINGS CORP.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "3405.T",
+    "name": "KURARAY CO., LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "3407.T",
+    "name": "ASAHI KASEI CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4004.T",
+    "name": "RESONAC HOLDINGS CORP.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4005.T",
+    "name": "SUMITOMO CHEMICAL CO., LTD.",
+    "date": "2026-11-02",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4021.T",
+    "name": "NISSAN CHEMICAL CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4042.T",
+    "name": "TOSOH CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4061.T",
+    "name": "DENKA CO., LTD.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4183.T",
+    "name": "MITSUI CHEMICALS, INC.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4188.T",
+    "name": "MITSUBISHI CHEMICAL GROUP CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4208.T",
+    "name": "UBE CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4452.T",
+    "name": "KAO CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4901.T",
+    "name": "FUJIFILM HOLDINGS CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "4911.T",
+    "name": "SHISEIDO CO., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5019.T",
+    "name": "IDEMITSU KOSAN CO., LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5020.T",
+    "name": "ENEOS HOLDINGS, INC.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5101.T",
+    "name": "THE YOKOHAMA RUBBER CO., LTD.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5108.T",
+    "name": "BRIDGESTONE CORP.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5201.T",
+    "name": "AGC INC.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5233.T",
+    "name": "TAIHEIYO CEMENT CORP.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5301.T",
+    "name": "TOKAI CARBON CO., LTD.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5401.T",
+    "name": "NIPPON STEEL CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5406.T",
+    "name": "KOBE STEEL, LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5411.T",
+    "name": "JFE HOLDINGS, INC.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "3436.T",
+    "name": "SUMCO CORP.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5016.T",
+    "name": "JX ADVANCED METALS CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5706.T",
+    "name": "MITSUI KINZOKU CO., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5711.T",
+    "name": "MITSUBISHI MATERIALS CORP.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5713.T",
+    "name": "SUMITOMO METAL MINING CO., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5714.T",
+    "name": "DOWA HOLDINGS CO., LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5801.T",
+    "name": "FURUKAWA ELECTRIC CO., LTD.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5803.T",
+    "name": "FUJIKURA LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8001.T",
+    "name": "ITOCHU CORP.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8002.T",
+    "name": "MARUBENI CORP.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8031.T",
+    "name": "MITSUI & CO., LTD.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8053.T",
+    "name": "SUMITOMO CORP.",
+    "date": "2026-11-02",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8058.T",
+    "name": "MITSUBISHI CORP.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1721.T",
+    "name": "COMSYS HOLDINGS CORP.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1801.T",
+    "name": "TAISEI CORP.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1802.T",
+    "name": "OBAYASHI CORP.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1803.T",
+    "name": "SHIMIZU CORP.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1808.T",
+    "name": "HASEKO CORP.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1812.T",
+    "name": "KAJIMA CORP.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1925.T",
+    "name": "DAIWA HOUSE IND. CO., LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "1963.T",
+    "name": "JGC HOLDINGS CORP.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "5631.T",
+    "name": "THE JAPAN STEEL WORKS, LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6103.T",
+    "name": "OKUMA CORP.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6113.T",
+    "name": "AMADA CO., LTD.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6273.T",
+    "name": "SMC CORP.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6361.T",
+    "name": "EBARA CORP.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "6367.T",
+    "name": "DAIKIN INDUSTRIES, LTD.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7011.T",
+    "name": "MITSUBISHI HEAVY IND., LTD.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7013.T",
+    "name": "IHI CORP.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7012.T",
+    "name": "KAWASAKI HEAVY IND., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7911.T",
+    "name": "TOPPAN HOLDINGS INC.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7912.T",
+    "name": "DAI NIPPON PRINTING CO., LTD.",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "7951.T",
+    "name": "YAMAHA CORP.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "3289.T",
+    "name": "TOKYU FUDOSAN HOLDINGS CORP.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8801.T",
+    "name": "MITSUI FUDOSAN CO., LTD.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8802.T",
+    "name": "MITSUBISHI ESTATE CO., LTD.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8804.T",
+    "name": "TOKYO TATEMONO CO., LTD.",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "8830.T",
+    "name": "SUMITOMO REALTY & DEVELOPMENT CO., LTD.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9001.T",
+    "name": "TOBU RAILWAY CO., LTD.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9005.T",
+    "name": "TOKYU CORP.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9007.T",
+    "name": "ODAKYU ELECTRIC RAILWAY CO., LTD.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9008.T",
+    "name": "KEIO CORP.",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9009.T",
+    "name": "KEISEI ELECTRIC RAILWAY CO., LTD.",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9021.T",
+    "name": "WEST JAPAN RAILWAY CO.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9064.T",
+    "name": "YAMATO HOLDINGS CO., LTD.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9147.T",
+    "name": "NIPPON EXPRESS HOLDINGS, INC.",
+    "date": "2026-11-11",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9101.T",
+    "name": "NIPPON YUSEN K.K.",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9104.T",
+    "name": "MITSUI O.S.K.LINES, LTD.",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9107.T",
+    "name": "KAWASAKI KISEN KAISHA, LTD.",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "9201.T",
+    "name": "JAPAN AIRLINES CO., LTD.",
+    "date": "2026-11-02",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+    "verifiedOn": "2026-11-04",
+    "evidence": "JPX official issuer-submitted earnings schedule as of October 29; no release session supplied; schedule may change."
+  },
+  {
+    "ticker": "688235.SS",
+    "name": "BeiGene, Ltd. — Q3 report filing",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official SSE Q3 periodic-report appointment; latest revision used. Filing date may follow earnings press release."
+  },
+  {
+    "ticker": "688347.SS",
+    "name": "Hua Hong Grace Semiconductor Limited — Q3 report filing",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official SSE Q3 periodic-report appointment; latest revision used. Filing date may follow earnings press release."
+  },
+  {
+    "ticker": "688981.SS",
+    "name": "Semiconductor Manufacturing International Corporation — Q3 report filing",
+    "date": "2026-11-13",
+    "session": "other",
+    "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official SSE Q3 periodic-report appointment; latest revision used. Filing date may follow earnings press release."
+  },
+  {
+    "ticker": "ABF.L",
+    "name": "Associated British Foods",
+    "date": "2026-11-03",
+    "session": "other",
+    "source": "https://www.abf.co.uk/media/news/2026/2026-annual-results-announcement",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "MKS.L",
+    "name": "Marks & Spencer",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://corporate.marksandspencer.com/newsroom/press-releases/interim-results-26-weeks-ended-26-september-2026",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "BT-A.L",
+    "name": "BT Group",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.bt.com/about/investors/financial-reporting-and-news/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "NG.L",
+    "name": "National Grid",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.nationalgrid.com/investors/events/event-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "IAG.L",
+    "name": "International Airlines Group",
+    "date": "2026-11-06",
+    "session": "other",
+    "source": "https://www.cnmv.es/Portal/otra-informacion-relevante/resultado-oir?lang=gl&nif=A85845535",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "IMB.L",
+    "name": "Imperial Brands",
+    "date": "2026-11-17",
+    "session": "other",
+    "source": "https://www.imperialbrandsplc.com/investor-hub/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "BRBY.L",
+    "name": "Burberry",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.burberryplc.com/investors/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "SSE.L",
+    "name": "SSE",
+    "date": "2026-11-18",
+    "session": "other",
+    "source": "https://www.sse.com/investors/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "VOD.L",
+    "name": "Vodafone",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://www.vodafone.com/investors/performance-and-reports/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "SGE.L",
+    "name": "Sage Group",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://www.sage.com/investors/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "HLMA.L",
+    "name": "Halma",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://www.halma.com/investors/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "CPG.L",
+    "name": "Compass Group",
+    "date": "2026-11-24",
+    "session": "other",
+    "source": "https://www.compass-group.com/en/investors.html",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "UU.L",
+    "name": "United Utilities",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.unitedutilities.com/corporate/investors/financial-news/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "AUTO.L",
+    "name": "Autotrader Group",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://plc.autotrader.co.uk/investors/results-centre/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "BLND.L",
+    "name": "British Land",
+    "date": "2026-11-18",
+    "session": "other",
+    "source": "https://www.britishland.com/investors/financial-calendar/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "EN.PA",
+    "name": "Bouygues",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.bouygues.com/en/calendar-contacts/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "ENX.PA",
+    "name": "Euronext",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.euronext.com/en/investor-relations/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "MT.AS",
+    "name": "ArcelorMittal",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://corporate.arcelormittal.com/investors/financial-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "ENGI.PA",
+    "name": "Engie",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.engie.com/en/investors/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "VIE.PA",
+    "name": "Veolia — nine-month key figures",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.veolia.com/sites/g/files/dvc4206/files/document/2026/03/Finance_Veolia_2025_full_year_results_presentation_0.pdf",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "FGR.PA",
+    "name": "Eiffage — Q3 revenue",
+    "date": "2026-11-12",
+    "session": "other",
+    "source": "https://www.eiffage.com/en/finance/agenda",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "LR.PA",
+    "name": "Legrand",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.legrand.com/fr/investisseurs-et-actionnaires/calendrier-financier",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "033780.KS",
+    "name": "KT&G",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://en.ktng.com/ir/overview",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "688235.SS",
+    "name": "BeOne Medicines — Q3 earnings release",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://ir.beonemedicines.com/news/beone-medicines-to-announce-third-quarter-2026-financial-results-on-november-5/66539b45-e525-4cba-abc6-8b974808de2a",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
   }
 ]

@@ -24,8 +24,8 @@ for(const e of events){
 const changed=JSON.stringify(data)!==beforeEvents;
 if(changed){
  // Explicit verification date from reviewed evidence, never the machine clock.
- data.updatedAt='2026-11-04 15:37 (Berlin)';
- data.source='company IR; verified dates, partial earnings coverage';
+ data.updatedAt='2026-11-04 20:20 (Berlin)';
+ data.source='official exchange schedules and company IR; verified dates, partial earnings coverage';
  html=html.replace(re,(_,a,b,c)=>a+JSON.stringify(data)+c);fs.writeFileSync(file,html);
 }
 console.log('Imported reviewed events; changed:',changed);

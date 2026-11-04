@@ -1,0 +1,884 @@
+{
+  "scope": "All 100 roster securities screened against HL November financial diary; this secondary calendar omits known issuer-confirmed events and is not a completeness certificate.",
+  "companies": [
+    {
+      "ticker": "III.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-13",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "ABDN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "ADM.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "AAF.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "ALW.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "AAL.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "ANTO.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "ABF.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-03",
+          "type": "Final results"
+        }
+      ]
+    },
+    {
+      "ticker": "AZN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "AUTO.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-05",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "AV.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "BAB.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-19",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "BA.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "BBY.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "BARC.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "BTRW.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-04",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "BP.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-03",
+          "type": "Quarter 3 results"
+        }
+      ]
+    },
+    {
+      "ticker": "BATS.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "BLND.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "BT-A.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "BNZL.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "BRBY.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "CNA.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "CCEP.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-03",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "CCH.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-04",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "CPG.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-24",
+          "type": "Final results"
+        }
+      ]
+    },
+    {
+      "ticker": "CCC.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "CTEC.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-18",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "CRDA.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "DCC.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "DGE.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-05",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "DPLM.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-17",
+          "type": "Final results"
+        }
+      ]
+    },
+    {
+      "ticker": "EZJ.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "EDV.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "EXPN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "FCIT.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "FRES.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "GAW.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "GLEN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "GSK.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "HLN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "HLMA.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-19",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "HSX.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-03",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "HWDN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-05",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "HSBA.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "ICG.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-11",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "IGG.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "IHG.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "IMI.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-05",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "IMB.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "INF.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "IAG.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-06",
+          "type": "Quarter 3 results"
+        }
+      ]
+    },
+    {
+      "ticker": "ITRK.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-24",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "INVP.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-19",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "ITH.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "JD.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-19",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "BGEO.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-04",
+          "type": "Quarter 3 results"
+        }
+      ]
+    },
+    {
+      "ticker": "KGF.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "LAND.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-13",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "LGEN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-16",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "LLOY.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "LMP.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-24",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "LSEG.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "MNG.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "MKS.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "MRO.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "MTLN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-05",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "NG.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-05",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "NWG.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "NXT.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-04",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "PSON.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "PSH.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "PCT.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "PRU.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "RKT.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "REL.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "RTO.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "RIO.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "RR.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "SGE.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-19",
+          "type": "Final results"
+        }
+      ]
+    },
+    {
+      "ticker": "SBRY.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "SMT.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "SGRO.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "SVT.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-18",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "SHEL.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "SMIN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-18",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "SN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-04",
+          "type": "Trading Announcements"
+        },
+        {
+          "date": "2026-11-04",
+          "type": "Quarter 3 results"
+        }
+      ]
+    },
+    {
+      "ticker": "SPX.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-11",
+          "type": "Trading Announcements"
+        }
+      ]
+    },
+    {
+      "ticker": "SSE.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-18",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "STAN.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "SDLF.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "STJ.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "TSCO.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "BBOX.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "ULVR.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "UU.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": [
+        {
+          "date": "2026-11-12",
+          "type": "Interim results"
+        }
+      ]
+    },
+    {
+      "ticker": "VOD.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "WEIR.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "WTB.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    },
+    {
+      "ticker": "WPP.L",
+      "checkedOn": "2026-11-04",
+      "source": "https://www.hl.co.uk/shares/financial-diary?month=11&year=2026",
+      "status": "secondary calendar screened; issuer confirmation required",
+      "candidates": []
+    }
+  ]
+}
