@@ -15,6 +15,9 @@
     ["HWDN.L", "Howden Joinery — trading update", "2026-11-05", "https://www.howdenjoinerygroupplc.com/investors/share-price/events-calendar.asp"]
   ],
   "outsideWindow": [
+    {"ticker":"6506.T","date":"2026-10-09","source":"https://www.yaskawa-global.com/ir/calendar","finding":"Half-year results published October 9; outside November window."},
+    {"ticker":"3697.T","date":"2026-10-15","source":"https://www.shiftinc.jp/news/fy2026-4q/","finding":"FY2026 results published October 15; November calendar event is AGM."},
+    {"ticker":"9602.T","date":"2026-10-15","source":"https://www.toho.co.jp/en/ir/calendar/","finding":"Q2 FY2/27 results October 15; next scheduled quarterly results January 14 2027."},
     {"ticker":"SAF.PA","date":"2026-10-23","source":"https://www.safran-group.com/pressroom/safran-reports-its-third-quarter-2026-revenue-2026-10-23","finding":"Q3 revenue outside November window; other events not excluded."},
     {"ticker":"SGO.PA","date":"2026-10-27","source":"https://www.saint-gobain.com/en/news/nine-month-2026-sales","finding":"Nine-month sales outside November window; other events not excluded."},
     {"ticker":"SU.PA","date":"2026-10-16","source":"https://www.se.com/ww/en/about-us/investor-relations/financial-calendar-and-events/","finding":"Q3 revenue outside November window; other events not excluded."},
