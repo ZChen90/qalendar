@@ -1832,5 +1832,23 @@
     "source": "https://ir.beonemedicines.com/news/beone-medicines-to-announce-third-quarter-2026-financial-results-on-november-5/66539b45-e525-4cba-abc6-8b974808de2a",
     "verifiedOn": "2026-11-04",
     "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
+  },
+  {
+    "ticker": "6326.T",
+    "name": "Kubota — Q3 results",
+    "date": "2026-11-09",
+    "session": "other",
+    "source": "https://www.kubota.co.jp/ir/",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer IR homepage explicitly schedules FY2026 Q3 results on November 9; release time unspecified."
+  },
+  {
+    "ticker": "7832.T",
+    "name": "Bandai Namco — Q2 FY2027.3 results",
+    "date": "2026-11-10",
+    "session": "other",
+    "source": "https://renewal.bandainamco.co.jp/en/ir/calendar/index.html",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar explicitly schedules Q2 FY2027.3 financial results on November 10; subject to change, release time unspecified."
   }
 ]
