@@ -2,35 +2,45 @@
 
 Window: **2–29 November 2026**. KOSPI is independent of this work.
 
-Published additions: **23 FTSE 100 events**, with issuer/exchange or issuer-distributed regulatory sources. No release session was inferred from a presentation time.
+This follow-up adds five verified release entries: easyJet November 25, M&G November 5, Mercari November 12, Hua Hong November 5 and SMIC November 12. Three later SSE filing entries were removed from the earnings calendar and retained in the filing audit. BeOne's November 5 release remains published.
 
-| Saved roster | Securities screened | Verified November events | Other findings |
+| Saved roster | Securities screened | Companies with verified November releases | Other findings |
 |---|---:|---:|---|
-| SSE Composite | 2,233 | 3 filing events | 2,230 outside-window Q3 issuer filing records |
-| FTSE 100 | 100 | 48 | 40 outside-window periodic releases; 4 reviewed without a verified November earnings event; 8 unresolved dates |
+| SSE Composite | 2,233 | 3 | 2,229 actual issuer filing records before the window; Allgens delayed with exact date unknown |
+| FTSE 100 | 100 | 50 | 41 outside-window periodic releases; 5 reviewed without a verified November earnings event; 4 unresolved |
 | CAC 40 | 40 | 7 | 33 outside-window periodic releases |
-| Nikkei 225 | 225 | 151 | 73 outside-window schedule/issuer results; Mercari unresolved |
+| Nikkei 225 | 225 | 152 | 73 outside-window schedule/issuer results |
 
-Machine-readable evidence for every security is in `four-index-audit-20261104.json`. This is complete **screening of the saved rosters**, not certification that every possible November release is known. FTSE/CAC rosters retain their documented secondary-source limitation. An October result does not exclude an additional trading update in November.
+Machine-readable evidence for every security is in `four-index-audit-20261104.json`. This is screening of the saved rosters, not certification that every possible November release is known. FTSE/CAC rosters retain their documented secondary-source limitation. An October result does not exclude an additional trading update in November.
 
-## Source/date exceptions
+## Nine-company follow-up
 
-- **Mercari (4385.T):** issuer IR returns HTTP 403; alternative IRpocket search returned prior-year reports. Unverified November 4 date withheld.
-- **easyJet (EZJ.L):** issuer calendar and results pages expose empty dynamic content; direct retrieval also returned HTTP 403. Secondary November 25 / December 1 dates conflict.
-- **M&G (MNG.L):** issuer calendar and IR return HTTP 403; November 5 has secondary support only.
-- **Polar Capital Technology Trust (PCT.L):** issuer pages return a generic dynamic shell, including its document library. Polar Capital Holdings is a different company and its date must not be substituted.
-- **Prudential plc (PRU.L):** reopened issuer calendar exposes August results only; earlier November candidate could not be reproduced. Do not substitute US Prudential Financial.
-- **Scottish Mortgage (SMT.L):** issuer confirms May/November reporting months but an exact November 2026 publication date was not found. November 24 investor event excluded.
-- **BAE Systems (BA.L):** current calendar has July results and a December dividend; its November 12 update is explicitly from 2025.
-- **Ithaca (ITH.L):** current issuer calendar explicitly lists no upcoming events; no exact Q3 date established.
-- **Games Workshop (GAW.L):** official trading-statement archive checked; no current November publication date established.
+- **easyJet:** rendered official calendar confirms November 25 FY26 results. Earlier empty fetch did not reflect the rendered page.
+- **M&G:** issuer calendar redirects to group.mandg.com; rendered page confirms November 5 Q3 trading update.
+- **Mercari:** official IR-linked October 2 notice confirms November 12, with materials disclosed after 15:30 JST. There is no Q1 presentation. November 4 candidate rejected.
+- **Games Workshop:** official calendar lists January 12 2027 half-year results. November 27 is a dividend payment. Unscheduled trading updates remain possible.
+- **Polar Capital Technology Trust:** 2026 annual report, PDF page 143, schedules half-year results in December. Exact December day remains unspecified; no November earnings event established.
+- **BAE Systems:** current calendar's November 12 update belongs to 2025; alternative official-domain search and browser calendar yielded no current date.
+- **Ithaca:** rendered issuer calendar explicitly has no upcoming events. Official August half-year release and LSE release did not establish a Q3 date.
+- **Prudential plc:** rendered calendar lacks a November event; official stock-exchange page feed was empty. Alternative HKEX and company-news searches did not establish release date. US Prudential Financial dates must not be substituted.
+- **Scottish Mortgage:** issuer document library and LSE release checked; latest half-year release is from November 2025. Reporting month is known, exact November 2026 date remains unverified.
 
-Centrica and BAT have outside-window half-year results recorded but no verified later trading-update date. BAT's current calendar also returned HTTP 403. These findings must not be interpreted as proof that they have no November update.
+The last four remain genuine source/date blockers. Centrica and BAT also have no independently verified later trading-update date, despite outside-window half-year records.
 
-## Exchange-schedule limits
+## SSE earliest-release review
 
-SSE: all 2,233 securities now have issuer-level Q3 filing records. The final 37 B-share rows are linked to A-share records by exact normalized issuer name in the official constituent roster. This does not independently establish the B-share publication time or the issuer's first earnings-release time. Separate releases remain possible.
+Issuer release notices supersede later filing appointments for the earnings calendar:
 
-Nikkei: September, August, and next-day JPX schedules were reconciled without date conflicts. Issuer follow-ups resolve Kubota, Bandai Namco, and Sekisui House; Mercari remains unresolved. Schedule files retain source URLs and hashes in the audit data.
+| Issuer | Verified scheduled earnings release | Later SSE filing appointment retained only in audit |
+|---|---|---|
+| BeOne / 688235.SS | November 5; US premarket, Chinese session unconfirmed | November 10 |
+| Hua Hong / 688347.SS | November 5 after trading hours | November 6 |
+| SMIC / 688981.SS | November 12 after trading hours | November 13 |
 
-The date exceptions above need accessible primary evidence before adding calendar entries. They do not prevent publication of the verified events.
+Hua Hong and SMIC dates come from original issuer notices in CNINFO's official disclosure archive. Their briefing times are not used as earnings-release times.
+
+**New exception: Allgens Medical / 688613.SS.** The October 31 appointment has no actual filing date. Official notice 2026-049 postpones Q3 reporting until before December 31 without an exact date; notice 2026-052 on November 4 confirms the delay. It is now unresolved, not classified as an October release. No guessed date is published.
+
+The other 2,229 securities have actual issuer filing dates before November 2, so their initial Q3 results cannot first appear in this November window. This is an upper bound, not verification of each exact historical earliest release date. The 37 B-share rows inherit issuer evidence via exact normalized A/B issuer-name matches; separate B-share publication timestamps remain unverified. See `sse-earliest-release-audit-20261104.json` for explicit per-security bounds, unknowns and sources. Later trading updates remain possible.
+
+Nikkei: September, August and next-day JPX schedules plus issuer follow-ups are reconciled. Mercari's new primary notice closes the final date exception in the saved Nikkei roster screening.

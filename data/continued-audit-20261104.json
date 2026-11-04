@@ -203,6 +203,36 @@
       "LondonMetric — half-year results",
       "2026-11-24",
       "https://www.londonmetric.com/news-and-media/press-release/2026/26%2010%2029%20trading%20update"
+    ],
+    [
+      "EZJ.L",
+      "easyJet — FY26 results",
+      "2026-11-25",
+      "https://corporate.easyjet.com/investors/financial-calendar/"
+    ],
+    [
+      "MNG.L",
+      "M&G — Q3 trading update",
+      "2026-11-05",
+      "https://group.mandg.com/investors/financial-calendar"
+    ],
+    [
+      "4385.T",
+      "Mercari — FY2027.6 Q1 results",
+      "2026-11-12",
+      "https://storage.googleapis.com/prd-about-asset-2020/2026/10/9edb2c36-fy2027.6-q1-financial-results-announcement.pdf"
+    ],
+    [
+      "688347.SS",
+      "Hua Hong Grace Semiconductor — Q3 earnings release",
+      "2026-11-05",
+      "https://static.cninfo.com.cn/finalpage/2026-10-22/1225614518.PDF"
+    ],
+    [
+      "688981.SS",
+      "SMIC — Q3 earnings release",
+      "2026-11-12",
+      "https://static.cninfo.com.cn/finalpage/2026-10-31/1225648374.PDF"
     ]
   ],
   "outsideWindow": [
@@ -667,53 +697,39 @@
       "date": "2026-07-30",
       "source": "https://www.bat.com/DO72TJQU.html",
       "finding": "Latest half-year results. Current financial-calendar fetch returns 403; later trading-update date remains unconfirmed. Other releases not excluded."
+    },
+    {
+      "ticker": "GAW.L",
+      "date": "2027-01-12",
+      "source": "https://investor.games-workshop.com/financial-calendar",
+      "finding": "Issuer calendar explicitly lists next half-year results January 12 2027; November 27 is dividend payment. Unscheduled trading updates remain possible."
     }
   ],
   "unresolved": [
     {
-      "ticker": "4385.T",
-      "source": "https://about.mercari.com/en/ir/",
-      "finding": "IR access returns HTTP 403. Alternative Japanese IRpocket search returned prior-year reports only; November 4 candidate withheld."
-    },
-    {
       "ticker": "BA.L",
       "source": "https://investors.baesystems.com/financial-calendar",
-      "finding": "Current calendar lists July 30 results and December dividend; no November 2026 trading-update date. November 12 entry belongs to 2025."
-    },
-    {
-      "ticker": "EZJ.L",
-      "source": "https://corporate.easyjet.com/investors/financial-calendar/",
-      "finding": "Calendar/results pages expose empty dynamic content. Direct network fetch also returned HTTP 403. Secondary November 25/December 1 conflict not resolved."
-    },
-    {
-      "ticker": "GAW.L",
-      "source": "https://investor.games-workshop.com/category/trading-statements",
-      "finding": "Official trading-statement archive checked; no current November 2026 release date established."
+      "finding": "Current calendar lists July 30 results and December dividend; no November 2026 trading-update date. November 12 entry belongs to 2025. Alternative official-domain search found the 2025 annual report but no exact November 2026 update date; browser calendar returned blank."
     },
     {
       "ticker": "ITH.L",
       "source": "https://investors.ithacaenergy.com/news-events/financial-calendar",
-      "finding": "Issuer calendar explicitly states no upcoming events; latest H1 results August 19. Q3 date not established."
-    },
-    {
-      "ticker": "MNG.L",
-      "source": "https://www.mandg.com/investors/financial-calendar",
-      "finding": "Issuer calendar and IR return HTTP 403; LSE half-year release did not provide November date. Secondary November 5 candidate withheld."
-    },
-    {
-      "ticker": "PCT.L",
-      "source": "https://www.polarcapitaltechnologytrust.co.uk/Corporate-Information/Document-Library/",
-      "finding": "Official site returns generic dynamic shell across key information and document library. Exact next results date unverified; do not substitute Polar Capital Holdings calendar."
+      "finding": "Issuer calendar explicitly states no upcoming events; latest H1 results August 19. Q3 date not established. Rendered browser calendar independently confirms no upcoming events. Official August 19 release and exchange release checked; no Q3 date established."
     },
     {
       "ticker": "PRU.L",
       "source": "https://www.prudentialplc.com/en/investors/financial-calendar/",
-      "finding": "Reopened calendar only exposes August results. Earlier November candidate not reproducible; held pending primary confirmation. Do not confuse Prudential Financial US."
+      "finding": "Reopened calendar only exposes August results. Earlier November candidate not reproducible; held pending primary confirmation. Do not confuse Prudential Financial US. Browser calendar also lacks November event; issuer stock-exchange page embeds an empty feed. Alternative HKEX/company-news search did not establish release date. Secondary call calendar risks confusion with US Prudential Financial."
     },
     {
       "ticker": "SMT.L",
       "source": "https://www.scottishmortgage.com/en/uk/individual-investors/frequently-asked-questions",
-      "finding": "Issuer confirms results in May and November but no exact November 2026 date retrieved from documents/events; November 24 investor event is not earnings."
+      "finding": "Issuer confirms results in May and November but no exact November 2026 date retrieved from documents/events; November 24 investor event is not earnings. Alternative LSE final-results release and current issuer document library checked; latest half-year release remains November 7 2025. No exact November 2026 date verified."
+    },
+    {
+      "ticker": "688613.SS",
+      "source": "https://static.cninfo.com.cn/finalpage/2026-10-31/1225650661.PDF",
+      "finding": "Allgens Medical notice 2026-049 explicitly delays Q3 report originally scheduled October 31 to before December 31 2026; no exact date. November 4 notice 2026-052 confirms delay. Previous outside-window classification corrected; November release cannot be excluded."
     }
   ],
   "reviewedNoVerifiedNovemberEvent": [
@@ -736,6 +752,11 @@
       "ticker": "SDLF.L",
       "source": "https://www.standardlifeplc.com/news-and-views/press-releases/article-page/2026-half-year-results",
       "finding": "Issuer lists November 30 Capital Markets Update, outside November 2–29 and not a results publication."
+    },
+    {
+      "ticker": "PCT.L",
+      "source": "https://www.pctannualhighlights.co.uk/static/literature/PCTT_Annual_Report_2026.pdf",
+      "finding": "2026 annual report PDF page 143 Financial Calendar: half-year results in December, full-year results in July. Exact December day not specified; no November earnings event established."
     }
   ]
 }

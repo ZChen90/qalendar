@@ -106,3 +106,7 @@ The reviewed constituent snapshot and per-company earnings checklist are in `dat
 Membership coverage is separate from earnings coverage. The full four-week earnings calendar for every constituent has NOT been verified. Every company checklist records that limitation; empty dates do not establish that no results are due. This publication corrects known omissions and exposes the remaining audit work rather than claiming comprehensive or real-time coverage.
 
 The scripts in `scripts/` support this manually reviewed November 4 snapshot. Fetching new files alone is not verification; do not import a new snapshot or advance freshness without reviewing evidence. Python roster ingestion uses xlrd for the official SSE spreadsheet.
+
+## Alternative-source follow-up — November 4, 2026, 21:10 Berlin
+
+Five release entries added and three later SSE filing entries removed from the earnings calendar. See `data/alternative-source-audit-20261104.json` for sources, evidence and PDF hashes, and `data/FOUR-INDEX-AUDIT-20261104.md` for the superseding audit summary. Original nine exceptions: five resolved for this window, four remain unresolved. Allgens Medical is a newly identified delayed SSE report with no exact date; its October 31 scheduled date is not evidence of actual publication. SSE historical first-disclosure dates are bounded by actual filings, not claimed as individually verified earliest dates.

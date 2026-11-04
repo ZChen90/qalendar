@@ -4744,8 +4744,10 @@
         {
           "Symbol": "EZJ.L",
           "Name": "EasyJet",
-          "earningsReview": "not reviewed for the full window",
-          "knownReleaseDates": []
+          "earningsReview": "at least one verified release; full-window completeness not certified",
+          "knownReleaseDates": [
+            "2026-11-25"
+          ]
         },
         {
           "Symbol": "EDV.L",
@@ -4930,8 +4932,10 @@
         {
           "Symbol": "MNG.L",
           "Name": "M&G",
-          "earningsReview": "not reviewed for the full window",
-          "knownReleaseDates": []
+          "earningsReview": "at least one verified release; full-window completeness not certified",
+          "knownReleaseDates": [
+            "2026-11-05"
+          ]
         },
         {
           "Symbol": "MKS.L",
@@ -5716,8 +5720,10 @@
         {
           "Symbol": "4385.T",
           "Name": "MERCARI, INC.",
-          "earningsReview": "not reviewed for the full window",
-          "knownReleaseDates": []
+          "earningsReview": "at least one verified release; full-window completeness not certified",
+          "knownReleaseDates": [
+            "2026-11-12"
+          ]
         },
         {
           "Symbol": "4689.T",
@@ -23071,8 +23077,10 @@
           "aliases": [
             "百济神州"
           ],
-          "earningsReview": "not reviewed for the full window",
-          "knownReleaseDates": []
+          "earningsReview": "at least one verified release; full-window completeness not certified",
+          "knownReleaseDates": [
+            "2026-11-05"
+          ]
         },
         {
           "Symbol": "688236.SS",
@@ -23890,8 +23898,10 @@
           "aliases": [
             "华虹宏力"
           ],
-          "earningsReview": "not reviewed for the full window",
-          "knownReleaseDates": []
+          "earningsReview": "at least one verified release; full-window completeness not certified",
+          "knownReleaseDates": [
+            "2026-11-05"
+          ]
         },
         {
           "Symbol": "688348.SS",
@@ -25519,7 +25529,7 @@
           "aliases": [
             "奥精医疗"
           ],
-          "earningsReview": "not reviewed for the full window",
+          "earningsReview": "Allgens Medical notice 2026-049 explicitly delays Q3 report originally scheduled October 31 to before December 31 2026; no exact date. November 4 notice 2026-052 confirms delay. Previous outside-window classification corrected; November release cannot be excluded.",
           "knownReleaseDates": []
         },
         {
@@ -26491,8 +26501,10 @@
           "aliases": [
             "中芯国际"
           ],
-          "earningsReview": "not reviewed for the full window",
-          "knownReleaseDates": []
+          "earningsReview": "at least one verified release; full-window completeness not certified",
+          "knownReleaseDates": [
+            "2026-11-12"
+          ]
         },
         {
           "Symbol": "689009.SS",

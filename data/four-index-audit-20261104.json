@@ -11,8 +11,9 @@
       "rosterQuality": "official roster",
       "total": 2233,
       "counts": {
-        "Q3 filing screened; other releases not excluded": 2230,
-        "verified November event": 3
+        "Q3 filing screened; other releases not excluded": 2229,
+        "verified November event": 3,
+        "unresolved date or source access": 1
       },
       "companies": [
         {
@@ -45297,15 +45298,6 @@
           "evidence": [
             {
               "ticker": "688235.SS",
-              "name": "BeiGene, Ltd. — Q3 report filing",
-              "date": "2026-11-10",
-              "session": "other",
-              "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
-              "verifiedOn": "2026-11-04",
-              "evidence": "Official SSE Q3 periodic-report appointment; latest revision used. Filing date may follow earnings press release."
-            },
-            {
-              "ticker": "688235.SS",
               "name": "BeOne Medicines — Q3 earnings release",
               "date": "2026-11-05",
               "session": "other",
@@ -47572,12 +47564,12 @@
           "evidence": [
             {
               "ticker": "688347.SS",
-              "name": "Hua Hong Grace Semiconductor Limited — Q3 report filing",
-              "date": "2026-11-06",
-              "session": "other",
-              "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
-              "verifiedOn": "2026-11-04",
-              "evidence": "Official SSE Q3 periodic-report appointment; latest revision used. Filing date may follow earnings press release."
+              "name": "Hua Hong Grace Semiconductor — Q3 earnings release",
+              "date": "2026-11-05",
+              "session": "post",
+              "source": "https://static.cninfo.com.cn/finalpage/2026-10-22/1225614518.PDF",
+              "evidence": "Issuer notice 2026-060 explicitly states Q3 results disclosed November 5 after trading hours; 17:00 briefing is separate. Supersedes November 6 filing-calendar entry for earnings purposes.",
+              "verifiedOn": "2026-11-04"
             }
           ]
         },
@@ -52084,25 +52076,12 @@
         {
           "ticker": "688613.SS",
           "name": "Allgens Medical Technology CO., LTD.",
-          "category": "Q3 filing screened; other releases not excluded",
+          "category": "unresolved date or source access",
           "evidence": [
             {
               "ticker": "688613.SS",
-              "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
-              "checkedOn": "2026-11-04",
-              "status": "Q3 filing outside window; other releases not excluded",
-              "date": "2026-10-31",
-              "appointment": {
-                "companyCode": "688613",
-                "publishDate3": "",
-                "publishDate1": "",
-                "publishYear": "2026",
-                "publishDate2": "",
-                "publishDate0": "2026-10-31",
-                "companyAbbr": "奥精医疗",
-                "actualDate": "",
-                "bulletinType": "L014"
-              }
+              "source": "https://static.cninfo.com.cn/finalpage/2026-10-31/1225650661.PDF",
+              "finding": "Allgens Medical notice 2026-049 explicitly delays Q3 report originally scheduled October 31 to before December 31 2026; no exact date. November 4 notice 2026-052 confirms delay. Previous outside-window classification corrected; November release cannot be excluded."
             }
           ]
         },
@@ -54788,12 +54767,12 @@
           "evidence": [
             {
               "ticker": "688981.SS",
-              "name": "Semiconductor Manufacturing International Corporation — Q3 report filing",
-              "date": "2026-11-13",
-              "session": "other",
-              "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
-              "verifiedOn": "2026-11-04",
-              "evidence": "Official SSE Q3 periodic-report appointment; latest revision used. Filing date may follow earnings press release."
+              "name": "SMIC — Q3 earnings release",
+              "date": "2026-11-12",
+              "session": "post",
+              "source": "https://static.cninfo.com.cn/finalpage/2026-10-31/1225648374.PDF",
+              "evidence": "Original issuer notice 2026-033 retrieved via CNINFO announcement API. Explicit release November 12 after trading hours; November 13 08:30 briefing is separate. Supersedes November 13 filing-calendar entry for earnings purposes.",
+              "verifiedOn": "2026-11-04"
             }
           ]
         },
@@ -55903,10 +55882,10 @@
       "rosterQuality": "secondary roster",
       "total": 100,
       "counts": {
-        "verified November event": 48,
-        "periodic release outside window; other releases not excluded": 40,
-        "reviewed; no verified November earnings event": 4,
-        "unresolved date or source access": 8
+        "verified November event": 50,
+        "periodic release outside window; other releases not excluded": 41,
+        "reviewed; no verified November earnings event": 5,
+        "unresolved date or source access": 4
       },
       "companies": [
         {
@@ -56087,7 +56066,7 @@
             {
               "ticker": "BA.L",
               "source": "https://investors.baesystems.com/financial-calendar",
-              "finding": "Current calendar lists July 30 results and December dividend; no November 2026 trading-update date. November 12 entry belongs to 2025."
+              "finding": "Current calendar lists July 30 results and December dividend; no November 2026 trading-update date. November 12 entry belongs to 2025. Alternative official-domain search found the 2025 annual report but no exact November 2026 update date; browser calendar returned blank."
             }
           ]
         },
@@ -56380,12 +56359,16 @@
         {
           "ticker": "EZJ.L",
           "name": "EasyJet",
-          "category": "unresolved date or source access",
+          "category": "verified November event",
           "evidence": [
             {
               "ticker": "EZJ.L",
+              "name": "easyJet — FY26 results",
+              "date": "2026-11-25",
+              "session": "other",
               "source": "https://corporate.easyjet.com/investors/financial-calendar/",
-              "finding": "Calendar/results pages expose empty dynamic content. Direct network fetch also returned HTTP 403. Secondary November 25/December 1 conflict not resolved."
+              "evidence": "Rendered official issuer calendar explicitly lists FY26 Results on 25 November 2026. Time not specified.",
+              "verifiedOn": "2026-11-04"
             }
           ]
         },
@@ -56449,12 +56432,13 @@
         {
           "ticker": "GAW.L",
           "name": "Games Workshop",
-          "category": "unresolved date or source access",
+          "category": "periodic release outside window; other releases not excluded",
           "evidence": [
             {
               "ticker": "GAW.L",
-              "source": "https://investor.games-workshop.com/category/trading-statements",
-              "finding": "Official trading-statement archive checked; no current November 2026 release date established."
+              "date": "2027-01-12",
+              "source": "https://investor.games-workshop.com/financial-calendar",
+              "finding": "Issuer calendar explicitly lists next half-year results January 12 2027; November 27 is dividend payment. Unscheduled trading updates remain possible."
             }
           ]
         },
@@ -56695,7 +56679,7 @@
             {
               "ticker": "ITH.L",
               "source": "https://investors.ithacaenergy.com/news-events/financial-calendar",
-              "finding": "Issuer calendar explicitly states no upcoming events; latest H1 results August 19. Q3 date not established."
+              "finding": "Issuer calendar explicitly states no upcoming events; latest H1 results August 19. Q3 date not established. Rendered browser calendar independently confirms no upcoming events. Official August 19 release and exchange release checked; no Q3 date established."
             }
           ]
         },
@@ -56824,12 +56808,16 @@
         {
           "ticker": "MNG.L",
           "name": "M&G",
-          "category": "unresolved date or source access",
+          "category": "verified November event",
           "evidence": [
             {
               "ticker": "MNG.L",
-              "source": "https://www.mandg.com/investors/financial-calendar",
-              "finding": "Issuer calendar and IR return HTTP 403; LSE half-year release did not provide November date. Secondary November 5 candidate withheld."
+              "name": "M&G — Q3 trading update",
+              "date": "2026-11-05",
+              "session": "other",
+              "source": "https://group.mandg.com/investors/financial-calendar",
+              "evidence": "Rendered official issuer calendar lists M&G plc Q3 2026 Trading Update on 05 November 2026. Time not specified.",
+              "verifiedOn": "2026-11-04"
             }
           ]
         },
@@ -56954,12 +56942,12 @@
         {
           "ticker": "PCT.L",
           "name": "Polar Capital Technology Trust",
-          "category": "unresolved date or source access",
+          "category": "reviewed; no verified November earnings event",
           "evidence": [
             {
               "ticker": "PCT.L",
-              "source": "https://www.polarcapitaltechnologytrust.co.uk/Corporate-Information/Document-Library/",
-              "finding": "Official site returns generic dynamic shell across key information and document library. Exact next results date unverified; do not substitute Polar Capital Holdings calendar."
+              "source": "https://www.pctannualhighlights.co.uk/static/literature/PCTT_Annual_Report_2026.pdf",
+              "finding": "2026 annual report PDF page 143 Financial Calendar: half-year results in December, full-year results in July. Exact December day not specified; no November earnings event established."
             }
           ]
         },
@@ -56971,7 +56959,7 @@
             {
               "ticker": "PRU.L",
               "source": "https://www.prudentialplc.com/en/investors/financial-calendar/",
-              "finding": "Reopened calendar only exposes August results. Earlier November candidate not reproducible; held pending primary confirmation. Do not confuse Prudential Financial US."
+              "finding": "Reopened calendar only exposes August results. Earlier November candidate not reproducible; held pending primary confirmation. Do not confuse Prudential Financial US. Browser calendar also lacks November event; issuer stock-exchange page embeds an empty feed. Alternative HKEX/company-news search did not establish release date. Secondary call calendar risks confusion with US Prudential Financial."
             }
           ]
         },
@@ -57080,7 +57068,7 @@
             {
               "ticker": "SMT.L",
               "source": "https://www.scottishmortgage.com/en/uk/individual-investors/frequently-asked-questions",
-              "finding": "Issuer confirms results in May and November but no exact November 2026 date retrieved from documents/events; November 24 investor event is not earnings."
+              "finding": "Issuer confirms results in May and November but no exact November 2026 date retrieved from documents/events; November 24 investor event is not earnings. Alternative LSE final-results release and current issuer document library checked; latest half-year release remains November 7 2025. No exact November 2026 date verified."
             }
           ]
         },
@@ -57901,9 +57889,8 @@
       "total": 225,
       "counts": {
         "exchange schedule screened; other releases not excluded": 69,
-        "verified November event": 151,
-        "periodic release outside window; other releases not excluded": 4,
-        "unresolved date or source access": 1
+        "verified November event": 152,
+        "periodic release outside window; other releases not excluded": 4
       },
       "companies": [
         {
@@ -58719,12 +58706,17 @@
         {
           "ticker": "4385.T",
           "name": "MERCARI, INC.",
-          "category": "unresolved date or source access",
+          "category": "verified November event",
           "evidence": [
             {
               "ticker": "4385.T",
-              "source": "https://about.mercari.com/en/ir/",
-              "finding": "IR access returns HTTP 403. Alternative Japanese IRpocket search returned prior-year reports only; November 4 candidate withheld."
+              "name": "Mercari — FY2027.6 Q1 results",
+              "date": "2026-11-12",
+              "session": "post",
+              "time": "after 15:30 JST",
+              "source": "https://storage.googleapis.com/prd-about-asset-2020/2026/10/9edb2c36-fy2027.6-q1-financial-results-announcement.pdf",
+              "evidence": "Issuer IR-linked notice dated October 2 schedules November 12 at 15:30 JST and states financial materials disclosed after 15:30 JST. No Q1 earnings presentation. PDF rendered and read; November 4 secondary candidate rejected.",
+              "verifiedOn": "2026-11-04"
             }
           ]
         },

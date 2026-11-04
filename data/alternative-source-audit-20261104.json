@@ -1,0 +1,125 @@
+{
+  "checkedOn": "2026-11-04",
+  "additions": [
+    {
+      "ticker": "EZJ.L",
+      "name": "easyJet — FY26 results",
+      "date": "2026-11-25",
+      "session": "other",
+      "source": "https://corporate.easyjet.com/investors/financial-calendar/",
+      "evidence": "Rendered official issuer calendar explicitly lists FY26 Results on 25 November 2026. Time not specified.",
+      "verifiedOn": "2026-11-04"
+    },
+    {
+      "ticker": "MNG.L",
+      "name": "M&G — Q3 trading update",
+      "date": "2026-11-05",
+      "session": "other",
+      "source": "https://group.mandg.com/investors/financial-calendar",
+      "evidence": "Rendered official issuer calendar lists M&G plc Q3 2026 Trading Update on 05 November 2026. Time not specified.",
+      "verifiedOn": "2026-11-04"
+    },
+    {
+      "ticker": "4385.T",
+      "name": "Mercari — FY2027.6 Q1 results",
+      "date": "2026-11-12",
+      "session": "post",
+      "time": "after 15:30 JST",
+      "source": "https://storage.googleapis.com/prd-about-asset-2020/2026/10/9edb2c36-fy2027.6-q1-financial-results-announcement.pdf",
+      "evidence": "Issuer IR-linked notice dated October 2 schedules November 12 at 15:30 JST and states financial materials disclosed after 15:30 JST. No Q1 earnings presentation. PDF rendered and read; November 4 secondary candidate rejected.",
+      "verifiedOn": "2026-11-04"
+    },
+    {
+      "ticker": "688347.SS",
+      "name": "Hua Hong Grace Semiconductor — Q3 earnings release",
+      "date": "2026-11-05",
+      "session": "post",
+      "source": "https://static.cninfo.com.cn/finalpage/2026-10-22/1225614518.PDF",
+      "evidence": "Issuer notice 2026-060 explicitly states Q3 results disclosed November 5 after trading hours; 17:00 briefing is separate. Supersedes November 6 filing-calendar entry for earnings purposes.",
+      "verifiedOn": "2026-11-04"
+    },
+    {
+      "ticker": "688981.SS",
+      "name": "SMIC — Q3 earnings release",
+      "date": "2026-11-12",
+      "session": "post",
+      "source": "https://static.cninfo.com.cn/finalpage/2026-10-31/1225648374.PDF",
+      "evidence": "Original issuer notice 2026-033 retrieved via CNINFO announcement API. Explicit release November 12 after trading hours; November 13 08:30 briefing is separate. Supersedes November 13 filing-calendar entry for earnings purposes.",
+      "verifiedOn": "2026-11-04"
+    }
+  ],
+  "removedCalendarFilingEntries": [
+    {
+      "ticker": "688235.SS",
+      "name": "BeiGene, Ltd. — Q3 report filing",
+      "date": "2026-11-10",
+      "session": "other",
+      "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
+      "verifiedOn": "2026-11-04",
+      "evidence": "Official SSE Q3 periodic-report appointment; latest revision used. Filing date may follow earnings press release."
+    },
+    {
+      "ticker": "688347.SS",
+      "name": "Hua Hong Grace Semiconductor Limited — Q3 report filing",
+      "date": "2026-11-06",
+      "session": "other",
+      "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
+      "verifiedOn": "2026-11-04",
+      "evidence": "Official SSE Q3 periodic-report appointment; latest revision used. Filing date may follow earnings press release."
+    },
+    {
+      "ticker": "688981.SS",
+      "name": "Semiconductor Manufacturing International Corporation — Q3 report filing",
+      "date": "2026-11-13",
+      "session": "other",
+      "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
+      "verifiedOn": "2026-11-04",
+      "evidence": "Official SSE Q3 periodic-report appointment; latest revision used. Filing date may follow earnings press release."
+    }
+  ],
+  "resolvedOutsideNovember": [
+    "GAW.L",
+    "PCT.L"
+  ],
+  "remainingOriginalUnresolved": [
+    {
+      "ticker": "BA.L",
+      "source": "https://investors.baesystems.com/financial-calendar",
+      "finding": "Current calendar lists July 30 results and December dividend; no November 2026 trading-update date. November 12 entry belongs to 2025. Alternative official-domain search found the 2025 annual report but no exact November 2026 update date; browser calendar returned blank."
+    },
+    {
+      "ticker": "ITH.L",
+      "source": "https://investors.ithacaenergy.com/news-events/financial-calendar",
+      "finding": "Issuer calendar explicitly states no upcoming events; latest H1 results August 19. Q3 date not established. Rendered browser calendar independently confirms no upcoming events. Official August 19 release and exchange release checked; no Q3 date established."
+    },
+    {
+      "ticker": "PRU.L",
+      "source": "https://www.prudentialplc.com/en/investors/financial-calendar/",
+      "finding": "Reopened calendar only exposes August results. Earlier November candidate not reproducible; held pending primary confirmation. Do not confuse Prudential Financial US. Browser calendar also lacks November event; issuer stock-exchange page embeds an empty feed. Alternative HKEX/company-news search did not establish release date. Secondary call calendar risks confusion with US Prudential Financial."
+    },
+    {
+      "ticker": "SMT.L",
+      "source": "https://www.scottishmortgage.com/en/uk/individual-investors/frequently-asked-questions",
+      "finding": "Issuer confirms results in May and November but no exact November 2026 date retrieved from documents/events; November 24 investor event is not earnings. Alternative LSE final-results release and current issuer document library checked; latest half-year release remains November 7 2025. No exact November 2026 date verified."
+    }
+  ],
+  "newDelayedReport": {
+    "ticker": "688613.SS",
+    "source": "https://static.cninfo.com.cn/finalpage/2026-10-31/1225650661.PDF",
+    "finding": "Allgens Medical notice 2026-049 explicitly delays Q3 report originally scheduled October 31 to before December 31 2026; no exact date. November 4 notice 2026-052 confirms delay. Previous outside-window classification corrected; November release cannot be excluded."
+  },
+  "documentHashes": [
+    {
+      "file": "mercari-notice.pdf",
+      "sha256": "bcd4c863247416a22c698d3c882ea69131bd6ab644cd93f7e77d32032384fc25"
+    },
+    {
+      "file": "smic-cninfo.pdf",
+      "sha256": "e79b1e9d734b712acb508428c0a4bcfc93072d714881e5a78dc41abce1e34bfc"
+    },
+    {
+      "file": "pct-report.pdf",
+      "sha256": "b38a876fc412104e72f7b4c9d284d8466c042da3ee7f2c377f6204d0d6994a89"
+    }
+  ]
+}

@@ -37504,8 +37504,8 @@
       "ticker": "688613.SS",
       "source": "https://www.sse.com.cn/disclosure/listedinfo/periodic/",
       "checkedOn": "2026-11-04",
-      "status": "Q3 filing outside window; other releases not excluded",
-      "date": "2026-10-31",
+      "status": "Q3 report delayed; exact release date unresolved",
+      "date": null,
       "appointment": {
         "companyCode": "688613",
         "publishDate3": "",
@@ -37516,7 +37516,14 @@
         "companyAbbr": "奥精医疗",
         "actualDate": "",
         "bulletinType": "L014"
-      }
+      },
+      "originalScheduledDate": "2026-10-31",
+      "correction": {
+        "ticker": "688613.SS",
+        "source": "https://static.cninfo.com.cn/finalpage/2026-10-31/1225650661.PDF",
+        "finding": "Allgens Medical notice 2026-049 explicitly delays Q3 report originally scheduled October 31 to before December 31 2026; no exact date. November 4 notice 2026-052 confirms delay. Previous outside-window classification corrected; November release cannot be excluded."
+      },
+      "confirmationSource": "https://static.cninfo.com.cn/finalpage/2026-11-04/1225656477.PDF"
     },
     {
       "ticker": "688615.SS",
