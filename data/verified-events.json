@@ -1913,5 +1913,32 @@
     "source": "https://www.howdenjoinerygroupplc.com/investors/share-price/events-calendar.asp",
     "verifiedOn": "2026-11-04",
     "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "SN.L",
+    "name": "Smith+Nephew — Q3 trading update",
+    "date": "2026-11-04",
+    "session": "other",
+    "source": "https://www.smith-nephew.com/en/news/2026/11/04/smithnephew-third-quarter-2026-trading-update",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "SMIN.L",
+    "name": "Smiths Group — Q1 trading update",
+    "date": "2026-11-18",
+    "session": "other",
+    "source": "https://www.smiths.com/investors/shareholder-services/events-calendar",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
+  },
+  {
+    "ticker": "SVT.L",
+    "name": "Severn Trent — interim results",
+    "date": "2026-11-18",
+    "session": "other",
+    "source": "https://www.severntrent.com/content/dam/stw-plc/fy-results-26/severn-trent-plc-results-for-the-year-to-31-march-2026.pdf",
+    "verifiedOn": "2026-11-04",
+    "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
   }
 ]
