@@ -2166,5 +2166,59 @@
     "source": "https://static.cninfo.com.cn/finalpage/2026-10-31/1225648374.PDF",
     "evidence": "Original issuer notice 2026-033 retrieved via CNINFO announcement API. Explicit release November 12 after trading hours; November 13 08:30 briefing is separate. Supersedes November 13 filing-calendar entry for earnings purposes.",
     "verifiedOn": "2026-11-04"
+  },
+  {
+    "ticker": "NBIS",
+    "name": "Nebius Group",
+    "date": "2026-11-12",
+    "session": "pre",
+    "source": "https://nebius.com/newsroom/nebius-group-announces-date-of-third-quarter-2026-results-and-conference-call",
+    "verifiedOn": "2026-11-05",
+    "evidence": "Issuer explicitly states before US market open; 08:00 ET is the separate call time."
+  },
+  {
+    "ticker": "9888.HK",
+    "name": "Baidu",
+    "date": "2026-11-16",
+    "session": "other",
+    "source": "https://ir.baidu.com/node/14976/pdf",
+    "verifiedOn": "2026-11-05",
+    "evidence": "Issuer confirms November 16 before US market open. Hong Kong release session is not established; call time is not release time."
+  },
+  {
+    "ticker": "AMD",
+    "name": "Advanced Micro Devices",
+    "date": "2026-11-03",
+    "session": "post",
+    "source": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
+    "verifiedOn": "2026-11-05",
+    "evidence": "Issuer explicitly states after market close."
+  },
+  {
+    "ticker": "AMGN",
+    "name": "Amgen",
+    "date": "2026-11-03",
+    "session": "post",
+    "source": "https://investors.amgen.com/node/37776/pdf",
+    "verifiedOn": "2026-11-05",
+    "evidence": "Issuer explicitly states after US market close."
+  },
+  {
+    "ticker": "QCOM",
+    "name": "Qualcomm",
+    "date": "2026-11-04",
+    "session": "post",
+    "source": "https://www.qualcomm.com/news/releases/2026/10/qualcomm-schedules-fourth-quarter-and-fiscal-2026-earnings-relea",
+    "verifiedOn": "2026-11-05",
+    "evidence": "Issuer explicitly states after market close."
+  },
+  {
+    "ticker": "DIS",
+    "name": "Walt Disney",
+    "date": "2026-11-17",
+    "session": "pre",
+    "source": "https://investors.thewaltdisneycompany.com/news/news-details/2026/The-Walt-Disney-Company-Executives-to-Discuss-Fiscal-Full-Year-and-Fourth-Quarter-2026-Financial-Results-via-Webcast/default.aspx",
+    "verifiedOn": "2026-11-05",
+    "evidence": "Issuer explicitly states before regular trading opens; webcast time is separate."
   }
 ]
