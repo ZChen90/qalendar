@@ -32,7 +32,7 @@ if (data) {
     if (w.days.length !== 7) warn.push("week " + wi + ": expected 7 days (Mon-Sun), got " + w.days.length);
     w.days.forEach((d, di) => {
       if (!/^\d{4}-\d{2}-\d{2}$/.test(d.date || "")) errors.push("week " + wi + " day " + di + ": bad date " + d.date);
-      for (const sess of ["pre", "post", "other"]) (d[sess] || []).forEach(c => {
+      for (const sess of ["pre", "during", "post", "other"]) (d[sess] || []).forEach(c => {
         const where = w.weekLabel + " " + d.date + " " + sess + " " + c.t;
         if (!c.t || !/^[A-Z0-9.\-]+$/.test(c.t)) errors.push("bad ticker at " + where);
         if (!c.n) errors.push("missing company name at " + where);

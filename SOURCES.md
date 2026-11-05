@@ -125,3 +125,6 @@ Window: November 2–29, four Monday–Sunday weeks in Europe/Berlin. This is a 
 - DAX, CAC, FTSE and Hang Seng issuer spot checks did not establish other changes. M&G's calendar returned HTTP 403; Tencent and Nvidia pages did not establish new in-window dates. Bloom Energy's calendar showed an October 22 Q3 event, outside this window. None of these negative searches proves absence of an earnings event.
 
 Remaining limits: full US and all-index schedule/membership reconciliation is incomplete; secondary constituent snapshots remain labeled. SSE's previously reviewed actual filings establish pre-window bounds for 2,229 companies, not individually verified earliest historical disclosure dates. The Allgens delay remains unresolved. No unverified new date or release session was added. Existing UI and schema were preserved.
+
+## November 5 Berlin release-time correction
+CBK 07:00, DHL 07:00, DTE 07:00, RHM 07:30 CET: pre-market; HOT 14:00 CET: during-market. DHL time confirmed by https://reporting-hub.group.dhl.com/de/ ; other exact times from dpa-AFX https://www.comdirect.de/inf/news/detail.html?CIF_Check=true&ID_NEWS=1169236043. Issuer date sources retained per record. Call times not used as release times.

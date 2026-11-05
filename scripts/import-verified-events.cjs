@@ -14,11 +14,11 @@ for(const w of data.weeks){
 }
 const beforeEvents=JSON.stringify(data);
 for(const e of events){
- if(!/^https:\/\//.test(e.source)||!e.verifiedOn||!['pre','post','other'].includes(e.session))throw Error('Unverified event '+e.ticker);
+ if(!/^https:\/\//.test(e.source)||!e.verifiedOn||!['pre','during','post','other'].includes(e.session))throw Error('Unverified event '+e.ticker);
  const day=data.weeks.flatMap(w=>w.days).find(d=>d.date===e.date);if(!day)continue;
  const record={t:e.ticker,n:e.name+(e.time?' ('+e.time+')':''),idx:indices.get(e.ticker)||[],source:e.source,verifiedOn:e.verifiedOn};
  if(!record.idx.length)throw Error('No checked membership for '+e.ticker);
- for(const s of ['pre','post','other'])if(day[s])day[s]=day[s].filter(c=>c.t!==e.ticker);
+ for(const s of ['pre','during','post','other'])if(day[s])day[s]=day[s].filter(c=>c.t!==e.ticker);
  (day[e.session]??=[]).push(record);
 }
 const changed=JSON.stringify(data)!==beforeEvents;

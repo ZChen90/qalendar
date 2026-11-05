@@ -103,11 +103,12 @@
     "ticker": "CBK.DE",
     "name": "Commerzbank",
     "date": "2026-11-05",
-    "session": "other",
-    "time": null,
+    "session": "pre",
+    "time": "07:00 CET",
     "source": "https://investor-relations.commerzbank.com/",
-    "verifiedOn": "2026-11-04",
-    "evidence": "Company report publication date confirmed; release session not established."
+    "verifiedOn": "2026-11-05",
+    "evidence": "Berlin CET release time; date confirmed by issuer; clock time reported by dpa-AFX, not independently issuer-confirmed.",
+    "timingSource": "https://www.comdirect.de/inf/news/detail.html?CIF_Check=true&ID_NEWS=1169236043"
   },
   {
     "ticker": "FRE.DE",
@@ -143,21 +144,23 @@
     "ticker": "HOT.DE",
     "name": "HOCHTIEF",
     "date": "2026-11-05",
-    "session": "other",
-    "time": null,
+    "session": "during",
+    "time": "14:00 CET",
     "source": "https://www.hochtief.com/investor-relations",
-    "verifiedOn": "2026-11-04",
-    "evidence": "Company report publication date confirmed; release session not established."
+    "verifiedOn": "2026-11-05",
+    "evidence": "Berlin CET release time; date confirmed by issuer; clock time reported by dpa-AFX, not independently issuer-confirmed.",
+    "timingSource": "https://www.comdirect.de/inf/news/detail.html?CIF_Check=true&ID_NEWS=1169236043"
   },
   {
     "ticker": "DHL.DE",
     "name": "DHL Group",
     "date": "2026-11-05",
-    "session": "other",
-    "time": null,
+    "session": "pre",
+    "time": "07:00 CET",
     "source": "https://group.dhl.com/en/investors/events.html",
-    "verifiedOn": "2026-11-04",
-    "evidence": "Company report publication date confirmed; release session not established."
+    "verifiedOn": "2026-11-05",
+    "evidence": "Berlin CET release time; explicitly stated in company reporting hub.",
+    "timingSource": "https://reporting-hub.group.dhl.com/de/"
   },
   {
     "ticker": "DTG.DE",
@@ -173,11 +176,12 @@
     "ticker": "DTE.DE",
     "name": "Deutsche Telekom",
     "date": "2026-11-05",
-    "session": "other",
-    "time": null,
+    "session": "pre",
+    "time": "07:00 CET",
     "source": "https://www.telekom.com/en/investor-relations/publications/financial-results",
-    "verifiedOn": "2026-11-04",
-    "evidence": "Company report publication date confirmed; release session not established."
+    "verifiedOn": "2026-11-05",
+    "evidence": "Berlin CET release time; date confirmed by issuer; clock time reported by dpa-AFX, not independently issuer-confirmed.",
+    "timingSource": "https://www.comdirect.de/inf/news/detail.html?CIF_Check=true&ID_NEWS=1169236043"
   },
   {
     "ticker": "HNR1.DE",
@@ -223,11 +227,12 @@
     "ticker": "RHM.DE",
     "name": "Rheinmetall",
     "date": "2026-11-05",
-    "session": "other",
-    "time": null,
+    "session": "pre",
+    "time": "07:30 CET",
     "source": "https://www.rheinmetall.com/en/investor-relations/calendar-and-events/financial-calendar",
-    "verifiedOn": "2026-11-04",
-    "evidence": "Company report publication date confirmed; release session not established."
+    "verifiedOn": "2026-11-05",
+    "evidence": "Berlin CET release time; date confirmed by issuer; clock time reported by dpa-AFX, not independently issuer-confirmed.",
+    "timingSource": "https://www.comdirect.de/inf/news/detail.html?CIF_Check=true&ID_NEWS=1169236043"
   },
   {
     "ticker": "ZAL.DE",

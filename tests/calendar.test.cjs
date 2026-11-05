@@ -30,6 +30,15 @@ function boot(date='2026-10-29T12:00:00',payload=calendarFixture()){
  const ctx=vm.createContext(sandbox); vm.runInContext(script,ctx);
  return {element,storage,ctx,run:s=>vm.runInContext(s,ctx),setDate:s=>{now=new Date(s).getTime();},async tick(){for(const x of intervals)await x.fn();},async focus(){await listeners.focus?.();},payload:()=>JSON.parse(element('week-data').textContent)};
 }
+test('Berlin release times render in the requested home-market sessions',()=>{
+ const app=boot('2026-11-05T16:38:00',null);
+ const day=app.run('W().flatMap(w=>w.days).find(d=>d.date==="2026-11-05")');
+ for(const [t,time] of [['CBK.DE','07:00'],['DHL.DE','07:00'],['DTE.DE','07:00'],['RHM.DE','07:30']])assert.ok(day.pre.some(c=>c.t===t&&c.n.includes(time+' CET')));
+ assert.ok(day.during.some(c=>c.t==='HOT.DE'&&c.n.includes('14:00 CET')));
+ assert.ok(!day.other.some(c=>['CBK.DE','DHL.DE','DTE.DE','RHM.DE','HOT.DE'].includes(c.t)));
+ assert.match(app.element('content').innerHTML,/During-market/);
+ assert.equal(app.run('validCalendar(data)'),true);
+});
 test('Oct 29 opens Oct 26, not the first stored week',()=>{
  const app=boot(); assert.equal(app.run('W()[active].days[0].date'),'2026-10-26');
  assert.match(app.element('content').innerHTML,/todaytag/);
