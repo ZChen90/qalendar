@@ -1,0 +1,1105 @@
+{
+  "verifiedOn": "2026-11-06",
+  "window": [
+    "2026-11-02",
+    "2026-11-29"
+  ],
+  "scope": "Partial daily verification. 225 saved Nikkei constituents compared to refreshed JPX September and October fiscal-period schedules; 211 matches, no in-window date differences. Unmatched names do not imply no earnings. Other markets received issuer spot checks, not full constituent recertification.",
+  "events": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "date": "2026-11-17",
+      "session": "post",
+      "time": "~22:20 CET",
+      "source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+      "evidence": "Issuer specifies approximately 13:20 Pacific for results publication, distinct from 14:00 Pacific call. November 17 PST converts to 22:20 CET.",
+      "verifiedOn": "2026-11-06"
+    },
+    {
+      "ticker": "9999.HK",
+      "name": "NetEase",
+      "date": "2026-11-19",
+      "session": "other",
+      "source": "https://ir.netease.com/news-releases/news-release-details/netease-report-third-quarter-2026-financial-results-november-19",
+      "evidence": "Issuer November 5 notice confirms November 19 before US markets open. Hong Kong release session not established; call time not used.",
+      "verifiedOn": "2026-11-06"
+    },
+    {
+      "ticker": "PRU.L",
+      "name": "Prudential plc — Q3 business performance update",
+      "date": "2026-11-05",
+      "session": "other",
+      "source": "https://www.prudentialplc.com/en/newsroom/company-news/2026/prudential-plc-q3-business-performance-update/",
+      "evidence": "Issuer published Q3 update dated November 5; linked LSE RNS 8642B independently carries November 5. Exact release time unverified.",
+      "verifiedOn": "2026-11-06"
+    }
+  ],
+  "jpxMatches": [
+    {
+      "ticker": "6146.T",
+      "date": "2026-10-22",
+      "period": "sep"
+    },
+    {
+      "ticker": "6954.T",
+      "date": "2026-10-23",
+      "period": "sep"
+    },
+    {
+      "ticker": "4063.T",
+      "date": "2026-10-27",
+      "period": "sep"
+    },
+    {
+      "ticker": "4519.T",
+      "date": "2026-10-27",
+      "period": "sep"
+    },
+    {
+      "ticker": "6988.T",
+      "date": "2026-10-27",
+      "period": "sep"
+    },
+    {
+      "ticker": "7751.T",
+      "date": "2026-10-27",
+      "period": "sep"
+    },
+    {
+      "ticker": "8697.T",
+      "date": "2026-10-27",
+      "period": "sep"
+    },
+    {
+      "ticker": "9697.T",
+      "date": "2026-10-27",
+      "period": "sep"
+    },
+    {
+      "ticker": "2002.T",
+      "date": "2026-10-28",
+      "period": "sep"
+    },
+    {
+      "ticker": "6501.T",
+      "date": "2026-10-28",
+      "period": "sep"
+    },
+    {
+      "ticker": "6526.T",
+      "date": "2026-10-28",
+      "period": "sep"
+    },
+    {
+      "ticker": "6701.T",
+      "date": "2026-10-28",
+      "period": "sep"
+    },
+    {
+      "ticker": "6857.T",
+      "date": "2026-10-28",
+      "period": "sep"
+    },
+    {
+      "ticker": "8604.T",
+      "date": "2026-10-28",
+      "period": "sep"
+    },
+    {
+      "ticker": "9022.T",
+      "date": "2026-10-28",
+      "period": "sep"
+    },
+    {
+      "ticker": "2914.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "3092.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "4043.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "4062.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "4307.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "4502.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "4507.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "4661.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "6301.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "6305.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "6471.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "6473.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "6504.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "6702.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "6723.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "6861.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "6902.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "8015.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "9202.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "9501.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "9502.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "9503.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "9531.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "9532.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "9766.T",
+      "date": "2026-10-29",
+      "period": "sep"
+    },
+    {
+      "ticker": "2768.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "285A.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "4506.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "4568.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "4578.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "5214.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "5332.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "5333.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "5802.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "6302.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "6472.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "6503.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "6752.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "6762.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "6770.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "6920.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "6981.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "7735.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "7741.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "8035.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "8601.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "9020.T",
+      "date": "2026-10-30",
+      "period": "sep"
+    },
+    {
+      "ticker": "2282.T",
+      "date": "2026-11-02",
+      "period": "sep"
+    },
+    {
+      "ticker": "4005.T",
+      "date": "2026-11-02",
+      "period": "sep"
+    },
+    {
+      "ticker": "4151.T",
+      "date": "2026-11-02",
+      "period": "sep"
+    },
+    {
+      "ticker": "6971.T",
+      "date": "2026-11-02",
+      "period": "sep"
+    },
+    {
+      "ticker": "8053.T",
+      "date": "2026-11-02",
+      "period": "sep"
+    },
+    {
+      "ticker": "9201.T",
+      "date": "2026-11-02",
+      "period": "sep"
+    },
+    {
+      "ticker": "2413.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "4503.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "6103.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "6841.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "7013.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "8001.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "8002.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "8031.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "8058.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "9064.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "9107.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "9432.T",
+      "date": "2026-11-04",
+      "period": "sep"
+    },
+    {
+      "ticker": "3401.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "3407.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "4042.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "4188.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "4208.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "4452.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "4689.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "5201.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "5301.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "5401.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "6367.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "6724.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "6758.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "6963.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "6976.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "7203.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "7731.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "7951.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "7974.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "9001.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "9021.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "9101.T",
+      "date": "2026-11-05",
+      "period": "sep"
+    },
+    {
+      "ticker": "1332.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "1721.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "3289.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "3861.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "5411.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "6479.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "7011.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "7202.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "7211.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "7272.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "7752.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "8801.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "9009.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "9433.T",
+      "date": "2026-11-06",
+      "period": "sep"
+    },
+    {
+      "ticker": "1803.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "2801.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "2802.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "4021.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "4061.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "4901.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "5016.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "5801.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "6525.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "6753.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "7261.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "8331.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "8591.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "8802.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "9104.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "9434.T",
+      "date": "2026-11-09",
+      "period": "sep"
+    },
+    {
+      "ticker": "2432.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "2871.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "3402.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "3659.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "4523.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "4911.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "5233.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "5406.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "5631.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "5706.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "5713.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "5803.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "5831.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "6645.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "7012.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "7267.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "7269.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "7270.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "7733.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "8252.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "8308.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "8354.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "8830.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "9005.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "9984.T",
+      "date": "2026-11-10",
+      "period": "sep"
+    },
+    {
+      "ticker": "1801.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "1812.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "1925.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "1963.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "2501.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "2503.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "3405.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "3436.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "4004.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "4183.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "4751.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "5019.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "5020.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "5711.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "5714.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "6098.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "7186.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "7201.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "8304.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "9007.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "9147.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "9735.T",
+      "date": "2026-11-11",
+      "period": "sep"
+    },
+    {
+      "ticker": "1605.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "1808.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "2269.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "4543.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "4704.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "5108.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "6113.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "7532.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "8309.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "8804.T",
+      "date": "2026-11-12",
+      "period": "sep"
+    },
+    {
+      "ticker": "1802.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "2502.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "3099.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "4755.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "5101.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "6178.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "6273.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "6361.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "7911.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "7912.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "8253.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "8306.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "8316.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "8411.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "8750.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "8795.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "9843.T",
+      "date": "2026-11-13",
+      "period": "sep"
+    },
+    {
+      "ticker": "4324.T",
+      "date": "2026-11-16",
+      "period": "sep"
+    },
+    {
+      "ticker": "8630.T",
+      "date": "2026-11-19",
+      "period": "sep"
+    },
+    {
+      "ticker": "8725.T",
+      "date": "2026-11-19",
+      "period": "sep"
+    },
+    {
+      "ticker": "8766.T",
+      "date": "2026-11-19",
+      "period": "sep"
+    },
+    {
+      "ticker": "1928.T",
+      "date": "2026-12-10",
+      "period": "oct"
+    }
+  ],
+  "jpxSources": [
+    {
+      "url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx",
+      "sha256": "8cadb08d6b705769875c843a4f6388b9fc0abf20518ff341bf1452b5f1cef2b2"
+    },
+    {
+      "url": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx",
+      "sha256": "e7eb408dc4914c45ba89a751c797d20ed972b3d856f62f1c43af74ff11443e58"
+    }
+  ]
+}

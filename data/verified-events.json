@@ -2225,5 +2225,33 @@
     "source": "https://investors.thewaltdisneycompany.com/news/news-details/2026/The-Walt-Disney-Company-Executives-to-Discuss-Fiscal-Full-Year-and-Fourth-Quarter-2026-Financial-Results-via-Webcast/default.aspx",
     "verifiedOn": "2026-11-05",
     "evidence": "Issuer explicitly states before regular trading opens; webcast time is separate."
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "date": "2026-11-17",
+    "session": "post",
+    "time": "~22:20 CET",
+    "source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+    "evidence": "Issuer specifies approximately 13:20 Pacific for results publication, distinct from 14:00 Pacific call. November 17 PST converts to 22:20 CET.",
+    "verifiedOn": "2026-11-06"
+  },
+  {
+    "ticker": "9999.HK",
+    "name": "NetEase",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://ir.netease.com/news-releases/news-release-details/netease-report-third-quarter-2026-financial-results-november-19",
+    "evidence": "Issuer November 5 notice confirms November 19 before US markets open. Hong Kong release session not established; call time not used.",
+    "verifiedOn": "2026-11-06"
+  },
+  {
+    "ticker": "PRU.L",
+    "name": "Prudential plc — Q3 business performance update",
+    "date": "2026-11-05",
+    "session": "other",
+    "source": "https://www.prudentialplc.com/en/newsroom/company-news/2026/prudential-plc-q3-business-performance-update/",
+    "evidence": "Issuer published Q3 update dated November 5; linked LSE RNS 8642B independently carries November 5. Exact release time unverified.",
+    "verifiedOn": "2026-11-06"
   }
 ]
