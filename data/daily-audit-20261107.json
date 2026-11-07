@@ -1,0 +1,68 @@
+{
+  "verifiedOn": "2026-11-07",
+  "window": [
+    "2026-11-02",
+    "2026-11-29"
+  ],
+  "scope": "Partial daily audit, not all constituent schedules or membership changes. Four added events and one source backfill; saved index memberships retained.",
+  "events": [
+    {
+      "ticker": "SMT.L",
+      "name": "Scottish Mortgage Investment Trust",
+      "date": "2026-11-06",
+      "session": "pre",
+      "time": "08:00 CET",
+      "source": "https://www.londonstockexchange.com/en/news/article/SMT/scottish-mortgage-half-year-results/f8ca-99-90-51-33-4f77b1",
+      "evidence": "Official LSE indexed RNS 0540C states released 07:00:02 November 6 UK time, equivalent to 08:00 CET; direct web open failed but exchange-indexed announcement text was readable.",
+      "verifiedOn": "2026-11-07"
+    },
+    {
+      "ticker": "9618.HK",
+      "name": "JD.com",
+      "date": "2026-11-17",
+      "session": "post",
+      "source": "https://ir.jd.com/static-files/c486dd4f-1a32-418d-9a12-ef6fe93dbab6",
+      "evidence": "Issuer November 4 Form 6-K exhibit explicitly promises November 17 release after Hong Kong trading hours and before US market opens. Conference call is separate.",
+      "verifiedOn": "2026-11-07"
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks",
+      "date": "2026-11-18",
+      "session": "post",
+      "source": "https://investors.paloaltonetworks.com/node/20971/pdf",
+      "evidence": "Issuer November 3 notice explicitly confirms after US markets close November 18; 16:30 ET webcast is not the release time.",
+      "verifiedOn": "2026-11-07"
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart",
+      "date": "2026-11-19",
+      "session": "pre",
+      "time": "~13:00 CET",
+      "source": "https://corporate.walmart.com/news/events/fy2027-q3-earnings-release",
+      "evidence": "Issuer event page states earnings materials available approximately 06:00 US/Central, equivalent to 13:00 CET; 07:00 Central is the separate call.",
+      "verifiedOn": "2026-11-07"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "date": "2026-11-02",
+      "session": "post",
+      "source": "https://investors.palantir.com/news-details/2026/Palantir-Announces-Date-of-Third-Quarter-2026-Earnings-Release-and-Webcast/",
+      "evidence": "Official issuer indexed October 12 announcement explicitly states November 2 following US market close. Direct page returns a navigation shell; indexed issuer text supplies evidence. Existing date unchanged.",
+      "verifiedOn": "2026-11-07"
+    }
+  ],
+  "jpxSchedulesUnchanged": true,
+  "jpxHashes": {
+    "sep": "8cadb08d6b705769875c843a4f6388b9fc0abf20518ff341bf1452b5f1cef2b2",
+    "oct": "e7eb408dc4914c45ba89a751c797d20ed972b3d856f62f1c43af74ff11443e58"
+  },
+  "allgensNewNoticesInNovember7Query": 0,
+  "unresolved": [
+    "BA.L",
+    "ITH.L",
+    "688613.SS"
+  ]
+}
