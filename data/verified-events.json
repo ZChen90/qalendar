@@ -2300,5 +2300,32 @@
     "source": "https://investors.palantir.com/news-details/2026/Palantir-Announces-Date-of-Third-Quarter-2026-Earnings-Release-and-Webcast/",
     "evidence": "Official issuer indexed October 12 announcement explicitly states November 2 following US market close. Direct page returns a navigation shell; indexed issuer text supplies evidence. Existing date unchanged.",
     "verifiedOn": "2026-11-07"
+  },
+  {
+    "ticker": "CSCO",
+    "name": "Cisco",
+    "date": "2026-11-12",
+    "session": "post",
+    "source": "https://investor.cisco.com/news/news-details/2026/Cisco-Schedules-Conference-Call-for-Q1-Fiscal-Year-2027-Financial-Results/default.aspx",
+    "evidence": "November 3 issuer notice explicitly states release after market close November 12. The 16:30 ET call is separate.",
+    "verifiedOn": "2026-11-08"
+  },
+  {
+    "ticker": "9988.HK",
+    "name": "Alibaba",
+    "date": "2026-11-19",
+    "session": "other",
+    "source": "https://www.alibabagroup.com/en-US/document-2054756418245885952",
+    "evidence": "November 6 issuer notice states November 19 before US market opens; Hong Kong release session is not independently established. 20:00 HKT is the call, not release time.",
+    "verifiedOn": "2026-11-08"
+  },
+  {
+    "ticker": "1024.HK",
+    "name": "Kuaishou",
+    "date": "2026-11-19",
+    "session": "post",
+    "source": "https://kuaishou.gcs-web.com/news-releases/news-release-details/kuaishou-technology-report-2026-third-quarter-financial-results",
+    "evidence": "November 6 issuer notice explicitly states November 19 after Hong Kong market closes; 19:00 HKT call is separate.",
+    "verifiedOn": "2026-11-08"
   }
 ]

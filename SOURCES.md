@@ -158,3 +158,19 @@ Window November 2–29 (Monday–Sunday); partial verification, not comprehensiv
 - Watch coverage: Bloom Energy's official calendar references October 22 Q3 earnings (outside window); SpaceX indexed IR page references an October 20 earnings update, while direct retrieval shows a dynamic shell. No November watch-company release was inferred. Sources: https://investor.bloomenergy.com/events-and-presentations/events-calendar/ and https://ir.spacex.com/investors/default.aspx .
 
 Existing roster classifications were retained; this run verifies issuer tickers in announcement evidence but does not recertify all current index memberships. The full US/all-index earnings audit and SSE earliest-release audit remain incomplete. UI/schema and prior during-market corrections are preserved; the updated timestamp represents these documented checks only.
+
+## Daily verification — November 8, 2026, 08:57 Berlin
+
+Window remains November 2–29, Monday–Sunday. Added three issuer-confirmed releases; exact URLs and evidence are recorded in `data/verified-events.json`:
+
+- Cisco November 12 after US market close. The issuer's November 3 announcement explicitly confirms release timing separately from its 16:30 ET call.
+- Alibaba 9988.HK November 19. The issuer's November 6 notice says before US market open; Hong Kong release session remains unconfirmed. The 20:00 HKT call was not substituted for release time.
+- Kuaishou 1024.HK November 19 after Hong Kong market close. November 6 issuer announcement explicitly confirms the session; 19:00 HKT is its separate call.
+
+All three issuer notices confirm their stock identifiers. Saved SPX/NDX/HSI classifications retained, not newly recertified against all provider changes. No UI or schema changes.
+
+JPX September/October snapshots were downloaded again from https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1106.xlsx and https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1106.xlsx . Their hashes remain `8cadb08d6b705769875c843a4f6388b9fc0abf20518ff341bf1452b5f1cef2b2` and `e7eb408dc4914c45ba89a751c797d20ed972b3d856f62f1c43af74ff11443e58`, identical to the November 6 comparison against all 225 saved Nikkei constituents. No schedule changes identified in these files.
+
+CNINFO query for Allgens over November 7–8 returned no new announcements (https://www.cninfo.com.cn/new/hisAnnouncement/query). Its precise delayed report date remains unverified. BAE and Ithaca official-source searches did not resolve their remaining date gaps. Tencent's official announcements/news searches did not establish its Q3 release date. These negative checks are not proof of absence of an event.
+
+This Sunday run is partial: other DAX/CAC/FTSE/KOSPI/SSE companies and watch-company records retain earlier evidence and were not all reverified today. Full US/all-index earnings and current-membership reconciliation, KOSPI provider coverage, and individually verified SSE earliest historical releases remain incomplete. No claim of comprehensive or real-time coverage. The calendar verification timestamp reflects the three documented additions, not blanket verification of all records.
