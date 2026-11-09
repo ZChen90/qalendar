@@ -2327,5 +2327,14 @@
     "source": "https://kuaishou.gcs-web.com/news-releases/news-release-details/kuaishou-technology-report-2026-third-quarter-financial-results",
     "evidence": "November 6 issuer notice explicitly states November 19 after Hong Kong market closes; 19:00 HKT call is separate.",
     "verifiedOn": "2026-11-08"
+  },
+  {
+    "ticker": "MRVL",
+    "name": "Marvell Technology",
+    "date": "2026-12-01",
+    "session": "other",
+    "source": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results",
+    "verifiedOn": "2026-11-09",
+    "evidence": "Issuer November 6 notice links December 1 results release to a subsequent 13:30 Pacific call. Exact release time/session not explicitly established; call time not substituted."
   }
 ]

@@ -1,0 +1,1043 @@
+{
+  "weekLabel": "Nov 2 – Nov 6, 2026",
+  "days": [
+    {
+      "date": "2026-11-02",
+      "weekday": "Mon",
+      "pre": [],
+      "post": [
+        {
+          "t": "PLTR",
+          "n": "Palantir Technologies",
+          "idx": [
+            "SPX",
+            "NDX"
+          ],
+          "source": "https://investors.palantir.com/news-details/2026/Palantir-Announces-Date-of-Third-Quarter-2026-Earnings-Release-and-Webcast/",
+          "verifiedOn": "2026-11-07"
+        }
+      ],
+      "other": [
+        {
+          "t": "AAPL",
+          "n": "Apple",
+          "idx": [
+            "SPX",
+            "NDX"
+          ],
+          "source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "6971.T",
+          "n": "KYOCERA CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "2282.T",
+          "n": "NH FOODS LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "4151.T",
+          "n": "KYOWA KIRIN CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "4005.T",
+          "n": "SUMITOMO CHEMICAL CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "8053.T",
+          "n": "SUMITOMO CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9201.T",
+          "n": "JAPAN AIRLINES CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "weekday": "Tue",
+      "pre": [
+        {
+          "t": "BAYN.DE",
+          "n": "Bayer (07:30 CET)",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.bayer.com/media/en-us/bayer-increases-sales-and-ebitda-before-special-items-in-the-third-quarter-improves-full-year-outlook/",
+          "verifiedOn": "2026-11-04"
+        }
+      ],
+      "post": [
+        {
+          "t": "AMD",
+          "n": "Advanced Micro Devices",
+          "idx": [
+            "SPX",
+            "NDX"
+          ],
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
+          "verifiedOn": "2026-11-05"
+        },
+        {
+          "t": "AMGN",
+          "n": "Amgen",
+          "idx": [
+            "SPX",
+            "NDX"
+          ],
+          "source": "https://investors.amgen.com/node/37776/pdf",
+          "verifiedOn": "2026-11-05"
+        }
+      ],
+      "other": [
+        {
+          "t": "FME.DE",
+          "n": "Fresenius Medical Care — Q3 earnings release",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://freseniusmedicalcare.com/en/investors/events/events-overview/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "ZAL.DE",
+          "n": "Zalando",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://corporate.zalando.com/en/investor-relations/financial-calendar?category=189&tag=83",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "ABF.L",
+          "n": "Associated British Foods",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.abf.co.uk/media/news/2026/2026-annual-results-announcement",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "HSX.L",
+          "n": "Hiscox — Q3 trading statement",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.hiscoxgroup.com/investors/results-and-presentations",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "CCEP.L",
+          "n": "Coca-Cola Europacific Partners — Q3 trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.cocacolaep.com/news-and-stories/ccep-q3-2026-trading-update/",
+          "verifiedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": "Wed",
+      "pre": [
+        {
+          "t": "CON.DE",
+          "n": "Continental (07:30 CET)",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.continental.com/en/investors/",
+          "verifiedOn": "2026-11-04"
+        }
+      ],
+      "post": [
+        {
+          "t": "QIA.DE",
+          "n": "QIAGEN (22:05 CET)",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://corporate.qiagen.com/English/newsroom/press-releases/press-release-details/2026/QIAGEN-reports-preliminary-Q3-2026-results/default.aspx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "QCOM",
+          "n": "Qualcomm",
+          "idx": [
+            "SPX",
+            "NDX"
+          ],
+          "source": "https://www.qualcomm.com/news/releases/2026/10/qualcomm-schedules-fourth-quarter-and-fiscal-2026-earnings-relea",
+          "verifiedOn": "2026-11-05"
+        }
+      ],
+      "other": [
+        {
+          "t": "BMW.DE",
+          "n": "BMW",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.bmwgroup.jobs/content/grpw/websites/bmwgroup_com/en/investor-relations/company-reports.html",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "FRE.DE",
+          "n": "Fresenius",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.fresenius.com/investor-news-and-ad-hoc-news",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "HEI.DE",
+          "n": "Heidelberg Materials",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.heidelbergmaterials.com/en/pr-2026-11-04",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "G24.DE",
+          "n": "Scout24",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.scout24.com/en/news-media/news/detail/scout24-sustains-revenue-momentum-in-q3-and-accelerates-earnings-growth-revenue-guidance-specified-to-c-18",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "VNA.DE",
+          "n": "Vonovia",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.vonovia.com/en/press/agenda/finances",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "6841.T",
+          "n": "YOKOGAWA ELECTRIC CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9432.T",
+          "n": "NTT, INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "4503.T",
+          "n": "ASTELLAS PHARMA INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "2413.T",
+          "n": "M3, INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "8001.T",
+          "n": "ITOCHU CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "8002.T",
+          "n": "MARUBENI CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "8031.T",
+          "n": "MITSUI & CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "8058.T",
+          "n": "MITSUBISHI CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "6103.T",
+          "n": "OKUMA CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7013.T",
+          "n": "IHI CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9064.T",
+          "n": "YAMATO HOLDINGS CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9107.T",
+          "n": "KAWASAKI KISEN KAISHA, LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "MKS.L",
+          "n": "Marks & Spencer",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://corporate.marksandspencer.com/newsroom/press-releases/interim-results-26-weeks-ended-26-september-2026",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "BTRW.L",
+          "n": "Barratt Redrow — trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.barrattredrow.co.uk/investors/financial-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "CCH.L",
+          "n": "Coca-Cola HBC — Q3 trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.coca-colahellenic.com/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "SN.L",
+          "n": "Smith+Nephew — Q3 trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.smith-nephew.com/en/news/2026/11/04/smithnephew-third-quarter-2026-trading-update",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "BGEO.L",
+          "n": "Lion Finance — Q3 and nine-month results",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.lse.co.uk/rns/notice-of-results-d4reyp98oluz7iy.html",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "WEIR.L",
+          "n": "Weir — Q3 interim management statement",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.global.weir/pt-BR/investors/financial-calendar/",
+          "verifiedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "weekday": "Thu",
+      "pre": [
+        {
+          "t": "SHL.DE",
+          "n": "Siemens Healthineers (07:00 CET)",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.siemens-healthineers.com/press/features/pf-2026-q4",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "CBK.DE",
+          "n": "Commerzbank (07:00 CET)",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://investor-relations.commerzbank.com/",
+          "verifiedOn": "2026-11-05",
+          "timingSource": "https://www.comdirect.de/inf/news/detail.html?CIF_Check=true&ID_NEWS=1169236043",
+          "evidence": "Berlin CET release time; date confirmed by issuer; clock time reported by dpa-AFX, not independently issuer-confirmed."
+        },
+        {
+          "t": "DHL.DE",
+          "n": "DHL Group (07:00 CET)",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://group.dhl.com/en/investors/events.html",
+          "verifiedOn": "2026-11-05",
+          "timingSource": "https://reporting-hub.group.dhl.com/de/",
+          "evidence": "Berlin CET release time; explicitly stated in company reporting hub."
+        },
+        {
+          "t": "DTE.DE",
+          "n": "Deutsche Telekom (07:00 CET)",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.telekom.com/en/investor-relations/publications/financial-results",
+          "verifiedOn": "2026-11-05",
+          "timingSource": "https://www.comdirect.de/inf/news/detail.html?CIF_Check=true&ID_NEWS=1169236043",
+          "evidence": "Berlin CET release time; date confirmed by issuer; clock time reported by dpa-AFX, not independently issuer-confirmed."
+        },
+        {
+          "t": "RHM.DE",
+          "n": "Rheinmetall (07:30 CET)",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.rheinmetall.com/en/investor-relations/calendar-and-events/financial-calendar",
+          "verifiedOn": "2026-11-05",
+          "timingSource": "https://www.comdirect.de/inf/news/detail.html?CIF_Check=true&ID_NEWS=1169236043",
+          "evidence": "Berlin CET release time; date confirmed by issuer; clock time reported by dpa-AFX, not independently issuer-confirmed."
+        }
+      ],
+      "post": [
+        {
+          "t": "688347.SS",
+          "n": "Hua Hong Grace Semiconductor — Q3 earnings release",
+          "idx": [
+            "SSE"
+          ],
+          "source": "https://static.cninfo.com.cn/finalpage/2026-10-22/1225614518.PDF",
+          "verifiedOn": "2026-11-04"
+        }
+      ],
+      "other": [
+        {
+          "t": "6724.T",
+          "n": "SEIKO EPSON CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "6758.T",
+          "n": "SONY GROUP CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "6963.T",
+          "n": "ROHM CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "6976.T",
+          "n": "TAIYO YUDEN CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7203.T",
+          "n": "TOYOTA MOTOR CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7731.T",
+          "n": "NIKON CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "4689.T",
+          "n": "LY CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7974.T",
+          "n": "NINTENDO CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "3401.T",
+          "n": "TEIJIN LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "3407.T",
+          "n": "ASAHI KASEI CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "4042.T",
+          "n": "TOSOH CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "4188.T",
+          "n": "MITSUBISHI CHEMICAL GROUP CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "4208.T",
+          "n": "UBE CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "4452.T",
+          "n": "KAO CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "5201.T",
+          "n": "AGC INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "5301.T",
+          "n": "TOKAI CARBON CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "5401.T",
+          "n": "NIPPON STEEL CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "6367.T",
+          "n": "DAIKIN INDUSTRIES, LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7951.T",
+          "n": "YAMAHA CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9001.T",
+          "n": "TOBU RAILWAY CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9021.T",
+          "n": "WEST JAPAN RAILWAY CO.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9101.T",
+          "n": "NIPPON YUSEN K.K.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "BT-A.L",
+          "n": "BT Group",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.bt.com/about/investors/financial-reporting-and-news/financial-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "NG.L",
+          "n": "National Grid",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.nationalgrid.com/investors/events/event-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "AUTO.L",
+          "n": "Autotrader Group",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://plc.autotrader.co.uk/investors/results-centre/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "EN.PA",
+          "n": "Bouygues",
+          "idx": [
+            "CAC"
+          ],
+          "source": "https://www.bouygues.com/en/calendar-contacts/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "ENX.PA",
+          "n": "Euronext",
+          "idx": [
+            "CAC"
+          ],
+          "source": "https://www.euronext.com/en/investor-relations/financial-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "MT.AS",
+          "n": "ArcelorMittal",
+          "idx": [
+            "CAC"
+          ],
+          "source": "https://corporate.arcelormittal.com/investors/financial-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "ENGI.PA",
+          "n": "Engie",
+          "idx": [
+            "CAC"
+          ],
+          "source": "https://www.engie.com/en/investors/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "VIE.PA",
+          "n": "Veolia — nine-month key figures",
+          "idx": [
+            "CAC"
+          ],
+          "source": "https://www.veolia.com/sites/g/files/dvc4206/files/document/2026/03/Finance_Veolia_2025_full_year_results_presentation_0.pdf",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "LR.PA",
+          "n": "Legrand",
+          "idx": [
+            "CAC"
+          ],
+          "source": "https://www.legrand.com/fr/investisseurs-et-actionnaires/calendrier-financier",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "033780.KS",
+          "n": "KT&G",
+          "idx": [
+            "KOSPI"
+          ],
+          "source": "https://en.ktng.com/ir/overview",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "688235.SS",
+          "n": "BeOne Medicines — Q3 earnings release",
+          "idx": [
+            "SSE"
+          ],
+          "source": "https://ir.beonemedicines.com/news/beone-medicines-to-announce-third-quarter-2026-financial-results-on-november-5/66539b45-e525-4cba-abc6-8b974808de2a",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "DGE.L",
+          "n": "Diageo — Q1 FY27 trading statement",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.diageo.com/en/investors/results-reports-and-events/results",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "HWDN.L",
+          "n": "Howden Joinery — trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.howdenjoinerygroupplc.com/investors/share-price/events-calendar.asp",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "MTLN.L",
+          "n": "Metlen — nine-month trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.metlen.com/investor-relations/financial-calendar/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "CRDA.L",
+          "n": "Croda — Q3 sales update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.croda.com/en-gb/investors/financial-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "NXT.L",
+          "n": "Next — Q3 trading statement",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.nextplc.co.uk/investors",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "MNG.L",
+          "n": "M&G — Q3 trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://group.mandg.com/investors/financial-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "PRU.L",
+          "n": "Prudential plc — Q3 business performance update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.prudentialplc.com/en/newsroom/company-news/2026/prudential-plc-q3-business-performance-update/",
+          "verifiedOn": "2026-11-06"
+        }
+      ],
+      "during": [
+        {
+          "t": "HOT.DE",
+          "n": "HOCHTIEF (14:00 CET)",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.hochtief.com/investor-relations",
+          "verifiedOn": "2026-11-05",
+          "timingSource": "https://www.comdirect.de/inf/news/detail.html?CIF_Check=true&ID_NEWS=1169236043",
+          "evidence": "Berlin CET release time; date confirmed by issuer; clock time reported by dpa-AFX, not independently issuer-confirmed."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "weekday": "Fri",
+      "pre": [
+        {
+          "t": "SMT.L",
+          "n": "Scottish Mortgage Investment Trust (08:00 CET)",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.londonstockexchange.com/en/news/article/SMT/scottish-mortgage-half-year-results/f8ca-99-90-51-33-4f77b1",
+          "verifiedOn": "2026-11-07"
+        }
+      ],
+      "post": [],
+      "other": [
+        {
+          "t": "FME.DE",
+          "n": "Fresenius Medical Care — Q3 financial report",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://freseniusmedicalcare.com/en/investors/events/events-overview/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "DTG.DE",
+          "n": "Daimler Truck",
+          "idx": [
+            "DAX"
+          ],
+          "source": "https://www.daimlertruck.com/en/investors/financial-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "6479.T",
+          "n": "MINEBEA MITSUMI INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7752.T",
+          "n": "RICOH CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7202.T",
+          "n": "ISUZU MOTORS LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7211.T",
+          "n": "MITSUBISHI MOTORS CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7272.T",
+          "n": "YAMAHA MOTOR CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9433.T",
+          "n": "KDDI CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "1332.T",
+          "n": "NISSUI CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "3861.T",
+          "n": "OJI HOLDINGS CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "5411.T",
+          "n": "JFE HOLDINGS, INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "1721.T",
+          "n": "COMSYS HOLDINGS CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "7011.T",
+          "n": "MITSUBISHI HEAVY IND., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "3289.T",
+          "n": "TOKYU FUDOSAN HOLDINGS CORP.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "8801.T",
+          "n": "MITSUI FUDOSAN CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9009.T",
+          "n": "KEISEI ELECTRIC RAILWAY CO., LTD.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "IAG.L",
+          "n": "International Airlines Group",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.cnmv.es/Portal/otra-informacion-relevante/resultado-oir?lang=gl&nif=A85845535",
+          "verifiedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "pre": [],
+      "post": []
+    },
+    {
+      "date": "2026-11-08",
+      "pre": [],
+      "post": []
+    }
+  ]
+}
