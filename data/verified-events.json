@@ -2336,5 +2336,14 @@
     "source": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results",
     "verifiedOn": "2026-11-09",
     "evidence": "Issuer November 6 notice links December 1 results release to a subsequent 13:30 Pacific call. Exact release time/session not explicitly established; call time not substituted."
+  },
+  {
+    "ticker": "0700.HK",
+    "name": "Tencent",
+    "date": "2026-11-18",
+    "session": "other",
+    "source": "https://www.tencent.com/investors/investor-kit-calendar/",
+    "verifiedOn": "2026-11-10",
+    "evidence": "Official calendar HTML identifies Tencent 2026 Third Quarter Results Announcement on 2026/11/18. Its 20:00 HKT event time is not independently verified as publication time; date only. September 24 board notice corroborates the date, but alone would not establish release."
   }
 ]
