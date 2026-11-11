@@ -2345,5 +2345,14 @@
     "source": "https://www.tencent.com/investors/investor-kit-calendar/",
     "verifiedOn": "2026-11-10",
     "evidence": "Official calendar HTML identifies Tencent 2026 Third Quarter Results Announcement on 2026/11/18. Its 20:00 HKT event time is not independently verified as publication time; date only. September 24 board notice corroborates the date, but alone would not establish release."
+  },
+  {
+    "ticker": "CRM",
+    "name": "Salesforce",
+    "date": "2026-12-02",
+    "session": "post",
+    "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Date-of-Third-Quarter-Fiscal-2027-Earnings-Release-and-Webcast/default.aspx",
+    "verifiedOn": "2026-11-11",
+    "evidence": "November 10 issuer notice explicitly states December 2 after market close. The 17:00 ET broadcast is separate, not the release time."
   }
 ]
