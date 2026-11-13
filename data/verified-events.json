@@ -2391,5 +2391,14 @@
     "verifiedOn": "2026-11-12",
     "evidence": "Issuer explicitly confirms release at 07:00 ET (13:00 CET), separately from 10:00 ET conference call.",
     "time": "13:00 CET"
+  },
+  {
+    "ticker": "WDAY",
+    "name": "Workday",
+    "date": "2026-11-24",
+    "session": "post",
+    "source": "https://newsroom.workday.com/2026-11-02-Workday-to-Announce-Fiscal-2027-Third-Quarter-Financial-Results-on-November-24%2C-2026",
+    "verifiedOn": "2026-11-13",
+    "evidence": "November 2 issuer notice explicitly confirms results after market close on November 24; 16:30 ET is a separate call."
   }
 ]
