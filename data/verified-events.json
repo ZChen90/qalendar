@@ -2400,5 +2400,23 @@
     "source": "https://newsroom.workday.com/2026-11-02-Workday-to-Announce-Fiscal-2027-Third-Quarter-Financial-Results-on-November-24%2C-2026",
     "verifiedOn": "2026-11-13",
     "evidence": "November 2 issuer notice explicitly confirms results after market close on November 24; 16:30 ET is a separate call."
+  },
+  {
+    "ticker": "CRWD",
+    "name": "CrowdStrike",
+    "date": "2026-12-01",
+    "session": "post",
+    "source": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-announces-date-fiscal-third-quarter-2027-financial",
+    "verifiedOn": "2026-11-14",
+    "evidence": "November 4 issuer notice explicitly states December 1 after US market close; 17:00 Eastern is a separate call."
+  },
+  {
+    "ticker": "DG",
+    "name": "Dollar General",
+    "date": "2026-12-03",
+    "session": "other",
+    "source": "https://investor.dollargeneral.com/news-detail/dollar-general-corporation-announces-webcast-of-its-third-quarter-2026-earnings-conference-call/61f86ee0-0552-4ed3-9adb-b21a0d3d1d14",
+    "verifiedOn": "2026-11-14",
+    "evidence": "November 5 issuer notice explicitly confirms December 3 results release. 09:00 Eastern is the call, not a verified release time."
   }
 ]
