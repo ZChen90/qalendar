@@ -2418,5 +2418,14 @@
     "source": "https://investor.dollargeneral.com/news-detail/dollar-general-corporation-announces-webcast-of-its-third-quarter-2026-earnings-conference-call/61f86ee0-0552-4ed3-9adb-b21a0d3d1d14",
     "verifiedOn": "2026-11-14",
     "evidence": "November 5 issuer notice explicitly confirms December 3 results release. 09:00 Eastern is the call, not a verified release time."
+  },
+  {
+    "ticker": "INTU",
+    "name": "Intuit",
+    "date": "2026-11-19",
+    "session": "post",
+    "source": "https://investors.intuit.com/news-events/press-releases/detail/1330/intuit-to-announce-first-quarter-fiscal-year-2027-results-on-nov-19",
+    "verifiedOn": "2026-11-15",
+    "evidence": "October 29 issuer notice explicitly confirms November 19 following market close; 13:30 Pacific is its separate conference call."
   }
 ]
