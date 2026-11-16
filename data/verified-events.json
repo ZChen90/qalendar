@@ -2427,5 +2427,23 @@
     "source": "https://investors.intuit.com/news-events/press-releases/detail/1330/intuit-to-announce-first-quarter-fiscal-year-2027-results-on-nov-19",
     "verifiedOn": "2026-11-15",
     "evidence": "October 29 issuer notice explicitly confirms November 19 following market close; 13:30 Pacific is its separate conference call."
+  },
+  {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "date": "2026-12-09",
+    "session": "post",
+    "source": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-fourth-quarter-and-fiscal-year-2026",
+    "verifiedOn": "2026-11-16",
+    "evidence": "November 9 issuer notice explicitly confirms December 9 after US trading closes. 17:00 Eastern is the separate call."
+  },
+  {
+    "ticker": "COST",
+    "name": "Costco",
+    "date": "2026-12-10",
+    "session": "other",
+    "source": "https://investor.costco.com/events-and-presentations/",
+    "verifiedOn": "2026-11-16",
+    "evidence": "Official calendar separately lists Q1 2027 Earnings Results on December 10 and an earnings call. No release clock time inferred."
   }
 ]
