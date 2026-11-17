@@ -2445,5 +2445,14 @@
     "source": "https://investor.costco.com/events-and-presentations/",
     "verifiedOn": "2026-11-16",
     "evidence": "Official calendar separately lists Q1 2027 Earnings Results on December 10 and an earnings call. No release clock time inferred."
+  },
+  {
+    "ticker": "ITH.L",
+    "name": "Ithaca Energy",
+    "date": "2026-11-18",
+    "session": "other",
+    "source": "https://investors.ithacaenergy.com/news-events/financial-calendar",
+    "verifiedOn": "2026-11-17",
+    "evidence": "Official financial calendar explicitly lists November 18 Q3 2026 Financial Results; release time not stated. Resolves previously unresolved date."
   }
 ]
