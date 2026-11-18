@@ -250,3 +250,11 @@ Window November 16–December 13. Resolved Ithaca Energy: official calendar http
 NVIDIA's official notice https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/ corroborates existing November 17 results at approximately 13:20 Pacific; no schedule change. Allgens CNINFO November 14–17 query at https://www.cninfo.com.cn/new/hisAnnouncement/query returned no notices, leaving its exact date unresolved. Adobe and lululemon searches did not establish an official new release date; secondary estimates were not imported.
 
 Partial verification: other index and watch-company records retain previous evidence; full earnings/current-membership coverage, KOSPI completeness and earliest SSE historical-release checks remain incomplete. UI/schema unchanged. Existing five-week validator warning remains open due to historical regression data. Freshness reflects this documented Ithaca verification, not blanket certification.
+
+## Daily verification — November 18, 2026
+
+Window November 16–December 13. Ithaca's official calendar https://investors.ithacaenergy.com/news-events/financial-calendar still confirms November 18 Q3 results; no timing correction established. Allgens CNINFO query for November 17–18 returned no notices at https://www.cninfo.com.cn/new/hisAnnouncement/query ; its exact delayed-report date remains unresolved.
+
+Adobe and lululemon searches produced secondary estimates but no independently verified issuer release announcement, so no event imported. Synopsys' official https://investor.synopsys.com/events-and-presentations/events/event-details/2026/Q4-Fiscal-Year-2026-Earnings/default.aspx establishes a December 8 earnings webcast at 14:00 Pacific. No independent release notice was retrieved; webcast time was not substituted for release time. Candidate date remains held for confirmation.
+
+No calendar data or updatedAt change. Partial run: other companies, current memberships and earliest SSE historical dates were not comprehensively reverified. Existing KOSPI/coverage gaps and five-stored-week validator warning remain open. Source-log-only publication records these checks without representing the whole calendar as newly verified.
