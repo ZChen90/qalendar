@@ -258,3 +258,11 @@ Window November 16–December 13. Ithaca's official calendar https://investors.i
 Adobe and lululemon searches produced secondary estimates but no independently verified issuer release announcement, so no event imported. Synopsys' official https://investor.synopsys.com/events-and-presentations/events/event-details/2026/Q4-Fiscal-Year-2026-Earnings/default.aspx establishes a December 8 earnings webcast at 14:00 Pacific. No independent release notice was retrieved; webcast time was not substituted for release time. Candidate date remains held for confirmation.
 
 No calendar data or updatedAt change. Partial run: other companies, current memberships and earliest SSE historical dates were not comprehensively reverified. Existing KOSPI/coverage gaps and five-stored-week validator warning remain open. Source-log-only publication records these checks without representing the whole calendar as newly verified.
+
+## Daily verification — November 19, 2026
+
+Window November 16–December 13. Synopsys https://investor.synopsys.com/events-and-presentations/ still establishes December 8 webcast timing, not independently verified release timing. Adobe and lululemon searches did not establish an official release notice; secondary estimates excluded.
+
+Issuer-confirmed discovery candidates: Okta December 1 after US close at https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-to-Announce-Third-Quarter-Fiscal-Year-2027-Financial-Results-on-December-1-2026/default.aspx and Zscaler December 2 after US close at https://ir.zscaler.com/news-releases/news-release-details/zscaler-host-first-quarter-fiscal-year-2027-earnings-conference . Both tickers are absent from the saved covered-index directory; no membership invented and no calendar entry imported. These dates await a coverage/membership determination, not issuer-date verification.
+
+No calendar or updatedAt change. Partial check only; other index/watch records and Allgens were not freshly reverified. Full current membership and earnings reconciliation, KOSPI coverage, earliest SSE releases and the historical five-week validator warning remain open. Source-log publication does not certify comprehensive coverage.
