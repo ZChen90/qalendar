@@ -266,3 +266,13 @@ Window November 16–December 13. Synopsys https://investor.synopsys.com/events-
 Issuer-confirmed discovery candidates: Okta December 1 after US close at https://investor.okta.com/news-and-events/news-releases/news-details/2026/Okta-to-Announce-Third-Quarter-Fiscal-Year-2027-Financial-Results-on-December-1-2026/default.aspx and Zscaler December 2 after US close at https://ir.zscaler.com/news-releases/news-release-details/zscaler-host-first-quarter-fiscal-year-2027-earnings-conference . Both tickers are absent from the saved covered-index directory; no membership invented and no calendar entry imported. These dates await a coverage/membership determination, not issuer-date verification.
 
 No calendar or updatedAt change. Partial check only; other index/watch records and Allgens were not freshly reverified. Full current membership and earnings reconciliation, KOSPI coverage, earliest SSE releases and the historical five-week validator warning remain open. Source-log publication does not certify comprehensive coverage.
+
+## Daily verification — November 20, 2026
+
+Window November 16–December 13. Used a clean checkout under /private/tmp because current filesystem permissions allow writes there rather than the prior workspace. Calendar data and updatedAt unchanged.
+
+Allgens CNINFO query November 18–20 returned six notices. Read November 19 issuer notice https://static.cninfo.com.cn/finalpage/2026-11-19/1225677704.PDF : it reiterates delayed Q3 preparation and financial-data review without an exact release date. November 20 returned titles concern independent-director nomination and a shareholder meeting; no earnings date inferred from those titles. Allgens remains unresolved.
+
+Direct Adobe IR page https://www.adobe.com/investor-relations.html confirms December 9 at 14:00 Pacific as an earnings call, not release time. Synopsys https://investor.synopsys.com/events-and-presentations/ likewise confirms a December 8 webcast only. Searches did not establish a lululemon issuer release notice; secondary estimates excluded. These checks do not establish absence of earnings.
+
+Partial run: other indices, watch companies and current memberships were not comprehensively reverified. Full earnings/membership reconciliation, KOSPI completeness, earliest SSE historical release dates and five-stored-week validator warning remain open. Source-log-only publication does not freshen the calendar or resolve stale-data warnings.
