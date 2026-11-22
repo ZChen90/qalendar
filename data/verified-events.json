@@ -2454,5 +2454,23 @@
     "source": "https://investors.ithacaenergy.com/news-events/financial-calendar",
     "verifiedOn": "2026-11-17",
     "evidence": "Official financial calendar explicitly lists November 18 Q3 2026 Financial Results; release time not stated. Resolves previously unresolved date."
+  },
+  {
+    "ticker": "A",
+    "name": "Agilent Technologies",
+    "date": "2026-11-23",
+    "session": "post",
+    "source": "https://www.agilent.com/about/newsroom/presrel/2026/29oct-gp26021.html",
+    "verifiedOn": "2026-11-22",
+    "evidence": "Issuer October 29 announcement explicitly confirms results after market close November 23; call time excluded."
+  },
+  {
+    "ticker": "DLTR",
+    "name": "Dollar Tree",
+    "date": "2026-11-24",
+    "session": "pre",
+    "source": "https://corporate.dollartree.com/news-media/press-releases/detail/312/dollar-tree-inc-to-host-third-quarter-earnings-conference",
+    "verifiedOn": "2026-11-22",
+    "evidence": "Issuer November 3 announcement explicitly confirms results before market open November 24; 08:00 ET call time excluded."
   }
 ]

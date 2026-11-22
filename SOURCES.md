@@ -284,3 +284,15 @@ Window November 16–December 13. Reopened Dell's official November 24 notice ht
 Allgens CNINFO November 20–21 query at https://www.cninfo.com.cn/new/hisAnnouncement/query returned the same five November 20 director/shareholder-meeting notice titles seen yesterday, with no new November 21 notice. Titles do not establish an earnings date; no date inferred. Allgens remains unresolved.
 
 No calendar or updatedAt change. This is a partial check, not full verification of all indices, current memberships or owner-watch companies. Existing earliest-SSE/KOSPI/coverage gaps and five-stored-week validator warning remain open. Source-log-only publication leaves freshness unchanged.
+
+## Daily verification — November 22, 2026
+
+Window November 16–December 13. Added two previously missing issuer-confirmed events:
+- Agilent (NYSE: A), November 23 after US market close: https://www.agilent.com/about/newsroom/presrel/2026/29oct-gp26021.html . October 29 announcement explicitly distinguishes release from the 13:30 Pacific call.
+- Dollar Tree (Nasdaq: DLTR), November 24 before US market open: https://corporate.dollartree.com/news-media/press-releases/detail/312/dollar-tree-inc-to-host-third-quarter-earnings-conference . November 3 announcement explicitly distinguishes release from the 08:00 Eastern call. Correct corporate IR domain resolved earlier unsuccessful searches.
+
+Both existing SPX tags cross-checked against the current secondary constituent list https://en.wikipedia.org/wiki/List_of_S%26P_500_companies ; this is not official index-provider certification. Issuer announcements confirm the listing symbols. No NDX membership added to Dollar Tree: Nasdaq's removal notice https://ir.nasdaq.com/node/108291/pdf supports its historical removal.
+
+Kroger notice https://ir.kroger.com/news/news-details/2026/Kroger-Announces-Third-Quarter-Conference-Call-with-Investors/default.aspx establishes December 3 call timing only. Best Buy https://www.investors.bestbuy.com/News--Events/events-and-presentations/events/event-details/2026/Q3-FY27-Best-Buy-Co-Inc-Earnings-Call/default.aspx establishes November 24 call timing only. Deere discovery at https://www.deere.com/en-us/john-deere-news/fy26-q4-announcement establishes November 25 call timing; no release session inferred. These candidates remain excluded pending independent release evidence. Secondary calendar discovery (Kiplinger) was not used as release confirmation.
+
+Freshness advanced only for the documented Agilent/Dollar Tree verification. Partial audit: all other index/watch records retain prior evidence; full current memberships, KOSPI coverage, earliest SSE historical releases and Allgens remain incomplete. Historical five-stored-week validation warning remains open. UI and schema unchanged.
