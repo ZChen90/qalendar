@@ -31,7 +31,9 @@ function boot(date='2026-10-29T12:00:00',payload=calendarFixture()){
  return {element,storage,ctx,run:s=>vm.runInContext(s,ctx),setDate:s=>{now=new Date(s).getTime();},async tick(){for(const x of intervals)await x.fn();},async focus(){await listeners.focus?.();},payload:()=>JSON.parse(element('week-data').textContent)};
 }
 test('Berlin release times render in the requested home-market sessions',()=>{
- const app=boot('2026-11-05T16:38:00',null);
+ // Archived week as published on November 5; the live feed no longer carries it.
+ const week=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/week-archive-20261102.json'),'utf8'));
+ const app=boot('2026-11-05T16:38:00',{updatedAt:'2026-11-05 09:01 (Berlin)',source:'Archived week fixture',changes:[],weeks:[week]});
  const day=app.run('W().flatMap(w=>w.days).find(d=>d.date==="2026-11-05")');
  for(const [t,time] of [['CBK.DE','07:00'],['DHL.DE','07:00'],['DTE.DE','07:00'],['RHM.DE','07:30']])assert.ok(day.pre.some(c=>c.t===t&&c.n.includes(time+' CET')));
  assert.ok(day.during.some(c=>c.t==='HOT.DE'&&c.n.includes('14:00 CET')));

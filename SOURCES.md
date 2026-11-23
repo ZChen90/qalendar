@@ -313,3 +313,7 @@ JPX landing https://www.jpx.co.jp/listing/event-schedules/financial-announcement
 Adobe and lululemon searches did not establish a new issuer release announcement. They remain unresolved; absence of search results does not establish no earnings. StockTitan used only to discover the original Synopsys issuer release, not as calendar confirmation.
 
 Partial audit: other index/watch companies retain prior evidence; full earnings and current-membership reconciliation, Allgens, KOSPI completeness and earliest SSE historical dates remain open. Freshness reflects only the four documented verified records and rollover, not comprehensive certification. UI/schema unchanged.
+
+## Maintenance — November 24, 2026
+
+No earnings dates were added, changed or re-verified, so `updatedAt` is unchanged. The historical November 2–8 week was removed from the published window; it had been kept only because one regression test read it from the live feed. That test now reads `data/week-archive-20261102.json`, which is identical to the removed week. The published window is the four current weeks, November 23–December 20, and the five-stored-week validator warning is resolved.
