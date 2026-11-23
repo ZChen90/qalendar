@@ -2472,5 +2472,42 @@
     "source": "https://corporate.dollartree.com/news-media/press-releases/detail/312/dollar-tree-inc-to-host-third-quarter-earnings-conference",
     "verifiedOn": "2026-11-22",
     "evidence": "Issuer November 3 announcement explicitly confirms results before market open November 24; 08:00 ET call time excluded."
+  },
+  {
+    "ticker": "NKE",
+    "name": "Nike",
+    "date": "2026-12-17",
+    "session": "post",
+    "time": "~22:15 CET",
+    "source": "https://investors.nike.com/news-events/press-releases/detail/580/nike-inc-announces-second-quarter-fiscal-2027-earnings-and-conference-call",
+    "evidence": "Issuer release November 20 confirms December 17 approximately 13:15 Pacific results release after close; converts to 22:15 CET.",
+    "verifiedOn": "2026-11-23"
+  },
+  {
+    "ticker": "MU",
+    "name": "Micron",
+    "date": "2026-12-17",
+    "session": "other",
+    "source": "https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-First-Quarter-Results-on-December-17-2026/default.aspx",
+    "evidence": "Issuer November 19 notice title explicitly says report fiscal first quarter results December 17. Body gives conference-call time only; release session remains unknown.",
+    "verifiedOn": "2026-11-23"
+  },
+  {
+    "ticker": "SNPS",
+    "name": "Synopsys",
+    "date": "2026-12-08",
+    "session": "post",
+    "source": "https://www.prnewswire.com/news-releases/synopsys-announces-earnings-release-date-for-fourth-quarter-and-fiscal-year-2026-302931192.html",
+    "evidence": "Original issuer-provided PR Newswire announcement November 5 explicitly confirms December 8 results after market close. Resolves prior call-only evidence.",
+    "verifiedOn": "2026-11-23"
+  },
+  {
+    "ticker": "1928.T",
+    "name": "Sekisui House",
+    "date": "2026-12-10",
+    "session": "other",
+    "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
+    "evidence": "Official JPX October-period schedule as of November 19 lists code 1928, third quarter, Excel date 46366 = December 10. No release session supplied.",
+    "verifiedOn": "2026-11-23"
   }
 ]

@@ -1,0 +1,341 @@
+{
+  "weekLabel": "Nov 16 – Nov 20, 2026",
+  "days": [
+    {
+      "date": "2026-11-16",
+      "weekday": "Mon",
+      "pre": [],
+      "post": [],
+      "other": [
+        {
+          "t": "4324.T",
+          "n": "DENTSU GROUP INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "LGEN.L",
+          "n": "Legal & General — quarterly trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://group.legalandgeneral.com/investors/financial-calendar/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9888.HK",
+          "n": "Baidu",
+          "idx": [
+            "HSI"
+          ],
+          "source": "https://ir.baidu.com/node/14976/pdf",
+          "verifiedOn": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "weekday": "Tue",
+      "pre": [
+        {
+          "t": "DIS",
+          "n": "Walt Disney",
+          "idx": [
+            "SPX"
+          ],
+          "source": "https://investors.thewaltdisneycompany.com/news/news-details/2026/The-Walt-Disney-Company-Executives-to-Discuss-Fiscal-Full-Year-and-Fourth-Quarter-2026-Financial-Results-via-Webcast/default.aspx",
+          "verifiedOn": "2026-11-05"
+        }
+      ],
+      "post": [
+        {
+          "t": "NVDA",
+          "n": "NVIDIA (~22:20 CET)",
+          "idx": [
+            "SPX",
+            "NDX"
+          ],
+          "source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "t": "9618.HK",
+          "n": "JD.com",
+          "idx": [
+            "HSI"
+          ],
+          "source": "https://ir.jd.com/static-files/c486dd4f-1a32-418d-9a12-ef6fe93dbab6",
+          "verifiedOn": "2026-11-07"
+        }
+      ],
+      "other": [
+        {
+          "t": "IMB.L",
+          "n": "Imperial Brands",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.imperialbrandsplc.com/investor-hub/financial-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "DPLM.L",
+          "n": "Diploma — preliminary results",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.diplomaplc.com/investors/financial-calendar/",
+          "verifiedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "weekday": "Wed",
+      "pre": [],
+      "post": [
+        {
+          "t": "PANW",
+          "n": "Palo Alto Networks",
+          "idx": [
+            "SPX",
+            "NDX"
+          ],
+          "source": "https://investors.paloaltonetworks.com/node/20971/pdf",
+          "verifiedOn": "2026-11-07"
+        }
+      ],
+      "other": [
+        {
+          "t": "SSE.L",
+          "n": "SSE",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.sse.com/investors/financial-calendar/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "BLND.L",
+          "n": "British Land",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.britishland.com/investors/financial-calendar/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "SMIN.L",
+          "n": "Smiths Group — Q1 trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.smiths.com/investors/shareholder-services/events-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "SVT.L",
+          "n": "Severn Trent — interim results",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.severntrent.com/content/dam/stw-plc/fy-results-26/severn-trent-plc-results-for-the-year-to-31-march-2026.pdf",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "EXPN.L",
+          "n": "Experian — half-yearly financial report",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "MRO.L",
+          "n": "Melrose — trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.melroseplc.net/investors/financial-calendar/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "CTEC.L",
+          "n": "Convatec — ten-month trading update",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.investegate.eu/announcement/rns/convatec-group--ctec/further-re-interim-results-for-first-half-of-2026/9704209",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "0700.HK",
+          "n": "Tencent",
+          "idx": [
+            "HSI"
+          ],
+          "source": "https://www.tencent.com/investors/investor-kit-calendar/",
+          "verifiedOn": "2026-11-10"
+        },
+        {
+          "t": "ITH.L",
+          "n": "Ithaca Energy",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://investors.ithacaenergy.com/news-events/financial-calendar",
+          "verifiedOn": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "weekday": "Thu",
+      "pre": [
+        {
+          "t": "WMT",
+          "n": "Walmart (~13:00 CET)",
+          "idx": [
+            "SPX",
+            "NDX"
+          ],
+          "source": "https://corporate.walmart.com/news/events/fy2027-q3-earnings-release",
+          "verifiedOn": "2026-11-07"
+        }
+      ],
+      "post": [
+        {
+          "t": "1024.HK",
+          "n": "Kuaishou",
+          "idx": [
+            "HSI"
+          ],
+          "source": "https://kuaishou.gcs-web.com/news-releases/news-release-details/kuaishou-technology-report-2026-third-quarter-financial-results",
+          "verifiedOn": "2026-11-08"
+        },
+        {
+          "t": "INTU",
+          "n": "Intuit",
+          "idx": [
+            "SPX",
+            "NDX"
+          ],
+          "source": "https://investors.intuit.com/news-events/press-releases/detail/1330/intuit-to-announce-first-quarter-fiscal-year-2027-results-on-nov-19",
+          "verifiedOn": "2026-11-15"
+        }
+      ],
+      "other": [
+        {
+          "t": "8630.T",
+          "n": "SOMPO HOLDINGS, INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "8725.T",
+          "n": "MS&AD INSURANCE GROUP HOLDINGS, INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "8766.T",
+          "n": "TOKIO MARINE HOLDINGS, INC.",
+          "idx": [
+            "N225"
+          ],
+          "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan09_1030.xlsx",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "SGE.L",
+          "n": "Sage Group",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.sage.com/investors/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "HLMA.L",
+          "n": "Halma",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.halma.com/investors/financial-calendar",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "BAB.L",
+          "n": "Babcock — half-year results",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.babcockinternational.com/investors/financial-calendar/",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "INVP.L",
+          "n": "Investec — interim results",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://uk.advfn.com/stock-market/london/investec-INVP/share-news/Investec-PLC-Pre-Close-Trading-Statement/99334086",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "JD.L",
+          "n": "JD Sports — Q3 trading statement",
+          "idx": [
+            "FTSE"
+          ],
+          "source": "https://www.jdplc.com/?p=8172",
+          "verifiedOn": "2026-11-04"
+        },
+        {
+          "t": "9999.HK",
+          "n": "NetEase",
+          "idx": [
+            "HSI"
+          ],
+          "source": "https://ir.netease.com/news-releases/news-release-details/netease-report-third-quarter-2026-financial-results-november-19",
+          "verifiedOn": "2026-11-06"
+        },
+        {
+          "t": "9988.HK",
+          "n": "Alibaba",
+          "idx": [
+            "HSI"
+          ],
+          "source": "https://www.alibabagroup.com/en-US/document-2054756418245885952",
+          "verifiedOn": "2026-11-08"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "weekday": "Fri",
+      "pre": [],
+      "post": []
+    },
+    {
+      "date": "2026-11-21",
+      "pre": [],
+      "post": []
+    },
+    {
+      "date": "2026-11-22",
+      "pre": [],
+      "post": []
+    }
+  ]
+}
