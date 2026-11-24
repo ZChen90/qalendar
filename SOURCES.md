@@ -317,3 +317,15 @@ Partial audit: other index/watch companies retain prior evidence; full earnings 
 ## Maintenance — November 24, 2026
 
 No earnings dates were added, changed or re-verified, so `updatedAt` is unchanged. The historical November 2–8 week was removed from the published window; it had been kept only because one regression test read it from the live feed. That test now reads `data/week-archive-20261102.json`, which is identical to the removed week. The published window is the four current weeks, November 23–December 20, and the five-stored-week validator warning is resolved.
+
+## Daily verification — November 24, 2026
+
+Window November 23–December 20. Synced clean checkout to remote 8fbc3c3, preserving its completed historical-week cleanup. No calendar/updatedAt change in this run.
+
+Adobe https://www.adobe.com/investor-relations.html still identifies December 9 at 14:00 Pacific as a call; no independent release notice established. Kroger https://www.thekrogerco.com/ir-feed-item/kroger-announces-third-quarter-conference-call-with-investors/ identifies December 3 at 08:00 Eastern as a call only. Best Buy https://www.investors.bestbuy.com/News--Events/events-and-presentations/default.aspx lists today's call without a newly retrieved release. No release session inferred for these held candidates. Lululemon searches did not establish an issuer release announcement; direct news-page retrieval failed, so this remains unresolved.
+
+FedEx https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Reports-Strong-Third-Quarter-Results-038f3037d/default.aspx confirms its latest calendar-quarter results were October 28. SEC filing https://www.sec.gov/Archives/edgar/data/1048911/000104891126000126/fdx-20261028.htm describes the fiscal-year transition; no December earnings date inferred from the old fiscal calendar.
+
+Allgens CNINFO https://www.cninfo.com.cn/new/hisAnnouncement/query query November 21–24 returned no announcement entries; this does not establish absence of a release. Exact delayed Q3 date remains unresolved.
+
+Partial check only: other indices, watch companies and current memberships were not comprehensively reverified. Earliest SSE releases, full KOSPI coverage and other existing audit gaps remain open. Source-log-only publication does not refresh calendar freshness. The prior five-week warning was resolved by the separately published 8fbc3c3 maintenance change.
