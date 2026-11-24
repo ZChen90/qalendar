@@ -1700,7 +1700,7 @@
     "date": "2026-11-24",
     "session": "other",
     "source": "https://www.compass-group.com/en/investors.html",
-    "verifiedOn": "2026-11-04",
+    "verifiedOn": "2026-11-24",
     "evidence": "Official issuer or regulator announcement/calendar confirms date; no release time inferred from presentation or webcast."
   },
   {
@@ -1943,7 +1943,7 @@
     "date": "2026-11-24",
     "session": "other",
     "source": "https://www.balfourbeatty.com/investors/financial-calendar/",
-    "verifiedOn": "2026-11-04",
+    "verifiedOn": "2026-11-24",
     "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
   },
   {
@@ -1988,7 +1988,7 @@
     "date": "2026-11-24",
     "session": "other",
     "source": "https://www.kingfisher.com/investors/financial-calendar",
-    "verifiedOn": "2026-11-04",
+    "verifiedOn": "2026-11-24",
     "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
   },
   {
@@ -2123,7 +2123,7 @@
     "date": "2026-11-24",
     "session": "other",
     "source": "https://www.londonmetric.com/news-and-media/press-release/2026/26%2010%2029%20trading%20update",
-    "verifiedOn": "2026-11-04",
+    "verifiedOn": "2026-11-24",
     "evidence": "Issuer calendar or release explicitly confirms date and event type. No release time inferred."
   },
   {
@@ -2334,7 +2334,7 @@
     "date": "2026-12-01",
     "session": "other",
     "source": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results",
-    "verifiedOn": "2026-11-09",
+    "verifiedOn": "2026-11-24",
     "evidence": "Issuer November 6 notice links December 1 results release to a subsequent 13:30 Pacific call. Exact release time/session not explicitly established; call time not substituted."
   },
   {
@@ -2370,7 +2370,7 @@
     "date": "2026-11-24",
     "session": "other",
     "source": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results",
-    "verifiedOn": "2026-11-12",
+    "verifiedOn": "2026-11-24",
     "evidence": "November 10 issuer notice links results release to the November 24 call and says results precede the call; 15:30 CST is not the release time. Session unconfirmed."
   },
   {
@@ -2379,7 +2379,7 @@
     "date": "2026-11-24",
     "session": "other",
     "source": "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--to-Announce-Fourth-Quarter-Fiscal-2026-Earnings-on-November-24-2026-and-to-Attend-Upcoming-Investor-Conferences/default.aspx",
-    "verifiedOn": "2026-11-12",
+    "verifiedOn": "2026-11-24",
     "evidence": "Issuer announcement title explicitly confirms November 24 earnings announcement. 17:00 ET in the body is the call, not a verified release session."
   },
   {
@@ -2388,9 +2388,9 @@
     "date": "2026-11-24",
     "session": "pre",
     "source": "https://www.analog.com/en/newsroom/press-releases/2026/10-22-2026-adi-report-4q-fy2026-financial-results.html",
-    "verifiedOn": "2026-11-12",
-    "evidence": "Issuer explicitly confirms release at 07:00 ET (13:00 CET), separately from 10:00 ET conference call.",
-    "time": "13:00 CET"
+    "verifiedOn": "2026-11-24",
+    "evidence": "Issuer release: financial results for the fourth quarter fiscal year 2026 at 7:00 a.m. Eastern time on Tuesday, November 24, 2026; the 10:00 a.m. ET call is separate.",
+    "time": "07:00 ET"
   },
   {
     "ticker": "WDAY",
@@ -2398,7 +2398,7 @@
     "date": "2026-11-24",
     "session": "post",
     "source": "https://newsroom.workday.com/2026-11-02-Workday-to-Announce-Fiscal-2027-Third-Quarter-Financial-Results-on-November-24%2C-2026",
-    "verifiedOn": "2026-11-13",
+    "verifiedOn": "2026-11-24",
     "evidence": "November 2 issuer notice explicitly confirms results after market close on November 24; 16:30 ET is a separate call."
   },
   {
@@ -2407,7 +2407,7 @@
     "date": "2026-12-01",
     "session": "post",
     "source": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-announces-date-fiscal-third-quarter-2027-financial",
-    "verifiedOn": "2026-11-14",
+    "verifiedOn": "2026-11-24",
     "evidence": "November 4 issuer notice explicitly states December 1 after US market close; 17:00 Eastern is a separate call."
   },
   {
@@ -2470,7 +2470,7 @@
     "date": "2026-11-24",
     "session": "pre",
     "source": "https://corporate.dollartree.com/news-media/press-releases/detail/312/dollar-tree-inc-to-host-third-quarter-earnings-conference",
-    "verifiedOn": "2026-11-22",
+    "verifiedOn": "2026-11-24",
     "evidence": "Issuer November 3 announcement explicitly confirms results before market open November 24; 08:00 ET call time excluded."
   },
   {
@@ -2545,6 +2545,42 @@
     "session": "pre",
     "source": "https://s204.q4cdn.com/636391999/files/doc_news/Hormel-Foods-Corporation-Announces-Fourth-Quarter-Earnings-Call-2026.pdf",
     "evidence": "Issuer notice: fourth quarter earnings release before the markets open on Thursday, December 3, 2026; the call is separate.",
+    "verifiedOn": "2026-11-24"
+  },
+  {
+    "ticker": "2015.HK",
+    "name": "Li Auto",
+    "date": "2026-11-25",
+    "session": "other",
+    "source": "https://ir.lixiang.com/news-releases/news-release-details/li-auto-inc-report-third-quarter-2026-financial-results-november",
+    "evidence": "Issuer release of November 10: unaudited third quarter 2026 results before the U.S. market opens on Wednesday, November 25, 2026. Timing is stated relative to the U.S. market only, so no Hong Kong session is assigned; the 20:00 HKT call is separate.",
+    "verifiedOn": "2026-11-24"
+  },
+  {
+    "ticker": "ULTA",
+    "name": "Ulta Beauty",
+    "date": "2026-12-03",
+    "session": "post",
+    "source": "https://www.ulta.com/investor/news-events/press-releases/detail/238/ulta-beauty-to-report-third-quarter-fiscal-2026-results-and",
+    "evidence": "Issuer release of November 19: third quarter fiscal 2026 results on Thursday, December 3, 2026, after the market closes; the 4:30 p.m. EST call is separate.",
+    "verifiedOn": "2026-11-24"
+  },
+  {
+    "ticker": "AZO",
+    "name": "AutoZone",
+    "date": "2026-12-08",
+    "session": "pre",
+    "source": "https://about.autozone.com/news-releases/news-release-details/autozone-release-first-quarter-fiscal-2027-earnings-december-8",
+    "evidence": "Issuer release of November 11: first quarter fiscal 2027 results before market open on Tuesday, December 8, 2026; the 10:00 a.m. ET call is separate.",
+    "verifiedOn": "2026-11-24"
+  },
+  {
+    "ticker": "CIEN",
+    "name": "Ciena",
+    "date": "2026-12-10",
+    "session": "pre",
+    "source": "https://s25.q4cdn.com/550667411/files/doc_news/Ciena-Announces-Reporting-Date-and-Web-Broadcast-for-Fiscal-Fourth-Quarter-and-Year-End-2026-Results-2026.pdf",
+    "evidence": "Issuer release of November 12: expects to announce fiscal fourth quarter and year-end results on Thursday, December 10, 2026, before the open of the U.S. financial markets; the 8:30 a.m. Eastern webcast is separate.",
     "verifiedOn": "2026-11-24"
   }
 ]

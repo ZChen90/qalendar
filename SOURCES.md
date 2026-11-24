@@ -340,3 +340,28 @@ Four issuer-confirmed events added. They were first verified by the 01:25 schedu
 - HRL: issuer notice states the earnings release before the markets open on December 3. https://s204.q4cdn.com/636391999/files/doc_news/Hormel-Foods-Corporation-Announces-Fourth-Quarter-Earnings-Call-2026.pdf
 
 Index tags come from the embedded directory (SJM, NTAP, HRL: SPX; 3690.HK: HSI). The scheduled run also reported re-checking ADI, WDAY, DELL, CRWD and MRVL with no date change; those sources were not retrieved again here, so their verifiedOn dates are unchanged. Held back as call-only evidence: Deere November 25, Autodesk November 24, Best Buy November 24, Kroger December 3, Adobe December 9. Unresolved: HPE, Oracle, FedEx, lululemon, Allgens. Coverage remains partial; empty days do not mean no earnings.
+
+## Daily verification — November 24, 2026 (third publication, scheduled cloud run)
+
+Window November 23–December 20; no rollover needed. Coverage is partial: an empty day means nothing verified, not that no company reports.
+
+Added (issuer pages retrieved in this run):
+- 2015.HK Li Auto, November 25, session unconfirmed ("other"): the issuer release states unaudited third quarter 2026 results "before the U.S. market opens on Wednesday, November 25, 2026". The timing is relative to the U.S. market only, so no Hong Kong session was assigned; the 20:00 HKT call is separate. https://ir.lixiang.com/news-releases/news-release-details/li-auto-inc-report-third-quarter-2026-financial-results-november
+- ULTA Ulta Beauty, December 3, after U.S. close: the issuer release states third quarter fiscal 2026 results on Thursday, December 3, 2026, after the market closes; the 4:30 p.m. EST call is separate. https://www.ulta.com/investor/news-events/press-releases/detail/238/ulta-beauty-to-report-third-quarter-fiscal-2026-results-and
+- AZO AutoZone, December 8, before U.S. open: the issuer release states first quarter fiscal 2027 results before market open on Tuesday, December 8, 2026; the 10:00 a.m. ET call is separate. https://about.autozone.com/news-releases/news-release-details/autozone-release-first-quarter-fiscal-2027-earnings-december-8
+- CIEN Ciena, December 10, before U.S. open: the issuer release says it "expects to announce" fiscal fourth quarter and year-end results on Thursday, December 10, 2026, before the open of the U.S. financial markets; the 8:30 a.m. Eastern webcast is separate. https://s25.q4cdn.com/550667411/files/doc_news/Ciena-Announces-Reporting-Date-and-Web-Broadcast-for-Fiscal-Fourth-Quarter-and-Year-End-2026-Results-2026.pdf
+
+Index tags come from the embedded directory (2015.HK: HSI; ULTA, AZO, CIEN: SPX).
+
+Re-checked against the stored issuer source, date unchanged, verifiedOn set to November 24: ADI (release 7:00 a.m. Eastern; label changed from "· 13:00 CET" to the "(07:00 ET)" convention, same instant), DLTR (before the stock market opens), WDAY (after market close), DELL (results before the 3:30 p.m. CST call; no session stated), HPQ (date in headline; call time only), SJM (materials from 7:00 a.m. EST), CPG.L, BBY.L, KGF.L, LMP.L (all November 24, no release session), 3690.HK (November 27 after market close), CRWD and NTAP (December 1 after market close), MRVL (December 1, no release timing). The Compass page reads "We will announce our Full Year 2026 Results on 24 November at 9.00am GMT"; this may be the presentation time rather than the regulatory release, so no time was added and the event stays in "other".
+
+Not confirmed in this run: EZJ.L easyJet November 25. The issuer calendar page https://corporate.easyjet.com/investors/financial-calendar/ loaded but the fetched text showed an empty "Upcoming Events" list (the list appears to be rendered by script). Nothing indicates a change of date, so the event stays as verified on November 4 and its verifiedOn is unchanged.
+
+Held back:
+- Deere November 25: https://www.deere.com/en-us/john-deere-news/fy26-q4-announcement returned only a script stub whose description gives the earnings call (Wednesday, Nov. 25, 9 a.m. CST); no release statement retrieved.
+- Autodesk November 24: https://investors.autodesk.com/news-releases/news-release-details/autodesk-extends-invitation-join-financial-results-conference-53 states the third quarter fiscal 2027 conference call only (2 p.m. PT).
+- Veeva December 3 and Darden December 18: seen only as aggregator copies (finviz, placera); the issuer news lists are script-rendered and the issuer notices were not retrieved.
+- Snowflake December 2 (issuer page https://www.snowflake.com/en/news/press-releases/fy27-q3-earnings-date-announcement/ found by search, not fetched) and Okta December 1: SNOW and OKTA have no listing in the embedded directory, so they cannot be published under the data-only rules.
+- Best Buy November 24, Kroger December 3, Adobe December 9: still call-only evidence; not re-fetched. HPE, Oracle, lululemon: searches returned no issuer notice for the coming quarter. Allgens not checked.
+
+Not checked in this run: JPX schedule workbooks, HKEX results notices beyond Meituan and Li Auto, London RNS, DAX, CAC, KOSPI and SSE constituents, Bloom Energy and SpaceX (a search found no issuer notice for a fourth quarter date), and events dated December 2 or later other than those named above. Directory observation, not changed: Deere (DE) is listed with market "DE" instead of "US".
