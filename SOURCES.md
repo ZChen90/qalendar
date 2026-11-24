@@ -329,3 +329,14 @@ FedEx https://investors.fedex.com/news-and-events/investor-news/investor-news-de
 Allgens CNINFO https://www.cninfo.com.cn/new/hisAnnouncement/query query November 21–24 returned no announcement entries; this does not establish absence of a release. Exact delayed Q3 date remains unresolved.
 
 Partial check only: other indices, watch companies and current memberships were not comprehensively reverified. Earliest SSE releases, full KOSPI coverage and other existing audit gaps remain open. Source-log-only publication does not refresh calendar freshness. The prior five-week warning was resolved by the separately published 8fbc3c3 maintenance change.
+
+## Daily verification — November 24, 2026 (second publication, 12:01 Berlin)
+
+Four issuer-confirmed events added. They were first verified by the 01:25 scheduled run, which could not push; each source was retrieved again before this publication.
+
+- SJM: issuer notice states second quarter fiscal 2027 results on November 24 with materials available from 7:00 a.m. Eastern; the 9:00 a.m. webcast is not the release time. https://s203.q4cdn.com/703080298/files/doc_news/The-J-M--Smucker-Co--to-Report-Second-Quarter-Earnings-2026.pdf
+- 3690.HK: Meituan investor-relations page states third quarter results on November 27 after market close; the 19:00 HKT call is separate. https://www.meituan.com/en-US/investor-relations
+- NTAP: issuer release states results after market close on December 1; the 14:30 Pacific webcast is separate. https://www.netapp.com/newsroom/press-releases/news-rel-20261110-705988/
+- HRL: issuer notice states the earnings release before the markets open on December 3. https://s204.q4cdn.com/636391999/files/doc_news/Hormel-Foods-Corporation-Announces-Fourth-Quarter-Earnings-Call-2026.pdf
+
+Index tags come from the embedded directory (SJM, NTAP, HRL: SPX; 3690.HK: HSI). The scheduled run also reported re-checking ADI, WDAY, DELL, CRWD and MRVL with no date change; those sources were not retrieved again here, so their verifiedOn dates are unchanged. Held back as call-only evidence: Deere November 25, Autodesk November 24, Best Buy November 24, Kroger December 3, Adobe December 9. Unresolved: HPE, Oracle, FedEx, lululemon, Allgens. Coverage remains partial; empty days do not mean no earnings.

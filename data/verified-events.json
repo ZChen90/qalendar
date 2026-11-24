@@ -2509,5 +2509,42 @@
     "source": "https://www.jpx.co.jp/listing/event-schedules/financial-announcement/tvdivq0000001ofb-att/kessan10_1120.xlsx",
     "evidence": "Official JPX October-period schedule as of November 19 lists code 1928, third quarter, Excel date 46366 = December 10. No release session supplied.",
     "verifiedOn": "2026-11-23"
+  },
+  {
+    "ticker": "SJM",
+    "name": "J.M. Smucker",
+    "date": "2026-11-24",
+    "session": "pre",
+    "time": "07:00 ET",
+    "source": "https://s203.q4cdn.com/703080298/files/doc_news/The-J-M--Smucker-Co--to-Report-Second-Quarter-Earnings-2026.pdf",
+    "evidence": "Issuer notice: second quarter fiscal 2027 results on Tuesday, November 24, 2026, with release materials available from 7:00 a.m. Eastern; the 9:00 a.m. webcast is separate.",
+    "verifiedOn": "2026-11-24"
+  },
+  {
+    "ticker": "3690.HK",
+    "name": "Meituan",
+    "date": "2026-11-27",
+    "session": "post",
+    "source": "https://www.meituan.com/en-US/investor-relations",
+    "evidence": "Issuer investor-relations page: third quarter 2026 results on Friday, November 27, 2026, after market close; the 19:00 HKT call is separate.",
+    "verifiedOn": "2026-11-24"
+  },
+  {
+    "ticker": "NTAP",
+    "name": "NetApp",
+    "date": "2026-12-01",
+    "session": "post",
+    "source": "https://www.netapp.com/newsroom/press-releases/news-rel-20261110-705988/",
+    "evidence": "Issuer press release: results after market close on December 1, 2026; the 14:30 Pacific webcast is separate.",
+    "verifiedOn": "2026-11-24"
+  },
+  {
+    "ticker": "HRL",
+    "name": "Hormel Foods",
+    "date": "2026-12-03",
+    "session": "pre",
+    "source": "https://s204.q4cdn.com/636391999/files/doc_news/Hormel-Foods-Corporation-Announces-Fourth-Quarter-Earnings-Call-2026.pdf",
+    "evidence": "Issuer notice: fourth quarter earnings release before the markets open on Thursday, December 3, 2026; the call is separate.",
+    "verifiedOn": "2026-11-24"
   }
 ]
