@@ -38,3 +38,7 @@ The board now supports Monday–Sunday data, including an optional `other` array
 `data/index-universe.json` is the reviewed roster snapshot and per-company earnings-review checklist. `scripts/sync-universe.cjs` reconciles the embedded directory to those reviewed rosters without advancing freshness. `data/verified-events.json` contains source-backed additions; `scripts/import-verified-events.cjs` is a one-time November 4 snapshot importer, not an unattended date generator. Review new evidence before changing its date or inputs.
 
 The coverage panel distinguishes roster size from companies with known release dates and explicitly identifies incomplete KOSPI verification and partial earnings coverage. Secondary rosters are labeled. The earlier weekday-only/schema restriction above is superseded by this user-authorized update.
+
+## Earnings API
+
+`/api/earnings` is served from `functions/api/earnings.js` and documented in `docs/API.md`. It reads the week-data JSON from the deployed `index.html` through the Pages asset binding, so the API and the page always show the same data and the data format is unchanged. `_routes.json` lists the endpoint; without that entry Pages answers the path with the page HTML. Tests use synthetic fixtures: `tests/earnings-api.test.cjs`.
