@@ -2334,7 +2334,7 @@
     "date": "2026-12-01",
     "session": "other",
     "source": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results",
-    "verifiedOn": "2026-11-24",
+    "verifiedOn": "2026-11-25",
     "evidence": "Issuer November 6 notice links December 1 results release to a subsequent 13:30 Pacific call. Exact release time/session not explicitly established; call time not substituted."
   },
   {
@@ -2352,7 +2352,7 @@
     "date": "2026-12-02",
     "session": "post",
     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Date-of-Third-Quarter-Fiscal-2027-Earnings-Release-and-Webcast/default.aspx",
-    "verifiedOn": "2026-11-11",
+    "verifiedOn": "2026-11-25",
     "evidence": "November 10 issuer notice explicitly states December 2 after market close. The 17:00 ET broadcast is separate, not the release time."
   },
   {
@@ -2407,7 +2407,7 @@
     "date": "2026-12-01",
     "session": "post",
     "source": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-announces-date-fiscal-third-quarter-2027-financial",
-    "verifiedOn": "2026-11-24",
+    "verifiedOn": "2026-11-25",
     "evidence": "November 4 issuer notice explicitly states December 1 after US market close; 17:00 Eastern is a separate call."
   },
   {
@@ -2527,7 +2527,7 @@
     "session": "post",
     "source": "https://www.meituan.com/en-US/investor-relations",
     "evidence": "Issuer investor-relations page: third quarter 2026 results on Friday, November 27, 2026, after market close; the 19:00 HKT call is separate.",
-    "verifiedOn": "2026-11-24"
+    "verifiedOn": "2026-11-25"
   },
   {
     "ticker": "NTAP",
@@ -2536,7 +2536,7 @@
     "session": "post",
     "source": "https://www.netapp.com/newsroom/press-releases/news-rel-20261110-705988/",
     "evidence": "Issuer press release: results after market close on December 1, 2026; the 14:30 Pacific webcast is separate.",
-    "verifiedOn": "2026-11-24"
+    "verifiedOn": "2026-11-25"
   },
   {
     "ticker": "HRL",
@@ -2582,5 +2582,33 @@
     "source": "https://s25.q4cdn.com/550667411/files/doc_news/Ciena-Announces-Reporting-Date-and-Web-Broadcast-for-Fiscal-Fourth-Quarter-and-Year-End-2026-Results-2026.pdf",
     "evidence": "Issuer release of November 12: expects to announce fiscal fourth quarter and year-end results on Thursday, December 10, 2026, before the open of the U.S. financial markets; the 8:30 a.m. Eastern webcast is separate.",
     "verifiedOn": "2026-11-24"
+  },
+  {
+    "ticker": "HPE",
+    "name": "Hewlett Packard Enterprise",
+    "date": "2026-11-23",
+    "session": "other",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001645590/000164559026000097/ex-991x11232026x8k.htm",
+    "evidence": "Issuer news release furnished as Exhibit 99.1, dated November 23, 2026, headed \"HPE reports fiscal 2026 fourth quarter results\": HPE \"today announced financial results for the fourth quarter ended October 31, 2026\". The exhibit does not state the time of day.",
+    "verifiedOn": "2026-11-25"
+  },
+  {
+    "ticker": "COO",
+    "name": "Cooper Companies",
+    "date": "2026-12-03",
+    "session": "post",
+    "time": "16:15 ET",
+    "source": "https://investor.coopercos.com/news-releases/news-release-details/coopercompanies-announces-release-date-fourth-quarter-and-full-6",
+    "evidence": "Issuer release of November 5: will report fourth quarter and full year 2026 financial results on Thursday, December 3, 2026, at 4:15 PM ET; the 5:00 PM ET call follows the release.",
+    "verifiedOn": "2026-11-25"
+  },
+  {
+    "ticker": "LULU",
+    "name": "Lululemon Athletica",
+    "date": "2026-12-08",
+    "session": "other",
+    "source": "https://corporate.lululemon.com/newsroom/press-releases/2026/11-24-2026-113020277",
+    "evidence": "Issuer release of November 24: financial results for the third quarter fiscal 2026 will be released Tuesday, December 8, 2026. No release time is stated; the 4:30 p.m. Eastern call is separate.",
+    "verifiedOn": "2026-11-25"
   }
 ]

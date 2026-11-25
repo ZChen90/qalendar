@@ -365,3 +365,35 @@ Held back:
 - Best Buy November 24, Kroger December 3, Adobe December 9: still call-only evidence; not re-fetched. HPE, Oracle, lululemon: searches returned no issuer notice for the coming quarter. Allgens not checked.
 
 Not checked in this run: JPX schedule workbooks, HKEX results notices beyond Meituan and Li Auto, London RNS, DAX, CAC, KOSPI and SSE constituents, Bloom Energy and SpaceX (a search found no issuer notice for a fourth quarter date), and events dated December 2 or later other than those named above. Directory observation, not changed: Deere (DE) is listed with market "DE" instead of "US".
+
+## Daily verification — November 25, 2026
+
+Window November 23–December 20; no rollover needed. Coverage is partial: an empty day means nothing verified, not that no company reports.
+
+Added (issuer documents retrieved in this run):
+- HPE Hewlett Packard Enterprise, November 23, session unconfirmed ("other"): the issuer news release furnished to the SEC as Exhibit 99.1, dated November 23, 2026 and headed "HPE reports fiscal 2026 fourth quarter results", says HPE "today announced financial results for the fourth quarter ended October 31, 2026". The exhibit gives no time of day. This resolves the earlier "HPE unresolved" note; the release had already happened when it was found. https://www.sec.gov/Archives/edgar/data/0001645590/000164559026000097/ex-991x11232026x8k.htm
+- COO Cooper Companies, December 3, after U.S. close, 16:15 ET: the issuer release of November 5 says it "will report fourth quarter and full year 2026 financial results on Thursday, December 3, 2026, at 4:15 PM ET"; the 5:00 PM ET call follows the release. https://investor.coopercos.com/news-releases/news-release-details/coopercompanies-announces-release-date-fourth-quarter-and-full-6
+- LULU Lululemon Athletica, December 8, session unconfirmed ("other"): the issuer release of November 24 says its "financial results for the third quarter fiscal 2026 will be released Tuesday, December 8, 2026". No release time is stated; the 4:30 p.m. Eastern call is separate. Resolves the earlier unresolved lululemon candidate. https://corporate.lululemon.com/newsroom/press-releases/2026/11-24-2026-113020277
+
+Index tags come from the embedded directory (HPE, COO, LULU: SPX).
+
+Re-checked against the stored issuer source, date unchanged, verifiedOn set to November 25:
+- 3690.HK Meituan: "plans to release its financial results for the third quarter ended September 30, 2026, on Friday, November 27, 2026, after market-close"; the 19:00 HKT call is separate. https://www.meituan.com/en-US/investor-relations
+- CRWD CrowdStrike: results "after the U.S. market close on Tuesday, December 1, 2026". https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-announces-date-fiscal-third-quarter-2027-financial
+- NTAP NetApp: "After market close on December 1, 2026". https://www.netapp.com/newsroom/press-releases/news-rel-20261110-705988/
+- MRVL Marvell: conference call "following the release of its third quarter of fiscal year 2027 financial results on Tuesday, December 1, 2026"; no release time stated, stays in "other". https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results
+- CRM Salesforce: results "will be released on Wednesday, December 2, 2026, after the close of the market". https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Date-of-Third-Quarter-Fiscal-2027-Earnings-Release-and-Webcast/default.aspx
+
+Not re-checked, although dated today (verifiedOn unchanged, events left as published):
+- EZJ.L easyJet, November 25: the financial-calendar page could not be fetched in this run, and the regulatory-news page https://corporate.easyjet.com/investors/regulatory-news/news-details/default.aspx?slug=final-results-88d6d134 returned only navigation without the announcement text. Nothing found indicates a change of date; last verified November 4.
+- 2015.HK Li Auto, November 25: the issuer release could not be fetched in this run and a search returned only aggregator copies; last verified November 24.
+
+Held back:
+- Deere November 25: https://www.deere.com/en-us/john-deere-news/fy26-q4-announcement again returned only a script stub whose description gives the earnings call (Wednesday, Nov. 25, 9 a.m. CST). No release statement retrieved; not published.
+- Adobe December 9: https://www.adobe.com/investor-relations.html lists only "Q4 & FY2026 earnings call", 2:00pm Pacific Time; no release statement.
+- Veeva December 3 and Darden December 18: found only as wire or aggregator copies (finviz, TradingView, placera); issuer notices not retrieved. A Veeva 8-K of November 5 (https://www.sec.gov/Archives/edgar/data/0001393052/000139305226000039/veev-20261105.htm) states no release date.
+- Kroger December 3 and Dollar General December 3 session: no 2026 issuer notice surfaced in search; unchanged.
+- PDD Holdings: aggregator headlines indicate third quarter results were reported November 19, before the current window; not added.
+- Oracle, General Mills, Accenture, Brown-Forman: searches returned only prior-year notices.
+
+Tooling limit in this run: page retrieval was refused for URLs taken from repository files and worked only for URLs returned by a web search, so stored sources could be re-checked only where a search surfaced the same URL. Not checked: JPX schedule workbooks, HKEX results notices beyond Meituan, London RNS, DAX, CAC, KOSPI and SSE constituents, Bloom Energy and SpaceX, events dated December 3 or later other than those named above, Allgens. Directory observation, not changed: Deere (DE) is listed with market "DE" instead of "US".
