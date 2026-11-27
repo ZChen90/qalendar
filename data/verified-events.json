@@ -2334,7 +2334,7 @@
     "date": "2026-12-01",
     "session": "other",
     "source": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results",
-    "verifiedOn": "2026-11-26",
+    "verifiedOn": "2026-11-27",
     "evidence": "Issuer November 6 notice links December 1 results release to a subsequent 13:30 Pacific call. Exact release time/session not explicitly established; call time not substituted."
   },
   {
@@ -2352,7 +2352,7 @@
     "date": "2026-12-02",
     "session": "post",
     "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Date-of-Third-Quarter-Fiscal-2027-Earnings-Release-and-Webcast/default.aspx",
-    "verifiedOn": "2026-11-26",
+    "verifiedOn": "2026-11-27",
     "evidence": "November 10 issuer notice explicitly states December 2 after market close. The 17:00 ET broadcast is separate, not the release time."
   },
   {
@@ -2407,7 +2407,7 @@
     "date": "2026-12-01",
     "session": "post",
     "source": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-announces-date-fiscal-third-quarter-2027-financial",
-    "verifiedOn": "2026-11-26",
+    "verifiedOn": "2026-11-27",
     "evidence": "November 4 issuer notice explicitly states December 1 after US market close; 17:00 Eastern is a separate call."
   },
   {
@@ -2527,7 +2527,7 @@
     "session": "post",
     "source": "https://www.meituan.com/en-US/investor-relations",
     "evidence": "Issuer investor-relations page: third quarter 2026 results on Friday, November 27, 2026, after market close; the 19:00 HKT call is separate.",
-    "verifiedOn": "2026-11-26"
+    "verifiedOn": "2026-11-27"
   },
   {
     "ticker": "NTAP",
@@ -2536,7 +2536,7 @@
     "session": "post",
     "source": "https://www.netapp.com/newsroom/press-releases/news-rel-20261110-705988/",
     "evidence": "Issuer press release: results after market close on December 1, 2026; the 14:30 Pacific webcast is separate.",
-    "verifiedOn": "2026-11-26"
+    "verifiedOn": "2026-11-27"
   },
   {
     "ticker": "HRL",
@@ -2545,7 +2545,7 @@
     "session": "pre",
     "source": "https://s204.q4cdn.com/636391999/files/doc_news/Hormel-Foods-Corporation-Announces-Fourth-Quarter-Earnings-Call-2026.pdf",
     "evidence": "Issuer notice: fourth quarter earnings release before the markets open on Thursday, December 3, 2026; the call is separate.",
-    "verifiedOn": "2026-11-26"
+    "verifiedOn": "2026-11-27"
   },
   {
     "ticker": "2015.HK",

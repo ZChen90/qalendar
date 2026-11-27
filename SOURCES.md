@@ -426,3 +426,32 @@ Held back:
 - Bloom Energy: search returned no notice for a fourth quarter 2026 date. SpaceX not checked.
 
 Tooling limit in this run (same as November 25): page retrieval was refused for URLs taken from repository files and worked only for URLs returned by a web search in the same run; each refused request also stalled for about five minutes. Not checked: JPX schedule workbooks, HKEX results notices beyond Meituan, London RNS and FTSE issuer calendars, DAX, CAC, KOSPI and SSE constituents, events dated December 4 or later, Allgens. Directory observation, not changed: Deere (DE) is listed with market "DE" instead of "US".
+
+## Daily verification — November 27, 2026
+
+Window November 23–December 20; no rollover needed. Coverage is partial: an empty day means nothing verified, not that no company reports.
+
+Added, changed or removed: none.
+
+Re-checked against the stored issuer source (page retrieved in this run), date unchanged, verifiedOn set to November 27:
+- 3690.HK Meituan (today): "plans to release its financial results for the third quarter ended September 30, 2026" "on Friday, November 27, 2026, after market-close" (notice dated November 17); the 7:00 p.m. Hong Kong Time call is separate. At retrieval the page did not yet list the third quarter results. https://www.meituan.com/en-US/investor-relations
+- CRWD CrowdStrike: results "after the U.S. market close on Tuesday, December 1, 2026" (notice dated November 4); the 2:00 p.m. Pacific call is separate. https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-announces-date-fiscal-third-quarter-2027-financial
+- NTAP NetApp: "After market close on December 1, 2026, NetApp (NASDAQ: NTAP) will announce financial results" (notice dated November 10); the 2:30 p.m. Pacific webcast is separate. https://www.netapp.com/newsroom/press-releases/news-rel-20261110-705988/
+- MRVL Marvell: the call follows "the release of its third quarter of fiscal year 2027 financial results on Tuesday, December 1, 2026" (notice dated November 6); no release time stated, stays in "other". https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results
+- CRM Salesforce: results "will be released on Wednesday, December 2, 2026, after the close of the market." (notice dated November 10). https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Date-of-Third-Quarter-Fiscal-2027-Earnings-Release-and-Webcast/default.aspx
+- HRL Hormel Foods: "will issue its earnings release before the markets open on Thursday, Dec. 3, 2026" (notice dated November 3); the 8 a.m. CT call is separate. https://s204.q4cdn.com/636391999/files/doc_news/Hormel-Foods-Corporation-Announces-Fourth-Quarter-Earnings-Call-2026.pdf
+
+Not re-checked, although inside the seven-day window (verifiedOn unchanged, events left as published):
+- ULTA Ulta Beauty, December 3: the stored issuer page could not be retrieved (see tooling limit) and searches surfaced only an aggregator copy (finviz); last verified November 24.
+- COO Cooper Companies, December 3: the stored issuer page could not be retrieved and searches surfaced only prior-year issuer pages and an aggregator copy; last verified November 26.
+- DG Dollar General, December 3: the stored issuer page could not be retrieved and searches surfaced only an aggregator copy; last verified November 14, session still unconfirmed.
+
+Held back (no issuer page stating a release date was retrieved):
+- Veeva December 3: again only the finviz copy of the wire text; ir.veeva.com returned only earlier quarters' notices in search.
+- Darden December 18: again only the placera copy.
+- Kroger, Oracle, Adobe, Casey's, Brown-Forman, Accenture, FedEx, General Mills, Cintas, Paychex, Lennar, Jabil, Carnival: searches returned only prior-year notices, aggregator calendars or earlier quarters' documents.
+- Snowflake, Okta, Zscaler, Campbell's, MongoDB: still no listing in the embedded directory; not researched further.
+
+JPX: the earnings-announcement schedule page https://www.jpx.co.jp/listing/event-schedules/financial-announcement/index.html was retrieved (updated November 20). It links the same two workbooks as before (kessan09_1106.xlsx, as of November 5; kessan10_1120.xlsx, as of November 19); the workbooks came back as binary and could not be read in this run, so no Japanese event was added or re-checked.
+
+Tooling limit in this run (same as November 25 and 26): page retrieval was refused for URLs taken from repository files and worked only for URLs returned by a web search in the same run; each refused batch stalled for about five minutes. Not checked: HKEX results notices beyond Meituan, London RNS and FTSE issuer calendars (only aggregator diaries surfaced), DAX, CAC, KOSPI and SSE constituents, events dated December 4 or later, Bloom Energy, SpaceX, Allgens. Directory observation, not changed: Deere (DE) is listed with market "DE" instead of "US".
